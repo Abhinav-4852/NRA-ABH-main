@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tour - Solanki Tours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="Solanki logo_Final.png" alt="Solanki Logo">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="booking.html" class="btn-primary active">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Book Your Dream Vacation</h1>
+            <p>Fill out the form below and our travel experts will contact you shortly</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-container">
+                    <div class="form-header">
+                        <h2>Booking Information</h2>
+                        <p>Complete the form below to start planning your perfect trip</p>
+                    </div>
+
+                    <form id="bookingForm" class="booking-form">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required placeholder="Your city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country *</label>
+                                    <input type="text" id="country" name="country" value="India" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Details -->
+                        <div class="form-section">
+                            <h3>Travel Details</h3>
+                            <div class="form-group">
+                                <label for="package">Select Package *</label>
+                                <select id="package" name="package" required>
+                                    <option value="">Choose a package...</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="destination">Preferred Destination *</label>
+                                    <select id="destination" name="destination" required>
+                                        <option value="">Select destination...</option>
+                                        <option value="himachal">Himachal Pradesh</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="kashmir">Kashmir</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="andaman">Andaman Islands</option>
+                                        <option value="northeast">North East India</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="singapore">Singapore</option>
+                                        <option value="dubai">Dubai</option>
+                                        <option value="srilanka">Sri Lanka</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="duration">Preferred Duration</label>
+                                    <select id="duration" name="duration">
+                                        <option value="">Any duration...</option>
+                                        <option value="2-3">2-3 Days</option>
+                                        <option value="4-5">4-5 Days</option>
+                                        <option value="6-7">6-7 Days</option>
+                                        <option value="8-10">8-10 Days</option>
+                                        <option value="10+">10+ Days</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="travelDate">Preferred Travel Date *</label>
+                                    <input type="date" id="travelDate" name="travelDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="travelers">Number of Travelers *</label>
+                                    <input type="number" id="travelers" name="travelers" min="1" max="50" value="2" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="accommodation">Accommodation Preference</label>
+                                <select id="accommodation" name="accommodation">
+                                    <option value="">No preference...</option>
+                                    <option value="3star">3-Star Hotels</option>
+                                    <option value="4star">4-Star Hotels</option>
+                                    <option value="5star">5-Star Hotels</option>
+                                    <option value="resort">Resorts</option>
+                                    <option value="boutique">Boutique Hotels</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Budget & Preferences -->
+                        <div class="form-section">
+                            <h3>Budget & Preferences</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="budget">Approximate Budget per Person</label>
+                                    <select id="budget" name="budget">
+                                        <option value="">Select budget range...</option>
+                                        <option value="10-20k">₹10,000 - ₹20,000</option>
+                                        <option value="20-30k">₹20,000 - ₹30,000</option>
+                                        <option value="30-50k">₹30,000 - ₹50,000</option>
+                                        <option value="50-75k">₹50,000 - ₹75,000</option>
+                                        <option value="75k+">₹75,000+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="travelType">Travel Type</label>
+                                    <select id="travelType" name="travelType">
+                                        <option value="">Select type...</option>
+                                        <option value="family">Family Trip</option>
+                                        <option value="honeymoon">Honeymoon</option>
+                                        <option value="friends">Friends Group</option>
+                                        <option value="solo">Solo Travel</option>
+                                        <option value="corporate">Corporate Trip</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Special Interests (Select all that apply)</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="adventure"> Adventure Activities
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="culture"> Cultural Experiences
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="nature"> Nature & Wildlife
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="beach"> Beach & Water Sports
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="spiritual"> Spiritual & Religious
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="photography"> Photography
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h3>Additional Information</h3>
+                            <div class="form-group">
+                                <label for="requirements">Special Requirements or Requests</label>
+                                <textarea id="requirements" name="requirements" rows="5" placeholder="Please mention any special requirements, dietary preferences, accessibility needs, or specific requests..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="hearAbout">How did you hear about us?</label>
+                                <select id="hearAbout" name="hearAbout">
+                                    <option value="">Select...</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="friend">Friend/Family Referral</option>
+                                    <option value="advertisement">Advertisement</option>
+                                    <option value="repeat">Previous Customer</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Terms & Submit -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terms" required>
+                                    I agree to the <a href="#" target="_blank">Terms & Conditions</a> and <a href="#" target="_blank">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    Subscribe to our newsletter for exclusive deals and travel tips
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">Submit Booking Request</button>
+                            <p class="form-note">Our travel experts will contact you within 24 hours</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="booking-sidebar">
+                    <div class="info-card sticky">
+                        <h3>Why Book With Us?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <div>
+                                    <strong>Best Price Guarantee</strong>
+                                    <p>Competitive rates with no hidden charges</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <div>
+                                    <strong>Expert Travel Planners</strong>
+                                    <p>Personalized itineraries by experienced professionals</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <div>
+                                    <strong>24/7 Support</strong>
+                                    <p>Round-the-clock assistance during your trip</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <div>
+                                    <strong>Flexible Cancellation</strong>
+                                    <p>Easy cancellation and rescheduling options</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <div>
+                                    <strong>Trusted by Thousands</strong>
+                                    <p>10,000+ satisfied travelers worldwide</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contact-box">
+                            <h4>Need Immediate Assistance?</h4>
+                            <p>Talk to our travel experts</p>
+                            <a href="tel:+919876543210" class="contact-btn-large">
+                                <span>📞</span> +91 98765 43210
+                            </a>
+                            <a href="mailto:bookings@Solanki.com" class="contact-btn-large">
+                                <span>✉️</span> bookings@Solanki.com
+                            </a>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <h4>Customer Reviews</h4>
+                            <div class="testimonial">
+                                <div class="rating">★★★★★</div>
+                                <p>"Amazing experience! The team handled everything perfectly. Highly recommended!"</p>
+                                <strong>- Priya Sharma</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div><h3 class="footer-brand">Solanki<br><span class="footer-sub-brand">Tours and Travels</span></h3>
+                    <Br></Br>
+                    <p>Creating unforgettable travel experiences since 2014. Your journey to extraordinary destinations starts here.</p>
+                    </div> 
+                    <br>
+                    <div> <P>A 260 Ramagarden Karwal Nagar, Main Mukiya Market, Delhi 110091</P>
+                        <br>
+                        <p>Contact us: Solankitourandtravel2206@gmail.com</p>
+                        
+                        <p>+91 78953 48735</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="packages.html?dest=himachal">Himachal Tours</a></li>
+                        <li><a href="packages.html?dest=kerala">Kerala Backwaters</a></li>
+                        <li><a href="packages.html?dest=kashmir">Kashmir Paradise</a></li>
+                        <li><a href="packages.html?dest=rajasthan">Rajasthan Heritage</a></li>
+                        <li><a href="packages.html?dest=international">International Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="social logos white/imgi_39_203dcdc2ac8b48de89313f90d2a4cda1.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="social logos white/imgi_40_81af6121f84c41a5b4391d7d37fce12a.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <img src="social logos white/imgi_41_23fd2a2be53141ed810f4d3dcdcd01fa.png" alt="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <img src="social logos white/imgi_42_7528824071724d12a3e6c31eee0b40d4.png" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Solanki Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

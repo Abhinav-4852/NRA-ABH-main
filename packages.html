@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Solanki Tours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="Solanki logo_Final.png" alt="Solanki Logo">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="booking.html" class="btn-primary">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Explore Our Tour Packages</h1>
+            <p>Discover curated travel experiences to amazing destinations</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter" onchange="filterPackages()">
+                        <option value="all">All Packages</option>
+                        <option value="domestic">Domestic Tours</option>
+                        <option value="international">International Tours</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Destination:</label>
+                    <select id="destination-filter" onchange="filterPackages()">
+                        <option value="all">All Destinations</option>
+                        <option value="Shimla">Shimla</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Dharamshala">Dharamshala</option>
+                        <option value="Dalhousie">Dalhousie</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Kashmir">Kashmir</option>
+                        <option value="Srinagar">Srinagar</option>
+                        <option value="Andaman">Andaman</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="North East">North East</option>
+                        <option value="Darjeeling">Darjeeling</option>
+                        <option value="Gangtok">Gangtok</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Srilanka">Sri Lanka</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Duration:</label>
+                    <select id="duration-filter" onchange="filterPackages()">
+                        <option value="all">Any Duration</option>
+                        <option value="2-3">2-3 Days</option>
+                        <option value="4-5">4-5 Days</option>
+                        <option value="6-7">6-7 Days</option>
+                        <option value="8-10">8-10 Days</option>
+                        <option value="10+">10+ Days</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select id="sort-filter" onchange="filterPackages()">
+                        <option value="default">Default</option>
+                        <option value="duration-asc">Duration (Low to High)</option>
+                        <option value="duration-desc">Duration (High to Low)</option>
+                        <option value="name">Name (A-Z)</option>
+                    </select>
+                </div>
+                <button class="btn-secondary" onclick="resetFilters()">Reset Filters</button>
+            </div>
+            <div class="results-count">
+                <p id="results-text">Showing all packages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="packages-grid" id="all-packages">
+                <!-- Packages will be loaded dynamically via JavaScript -->
+            </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <h3>No packages found</h3>
+                <p>Try adjusting your filters to see more results</p>
+                <button class="btn-primary" onclick="resetFilters()">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Let us create a custom itinerary tailored to your preferences</p>
+                <a href="booking.html" class="btn-large btn-primary">Request Custom Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div><h3 class="footer-brand">Solanki<br><span class="footer-sub-brand">Tours and Travels</span></h3>
+                    <Br></Br>
+                    <p>Creating unforgettable travel experiences since 2014. Your journey to extraordinary destinations starts here.</p>
+                    </div> 
+                    <br>
+                    <div> <P>A 260 Ramagarden Karwal Nagar, Main Mukiya Market, Delhi 110091</P>
+                        <br>
+                        <p>Contact us: Solankitourandtravel2206@gmail.com</p>
+                        
+                        <p>+91 78953 48735</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="packages.html?dest=himachal">Himachal Tours</a></li>
+                        <li><a href="packages.html?dest=kerala">Kerala Backwaters</a></li>
+                        <li><a href="packages.html?dest=kashmir">Kashmir Paradise</a></li>
+                        <li><a href="packages.html?dest=rajasthan">Rajasthan Heritage</a></li>
+                        <li><a href="packages.html?dest=international">International Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="social logos white/imgi_39_203dcdc2ac8b48de89313f90d2a4cda1.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="social logos white/imgi_40_81af6121f84c41a5b4391d7d37fce12a.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <img src="social logos white/imgi_41_23fd2a2be53141ed810f4d3dcdcd01fa.png" alt="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <img src="social logos white/imgi_42_7528824071724d12a3e6c31eee0b40d4.png" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Solanki Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/packages.js"></script>
+</body>
+</html>

@@ -66,31 +66,33 @@
     <section class="enquiry-section">
         <div class="container">
             <div class="enquiry-card">
-                <form method="POST" name="indexform" action="https://api.web3forms.com/submit" class="plan-tour" id="enquiryForm">
-                    <input type="hidden" name="access_key" value="0a40fe73-8cc8-469d-b224-45d90a9e2941">
-                    <input type="hidden" name="subject" value="New Tour Enquiry from Solanki Tours">
-                    <input type="hidden" name="from_name" value="Solanki Tours Website">
+                <form method="POST" name="indexform" action="https://script.google.com/macros/s/AKfycbyguqjJ3GiF14IjjVJ1sMZSZRCC9pV217Vl9vKc9CEKjoC_-IeqRlakEWTImFoyERdr/exec" class="plan-tour" id="enquiryForm">
+                    <input type="hidden" name="key" value="[£0e9^sN)|he5oS~r5@8y">
                     <div class="plan-banner">
                         <span>PLAN YOUR</span>
                         <h4>DREAM <span>TOUR</span></h4>
                     </div>
                     <div class="top-fields">
                         <div class="input-field">
-                            <input type="text" placeholder="1. Name" name="name" required>
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" placeholder="Enter your name" name="name" required>
                         </div>
                         <div class="input-field">
-                            <input type="email" placeholder="2. Email" name="email" required>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="your.email@example.com" name="email" required>
                         </div>
                         <div class="input-field">
-                            <input type="tel" placeholder="3. Phone" name="phone" required>
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210" name="phone" required>
                         </div>
                         <div class="input-field">
-                            <input type="date" placeholder="4. Date" name="date" required>
+                            <label for="date">Travel Date *</label>
+                            <input type="date" id="date" name="date" required>
                         </div>
                     </div>
                     <div class="bottom-fields">
                         <div class="input-field select col-md-3">
-                            <label>5. With Adults</label>
+                            <label for="adults">Adults *</label>
                             <select id="adults" name="adults" required>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -102,7 +104,7 @@
                             </select>
                         </div>
                         <div class="input-field select col-md-3">
-                            <label>6. With Kids</label>
+                            <label for="kids">Kids</label>
                             <select id="kids" name="kids">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -115,7 +117,8 @@
                             </select>
                         </div>
                         <div class="input-field col-md-3">
-                            <input type="text" placeholder="7. Enquiry" name="comments" required>
+                            <label for="comments">Enquiry *</label>
+                            <input type="text" id="comments" placeholder="Tell us about your travel plans" name="comments" required>
                         </div>
                         <div class="submit-btn col-md-2">
                             <input type="submit" value="Send Enquiry">
@@ -337,6 +340,17 @@
     </section>
 
     <!-- Footer -->
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Thank You!</h2>
+            <p>Your enquiry has been submitted successfully.</p>
+            <p>Our travel experts will contact you within 24 hours.</p>
+            <button onclick="closeModal()" class="btn-primary">Close</button>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -403,5 +417,60 @@
 
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        // Handle form submission
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('input[type="submit"]');
+            const originalBtnText = submitBtn.value;
+            
+            // Disable submit button and show loading
+            submitBtn.disabled = true;
+            submitBtn.value = 'Sending...';
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Submit to Google Apps Script
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Show success modal
+                document.getElementById('successModal').style.display = 'flex';
+                
+                // Reset form
+                form.reset();
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.value = originalBtnText;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting your enquiry. Please try again or contact us directly.');
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.value = originalBtnText;
+            });
+        });
+        
+        function closeModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('successModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

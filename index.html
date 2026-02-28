@@ -316,10 +316,8 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" method="POST" action="https://api.web3forms.com/submit">
-                        <input type="hidden" name="access_key" value="0a40fe73-8cc8-469d-b224-45d90a9e2941">
-                        <input type="hidden" name="subject" value="New Contact Message from Solanki Tours">
-                        <input type="hidden" name="from_name" value="Solanki Tours Website">
+                    <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbzrxSeDxPecjAFFykXsG4eaSZ5aLHYQsuj9cGbz-u6bQtKPBMke8DgQmrCMikoWFJpClQ/exec">
+                        <input type="hidden" name="key" value="9Y81j'v3N[_{%3>HA%H]!">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
@@ -418,7 +416,7 @@
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
     <script>
-        // Handle form submission
+        // Handle enquiry form submission
         document.getElementById('enquiryForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -457,6 +455,48 @@
                 // Re-enable button
                 submitBtn.disabled = false;
                 submitBtn.value = originalBtnText;
+            });
+        });
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            
+            // Disable submit button and show loading
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Submit to Google Apps Script
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Show success modal
+                document.getElementById('successModal').style.display = 'flex';
+                
+                // Reset form
+                form.reset();
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting your message. Please try again or contact us directly.');
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
             });
         });
         

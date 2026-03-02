@@ -2,14 +2,14 @@
 const tourPackages = [
     {
         id: 1,
-        title: "Shimla Volvo Tour Package",
+        title: "Shimla Tour",
         duration: "03 NIGHTS/04 DAYS",
         destinations: "Delhi - Shimla - Delhi",
         price: "Contact Us",
         category: "domestic",
         region: "himachal",
         inclusions: [
-            "Delhi to Shimla, Shimla to Delhi Volvo Bus tickets",
+            "Delhi to Shimla, Shimla to Delhi Travel",
             "Accomodation of 2 Night in the hotel",
             "Welcome drinks like coffee and tea on arrival",
             "Every day morning breakfast and dinner",
@@ -21,14 +21,14 @@ const tourPackages = [
     },
     {
         id: 2,
-        title: "Kullu Manali Volvo Tour Package",
+        title: "Kullu Manali Tour",
         duration: "05 NIGHTS/06 DAYS",
         destinations: "Delhi - Manali - Delhi",
         price: "Contact Us",
         category: "domestic",
         region: "himachal",
         inclusions: [
-            "Delhi to Manali, Manali to Delhi Volvo Bus tickets",
+            "Delhi to Manali, Manali to Delhi Travel",
             "Accommodation for 3 Night in the hotel",
             "Welcome drink on arrival",
             "Every day morning Breakfast and Dinner in the hotel",
@@ -36,22 +36,22 @@ const tourPackages = [
             "Sightseeing of Rohtang Pass (Snow Point) by Car full day",
             "Kullu – Manikaran full day sightseeing by Car",
             "One candle light dinner",
-            "All pick up and drops from Volvo stand to hotel",
+            "All pick up and drops from & to hotel",
             "Inclusive of all taxes"
         ],
         image: "Tour Package Images - Solanki Tours/Kullu Manali Volvo Tour Package.jpg"
     },
     {
         id: 3,
-        title: "Shimla Kullu Manali Volvo Tour Package",
+        title: "Shimla Kullu Manali Tour Package",
         duration: "6 NIGHT/7 DAYS",
         destinations: "Delhi - Shimla - Manali - Delhi",
         price: "Contact Us",
         category: "domestic",
         region: "himachal",
         inclusions: [
-            "Delhi - Manali Volvo tickets",
-            "Deluxe bus tickets from Manali-Shimla",
+            "Delhi - Manali Travel",
+            "Travel to Manali-Shimla",
             "Volvo tickets Shimla-Delhi",
             "Accommodation for night in shimla",
             "Manali Accommodation for 3 Nights",
@@ -68,14 +68,14 @@ const tourPackages = [
     },
     {
         id: 4,
-        title: "Dharamshala Dalhousie Volvo Tour Package",
+        title: "Dharamshala Dalhousie Tour Package",
         duration: "05 NIGHTS/06 DAYS",
         destinations: "Delhi - Dharamshala - Dalhousie - Delhi",
         price: "Contact Us",
         category: "domestic",
         region: "himachal",
         inclusions: [
-            "Delhi to Dharamshala, Dharamshala to Delhi Volvo tickets",
+            "Delhi to Dharamshala, Dharamshala to Delhi Travel",
             "Accommodation for 2 night in Dharamshala",
             "Accommodation for 2 night in Dalhousie",
             "Welcome drink on arrival",

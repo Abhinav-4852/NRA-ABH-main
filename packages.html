@@ -60,26 +60,41 @@
                     <label>Destination:</label>
                     <select id="destination-filter" onchange="filterPackages()">
                         <option value="all">All Destinations</option>
-                        <option value="Shimla">Shimla</option>
-                        <option value="Manali">Manali</option>
-                        <option value="Dharamshala">Dharamshala</option>
-                        <option value="Dalhousie">Dalhousie</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Kashmir">Kashmir</option>
-                        <option value="Srinagar">Srinagar</option>
-                        <option value="Andaman">Andaman</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Jaipur">Jaipur</option>
-                        <option value="Udaipur">Udaipur</option>
-                        <option value="North East">North East</option>
-                        <option value="Darjeeling">Darjeeling</option>
-                        <option value="Gangtok">Gangtok</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Dubai">Dubai</option>
-                        <option value="Srilanka">Sri Lanka</option>
+                        <optgroup label="By Tour Group">
+                            <option value="himachal">Himachal Pradesh Tours</option>
+                            <option value="kashmir">Kashmir Tours</option>
+                            <option value="uttarakhand">Uttarakhand Tours</option>
+                            <option value="chardham">Char Dham & Pilgrimage Tours</option>
+                            <option value="northeast">North East India Tours</option>
+                            <option value="combo">Punjab & Himachal Combo Tours</option>
+                            <option value="heritage">Heritage & Cultural Tours</option>
+                            <option value="beach">Beach & Island Tours</option>
+                            <option value="international">International Tours</option>
+                        </optgroup>
+                        <optgroup label="By City/Destination">
+                            <option value="Shimla">Shimla</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Dharamshala">Dharamshala</option>
+                            <option value="Dalhousie">Dalhousie</option>
+                            <option value="Srinagar">Srinagar</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Udaipur">Udaipur</option>
+                            <option value="Darjeeling">Darjeeling</option>
+                            <option value="Gangtok">Gangtok</option>
+                            <option value="Haridwar">Haridwar</option>
+                            <option value="Rishikesh">Rishikesh</option>
+                            <option value="Mussoorie">Mussoorie</option>
+                            <option value="Corbett">Jim Corbett</option>
+                            <option value="Char Dham">Char Dham</option>
+                            <option value="Kedarnath">Kedarnath</option>
+                            <option value="Badrinath">Badrinath</option>
+                            <option value="Kasol">Kasol</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Srilanka">Sri Lanka</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div class="filter-group">
@@ -204,6 +219,7 @@
         </div>
     </footer>
 
+    <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
     <script src="js/packages.js"></script>

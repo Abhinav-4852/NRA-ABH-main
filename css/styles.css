@@ -218,6 +218,7 @@ textarea {
     transition: all 0.3s ease;
     display: inline-block;
     text-align: center;
+    margin-right: 0.75rem;
 }
 
 .btn-primary {
@@ -1249,7 +1250,7 @@ textarea {
 
 .social-links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     align-items: flex-start;
 }

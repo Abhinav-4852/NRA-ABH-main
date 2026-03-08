@@ -17,7 +17,7 @@ const tourPackages = [
             "Full day visit to Kufri by car",
             "Inclusive of all taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Shimla Volvo Tour package.jpg"
+        image: "Tour Package Images - Solanki Tours/Shimla Tour package.jpg"
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const tourPackages = [
             "All pick up and drops from & to hotel",
             "Inclusive of all taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Kullu Manali Volvo Tour Package.jpg"
+        image: "Tour Package Images - Solanki Tours/Kullu Manali Tour Package.jpg"
     },
     {
         id: 3,
@@ -87,7 +87,7 @@ const tourPackages = [
             "Full day sightseeing of Chamba - Khajjiar - Kalatop by Car",
             "Inclusive of all applicable taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Dharamshala Dalhouse Volvo Tour Package.jpg"
+        image: "Tour Package Images - Solanki Tours/Dharamshala Dalhousie Tour Package.jpg"
     },
     {
         id: 5,
@@ -366,7 +366,7 @@ const tourPackages = [
     },
     {
         id: 19,
-        title: "Manali Honeymoon Volvo Package",
+        title: "Manali Honeymoon Tour Package",
         duration: "05 NIGHTS/06 DAYS",
         destinations: "Delhi - Manali - Kullu - Solong Valley - Delhi",
         price: "Contact Us",
@@ -407,7 +407,7 @@ const tourPackages = [
     },
     {
         id: 21,
-        title: "Manali Shimla Volvo Honeymoon Tour",
+        title: "Manali Shimla Honeymoon Tour",
         duration: "06 NIGHTS/07 DAYS",
         destinations: "Delhi - Manali - Solong Valley - Kullu - Shimla - Kufri - Delhi",
         price: "Contact Us",
@@ -428,7 +428,7 @@ const tourPackages = [
     },
     {
         id: 22,
-        title: "Shimla Volvo Package",
+        title: "Shimla Tour Package",
         duration: "03 NIGHTS/04 DAYS",
         destinations: "Delhi - Shimla - Kufri - Delhi",
         price: "Contact Us",
@@ -437,13 +437,13 @@ const tourPackages = [
         inclusions: [
             "2 Nights accommodation in Shimla (3-star hotel)",
             "Welcome drink on arrival",
-            "Delhi – Shimla & Shimla – Delhi Volvo Bus Tickets",
+            "Delhi – Shimla & Shimla – Delhi Bus Tickets",
             "Daily Breakfast & Dinner",
             "Full-day Shimla sightseeing by car",
             "Kufri excursion by car",
             "All applicable taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Shimla Volvo Tour package.jpg"
+        image: "Tour Package Images - Solanki Tours/Shimla Tour package.jpg"
     },
     {
         id: 23,
@@ -468,7 +468,7 @@ const tourPackages = [
     },
     {
         id: 24,
-        title: "Delhi Manali Car Tour",
+        title: "Delhi Manali Tour",
         duration: "03 NIGHTS/04 DAYS",
         destinations: "Delhi - Manali - Delhi",
         price: "Contact Us",

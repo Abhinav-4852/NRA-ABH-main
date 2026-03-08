@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -15,7 +16,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="logo">
-                    <img src="Solanki logo_Final.png" alt="Solanki Logo">
+                    <img src="Solanki Tours Logo Transparent.png" alt="Solanki Logo">
                 </a>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -59,26 +60,41 @@
                     <label>Destination:</label>
                     <select id="destination-filter" onchange="filterPackages()">
                         <option value="all">All Destinations</option>
-                        <option value="Shimla">Shimla</option>
-                        <option value="Manali">Manali</option>
-                        <option value="Dharamshala">Dharamshala</option>
-                        <option value="Dalhousie">Dalhousie</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Kashmir">Kashmir</option>
-                        <option value="Srinagar">Srinagar</option>
-                        <option value="Andaman">Andaman</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Jaipur">Jaipur</option>
-                        <option value="Udaipur">Udaipur</option>
-                        <option value="North East">North East</option>
-                        <option value="Darjeeling">Darjeeling</option>
-                        <option value="Gangtok">Gangtok</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Dubai">Dubai</option>
-                        <option value="Srilanka">Sri Lanka</option>
+                        <optgroup label="By Tour Group">
+                            <option value="himachal">Himachal Pradesh Tours</option>
+                            <option value="kashmir">Kashmir Tours</option>
+                            <option value="uttarakhand">Uttarakhand Tours</option>
+                            <option value="chardham">Char Dham & Pilgrimage Tours</option>
+                            <option value="northeast">North East India Tours</option>
+                            <option value="combo">Punjab & Himachal Combo Tours</option>
+                            <option value="heritage">Heritage & Cultural Tours</option>
+                            <option value="beach">Beach & Island Tours</option>
+                            <option value="international">International Tours</option>
+                        </optgroup>
+                        <optgroup label="By City/Destination">
+                            <option value="Shimla">Shimla</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Dharamshala">Dharamshala</option>
+                            <option value="Dalhousie">Dalhousie</option>
+                            <option value="Srinagar">Srinagar</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Udaipur">Udaipur</option>
+                            <option value="Darjeeling">Darjeeling</option>
+                            <option value="Gangtok">Gangtok</option>
+                            <option value="Haridwar">Haridwar</option>
+                            <option value="Rishikesh">Rishikesh</option>
+                            <option value="Mussoorie">Mussoorie</option>
+                            <option value="Corbett">Jim Corbett</option>
+                            <option value="Char Dham">Char Dham</option>
+                            <option value="Kedarnath">Kedarnath</option>
+                            <option value="Badrinath">Badrinath</option>
+                            <option value="Kasol">Kasol</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Srilanka">Sri Lanka</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div class="filter-group">
@@ -134,6 +150,10 @@
         </div>
     </section>
 
+    <!--whatsapp floating button-->
+    <a href="https://api.whatsapp.com/send?phone=7895348735" class="float bounce" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -175,20 +195,20 @@
                     <h4>Connect With Us</h4>
                     <div class="social-links">
                         <a href="#" class="social-icon" aria-label="Facebook">
-                            <img src="social logos white/imgi_39_203dcdc2ac8b48de89313f90d2a4cda1.png" alt="Facebook">
+                            <img src="social logos white/Facebook Logo.png" alt="Facebook">
                             <span>Facebook</span>
                         </a>
                         <a href="#" class="social-icon" aria-label="Instagram">
-                            <img src="social logos white/imgi_40_81af6121f84c41a5b4391d7d37fce12a.png" alt="Instagram">
+                            <img src="social logos white/Instagram Logo.png" alt="Instagram">
                             <span>Instagram</span>
                         </a>
-                        <a href="#" class="social-icon" aria-label="Twitter">
-                            <img src="social logos white/imgi_41_23fd2a2be53141ed810f4d3dcdcd01fa.png" alt="Twitter">
-                            <span>Twitter</span>
-                        </a>
                         <a href="#" class="social-icon" aria-label="YouTube">
-                            <img src="social logos white/imgi_42_7528824071724d12a3e6c31eee0b40d4.png" alt="YouTube">
+                            <img src="social logos white/YouTube Logo.png" alt="YouTube">
                             <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <img src="social logos white/LinkedIn Logo.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
                         </a>
                     </div>
                 </div>
@@ -199,6 +219,7 @@
         </div>
     </footer>
 
+    <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
     <script src="js/packages.js"></script>

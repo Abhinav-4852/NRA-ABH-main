@@ -237,7 +237,7 @@ This is a custom website template for tour booking businesses. Feel free to cust
 
 For questions or issues:
 - Email: info@Solanki.com
-- Phone: +91 98765 43210
+- Phone: +91 78953 48735
 
 ## Version
 

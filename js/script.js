@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = `packages.html?dest=${dest}`;
         });
     });
+
+    // Update destination package counts dynamically
+    updateDestinationCounts();
 });
 
 // Handle Contact Form Submission
@@ -158,6 +161,21 @@ function loadFeaturedPackages() {
     container.innerHTML = featured.map(pkg => createPackageCard(pkg)).join('');
 }
 
+// Update destination package counts dynamically
+function updateDestinationCounts() {
+    Object.keys(destinationGroupPackages).forEach(groupKey => {
+        const countId = `count-${groupKey}`;
+        const el = document.getElementById(countId);
+        
+        if (el) {
+            const titles = destinationGroupPackages[groupKey];
+            const count = tourPackages.filter(pkg => titles.includes(pkg.title)).length;
+            el.textContent = `${count} ${count === 1 ? 'Package' : 'Packages'}`;
+        }
+    });
+}
+
+
 // Create package card HTML
 function createPackageCard(pkg) {
     const nights = pkg.duration.split('/')[0].trim().split(' ')[0];
@@ -220,18 +238,77 @@ function getNights(duration) {
     return match ? parseInt(match[1]) : 0;
 }
 
-// Filter packages by category
-function filterByCategory(packages, category) {
-    if (category === 'all') return packages;
-    return packages.filter(pkg => pkg.category === category);
-}
+// ===== Destination Group Mappings =====
+const destinationGroupPackages = {
+    'himachal': [
+        'Shimla Tour',
+        'Kullu Manali Tour',
+        'Shimla Kullu Manali Tour Package',
+        'Manali Weekend Tour',
+        'Manali Chandigarh Car Tour',
+        'Shimla Manali Car Package',
+        'Manali Honeymoon Volvo Package',
+        'Manali Kasol Amritsar Tour',
+        'Manali Shimla Volvo Honeymoon Tour',
+        'Shimla Volvo Package',
+        'Grand Himachal Tour',
+        'Delhi Manali Car Tour'
+    ],
+    'kashmir': [
+        'Kashmir Paradise Tour'
+    ],
+    'uttarakhand': [
+        'Uttarakhand Hill Station Tour',
+        'Mussoorie Dhanaulti Tour Package',
+        'Haridwar Rishikesh Tour Package',
+        'Jim Corbett Jungle Safari'
+    ],
+    'chardham': [
+        'Char Dham Yatra by Helicopter (Ex Dehradun)',
+        'Do Dham Yatra by Helicopter (Ex Dehradun)',
+        'Char Dham Yatra by Road (Ex Delhi)',
+        'Char Dham Yatra by Road (Ex Haridwar)',
+        'Badrinath Kedarnath Dham Package'
+    ],
+    'northeast': [
+        'Darjeeling Gangtok Tour'
+    ],
+    'combo': [
+        'Himachal with Golden Temple Tour',
+        'Manali Kasol Amritsar Tour'
+    ],
+    'heritage': [
+        'Golden Triangle Tour'
+    ],
+    'beach': [
+        'Kerala Backwaters Tour',
+        'Goa Beach Paradise',
+        'Andaman Island Paradise'
+    ],
+    'international': [
+        'Thailand Tour Package',
+        'Singapore Tour Package',
+        'Dubai Tour Package',
+        'Sri Lanka Tour Package'
+    ]
+};
 
 // Filter packages by destination
 function filterByDestination(packages, destination) {
     if (destination === 'all') return packages;
-    return packages.filter(pkg => 
-        pkg.destinations.toLowerCase().includes(destination.toLowerCase()) ||
-        pkg.region === destination.toLowerCase()
+
+    const dest = destination.toLowerCase();
+
+    // Check if this is a group key with explicit package mappings
+    if (destinationGroupPackages[dest]) {
+        const titles = destinationGroupPackages[dest];
+        return packages.filter(pkg => titles.includes(pkg.title));
+    }
+
+    // Fallback: match by region or destination string
+    return packages.filter(pkg =>
+        pkg.destinations.toLowerCase().includes(dest) ||
+        pkg.region === dest
     );
 }
 

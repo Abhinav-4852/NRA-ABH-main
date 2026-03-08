@@ -17,7 +17,7 @@ const tourPackages = [
             "Full day visit to Kufri by car",
             "Inclusive of all taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Shimla Tour package.jpg"
+        image: "Tour Package Images - Solanki Tours/Shimla Tour.avif"
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const tourPackages = [
             "All pick up and drops from & to hotel",
             "Inclusive of all taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Kullu Manali Tour Package.jpg"
+        image: "Tour Package Images - Solanki Tours/Kullu-Manali-Tour.webp"
     },
     {
         id: 3,
@@ -87,7 +87,7 @@ const tourPackages = [
             "Full day sightseeing of Chamba - Khajjiar - Kalatop by Car",
             "Inclusive of all applicable taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Dharamshala Dalhousie Tour Package.jpg"
+        image: "Tour Package Images - Solanki Tours/Dharamshala-Dalhousie-Tour-Package.webp"
     },
     {
         id: 5,
@@ -128,7 +128,7 @@ const tourPackages = [
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include"
         ],
-        image: "https://images.unsplash.com/photo-1631217784848-6ae72f2d6293?w=600"
+        image: "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
     },
     {
         id: 7,
@@ -324,7 +324,7 @@ const tourPackages = [
     },
     {
         id: 17,
-        title: "Manali Chandigarh Car Tour",
+        title: "Manali Chandigarh Tour",
         duration: "06 NIGHTS/07 DAYS",
         destinations: "Delhi - Shimla - Manali - Chandigarh",
         price: "Contact Us",
@@ -341,11 +341,11 @@ const tourPackages = [
             "Rohtang Pass / Snow Point excursion",
             "All pick-ups, drops & toll taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1597580124372-26c39b3d78fc?w=600"
+        image: "Tour Package Images - Solanki Tours/Manali-Chandigarh.webp"
     },
     {
         id: 18,
-        title: "Shimla Manali Car Package",
+        title: "Shimla Manali Package",
         duration: "05 NIGHTS/06 DAYS",
         destinations: "Shimla - Kufri - Kullu - Manali - Rohtang Pass",
         price: "Contact Us",
@@ -381,7 +381,7 @@ const tourPackages = [
             "Kullu & Solong Valley sightseeing",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1544986581-efac9be1fd66?w=600"
+        image: "Tour Package Images - Solanki Tours/Manali Shimla Honeymoon.webp"
     },
     {
         id: 20,
@@ -403,7 +403,7 @@ const tourPackages = [
             "Golden Temple visit, Wagah Border ceremony",
             "All transfers and taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1619112095032-b8aced56f5f0?w=600"
+        image: "Tour Package Images - Solanki Tours/Manali-Kasol-Amritsar.jpg"
     },
     {
         id: 21,
@@ -424,11 +424,11 @@ const tourPackages = [
             "Solong Valley, Kullu, Kufri, Shimla sightseeing",
             "All taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1590077428593-a4e5b3e5c3b0?w=600"
+        image: "Tour Package Images - Solanki Tours/Manali HoneyMoon.webp"
     },
     {
         id: 22,
-        title: "Shimla Tour Package",
+        title: "Delhi Shimla Tour Package",
         duration: "03 NIGHTS/04 DAYS",
         destinations: "Delhi - Shimla - Kufri - Delhi",
         price: "Contact Us",
@@ -443,7 +443,7 @@ const tourPackages = [
             "Kufri excursion by car",
             "All applicable taxes"
         ],
-        image: "Tour Package Images - Solanki Tours/Shimla Tour package.jpg"
+        image: "Tour Package Images - Solanki Tours/Delhi Shimla Tour Package.webp"
     },
     {
         id: 23,
@@ -464,7 +464,7 @@ const tourPackages = [
             "All intercity transfers by AC vehicle",
             "All taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1609188076864-c35269136c95?w=600"
+        image: "Tour Package Images - Solanki Tours/Grand Himachal.webp"
     },
     {
         id: 24,
@@ -483,7 +483,7 @@ const tourPackages = [
             "Solang Valley excursion",
             "All toll taxes & driver allowance included"
         ],
-        image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600"
+        image: "Tour Package Images - Solanki Tours/Delhi Manali Tour.webp"
     },
     {
         id: 25,
@@ -505,7 +505,7 @@ const tourPackages = [
             "Golden Temple & Wagah Border visit",
             "All intercity transfers by AC vehicle, taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1619112095032-b8aced56f5f0?w=600"
+        image: "Tour Package Images - Solanki Tours/Himachal with Golden Temple.webp"
     },
 
     // ── Char Dham Packages (Source: triptotemples.com) ────────────────────────
@@ -527,7 +527,7 @@ const tourPackages = [
             "Driver allowances, toll taxes & permits",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1561361058-c24e3d3c0e35?w=600"
+        image: "Tour Package Images - Solanki Tours/Char Dham Yatra by Helicopter.jpg"
     },
     {
         id: 27,
@@ -546,7 +546,7 @@ const tourPackages = [
             "All toll taxes & permits included",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1629994101748-9c89e66d8a33?w=600"
+        image: "Tour Package Images - Solanki Tours/Do Dham Yatra by Helicopter.webp"
     },
     {
         id: 28,
@@ -566,11 +566,11 @@ const tourPackages = [
             "Driver allowances, toll taxes, interstate taxes & parking",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1592813932014-56a57c12c4af?w=600"
+        image: "Tour Package Images - Solanki Tours/Char Dham Yatra by Road (Ex Haridwar).jpg"
     },
     {
         id: 29,
-        title: "Char Dham Yatra by Road (Ex Haridwar)",
+        title: "Do Dham Yatra by Road (Ex Haridwar)",
         duration: "09 NIGHTS/10 DAYS",
         destinations: "Haridwar - Yamunotri - Gangotri - Kedarnath - Badrinath - Haridwar",
         price: "Contact Us",
@@ -585,7 +585,7 @@ const tourPackages = [
             "Driver allowances, toll & interstate taxes included",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1580181423476-7d5b4f658c81?w=600"
+        image: "Tour Package Images - Solanki Tours/Do Dham Yatra by Road (Ex Haridwar).jpg"
     },
     {
         id: 30,
@@ -604,7 +604,7 @@ const tourPackages = [
             "Mana Village excursion",
             "All toll taxes & driver allowance included"
         ],
-        image: "https://images.unsplash.com/photo-1597977052073-bd16889c49e5?w=600"
+        image: "Tour Package Images00 - Solanki Tours/Badrinath-Kedarnath-Yatra.jpg"
     },
 
     // ── Mussoorie Package (Source: packthebagtours.com) ───────────────────────
@@ -626,7 +626,7 @@ const tourPackages = [
             "Driver T.A./D.A., toll taxes & parking included",
             "All state & GST taxes included"
         ],
-        image: "https://images.unsplash.com/photo-1610543695571-88c8cf2c68e0?w=600"
+        image: "Tour Package Images - Solanki Tours/Mussoorie Dhanaulti.jpg"
     },
 
     // ── Uttarakhand Packages (Source: justwravel.com) ─────────────────────────
@@ -648,7 +648,7 @@ const tourPackages = [
             "All forest entry & safari permit fees",
             "All applicable taxes"
         ],
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
+        image: "Tour Package Images - Solanki Tours/jim-corbett.jpg"
     },
     {
         id: 33,
@@ -669,7 +669,7 @@ const tourPackages = [
             "All transfers by AC vehicle from Delhi",
             "All toll taxes & driver allowance included"
         ],
-        image: "https://images.unsplash.com/photo-1585503418537-88331351ad99?w=600"
+        image: "Tour Package Images - Solanki Tours/Haridwar Rishikesh.jpg"
     }
 ];
 

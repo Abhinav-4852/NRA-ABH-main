@@ -67,10 +67,7 @@
     <section class="enquiry-section">
         <div class="container">
             <div class="enquiry-card">
-                <form method="POST" name="indexform" action="https://api.web3forms.com/submit" class="plan-tour" id="enquiryForm">
-                    <input type="hidden" name="access_key" value="0a40fe73-8cc8-469d-b224-45d90a9e2941">
-                    <input type="hidden" name="subject" value="New Tour Enquiry from Solanki Tours">
-                    <input type="hidden" name="from_name" value="Solanki Tours Website">
+                <form name="indexform" class="plan-tour" id="enquiryForm">
                     <div class="plan-banner">
                         <span>PLAN YOUR</span>
                         <h4>DREAM <span>TOUR</span></h4>
@@ -282,11 +279,11 @@
                             <span>Happy Customers</span>
                         </div>
                         <div class="about-feature">
-                            <strong>50+</strong>
+                            <strong>30+</strong>
                             <span>Tour Packages</span>
                         </div>
                         <div class="about-feature">
-                            <strong>15+</strong>
+                            <strong>10+</strong>
                             <span>Destinations</span>
                         </div>
                     </div>
@@ -346,10 +343,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" method="POST" action="https://api.web3forms.com/submit">
-                        <input type="hidden" name="access_key" value="0a40fe73-8cc8-469d-b224-45d90a9e2941">
-                        <input type="hidden" name="subject" value="New Contact Message from Solanki Tours">
-                        <input type="hidden" name="from_name" value="Solanki Tours Website">
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
@@ -358,6 +352,9 @@
                         </div>
                         <div class="form-group">
                             <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
                             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>

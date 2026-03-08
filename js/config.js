@@ -35,14 +35,14 @@ const siteConfig = {
     // ===== Default Package Images =====
     default: {
         himalImage: 'Tour Package Images - Solanki Tours/Shimla Kullu Manali Tour.avif',
-        beachImage: 'Tour Package Images - Solanki Tours/Andaman Island Paradise.jpg',
+        beachImage: 'Tour Package Images - Solanki Tours/Andaman-Island.webp',
         internationalImage: 'Tour Package Images - Solanki Tours/Dubai Tour Package.jpg',
         herculesImage: 'Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg',
-        kashimirImage: 'https://images.unsplash.com/photo-1631217784848-6ae72f2d6293?w=600',
+        kashimirImage: 'Tour Package Images - Solanki Tours/paradise-kashmir.webp',
         northeastImage: 'Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg',
         uttarakhandImage: 'Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg',
-        charDhamImage: 'https://images.unsplash.com/photo-1592813932014-56a57c12c4af?w=600',
-        comboImage: 'https://images.unsplash.com/photo-1619112095032-b8aced56f5f0?w=600'
+        charDhamImage: 'Tour Package Images - Solanki Tours/Char Dham Yatra by Helicopter.jpg',
+        comboImage: 'Tour Package Images - Solanki Tours/Himachal with Golden Temple.webp'
     },
 
     // ===== Destination Cards Configuration =====
@@ -58,7 +58,7 @@ const siteConfig = {
             id: 'kashmir',
             title: 'Kashmir Tours',
             subtitle: 'Paradise on Earth',
-            image: 'https://images.unsplash.com/photo-1631217784848-6ae72f2d6293?w=600',
+            image: 'Tour Package Images - Solanki Tours/paradise-kashmir.webp',
             countId: 'count-kashmir'
         },
         {
@@ -72,7 +72,7 @@ const siteConfig = {
             id: 'chardham',
             title: 'Char Dham & Pilgrimage Tours',
             subtitle: 'Sacred Himalayan Shrines',
-            image: 'https://images.unsplash.com/photo-1592813932014-56a57c12c4af?w=600',
+            image: 'Tour Package Images - Solanki Tours/Char Dham Yatra by Helicopter.jpg',
             countId: 'count-chardham'
         },
         {
@@ -86,7 +86,7 @@ const siteConfig = {
             id: 'combo',
             title: 'Punjab & Himachal Combo Tours',
             subtitle: 'Golden Temple & Hills',
-            image: 'https://images.unsplash.com/photo-1619112095032-b8aced56f5f0?w=600',
+            image: 'Tour Package Images - Solanki Tours/Himachal with Golden Temple.webp',
             countId: 'count-combo'
         },
         {
@@ -100,7 +100,7 @@ const siteConfig = {
             id: 'beach',
             title: 'Beach & Island Tours',
             subtitle: 'Beaches & Backwaters',
-            image: 'Tour Package Images - Solanki Tours/Andaman Island Paradise.jpg',
+            image: 'Tour Package Images - Solanki Tours/Andaman-Island.webp',
             countId: 'count-beach'
         },
         {

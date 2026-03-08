@@ -146,7 +146,7 @@ const tourPackages = [
             "Water sports activities",
             "All taxes included"
         ],
-        image: "Tour Package Images - Solanki Tours/Andaman Island Paradise.jpg"
+        image: "Tour Package Images - Solanki Tours/Andaman-Island.webp"
     },
     {
         id: 8,
@@ -246,7 +246,7 @@ const tourPackages = [
             "Airport taxes",
             "Service Taxes Included"
         ],
-        image: "Tour Package Images - Solanki Tours/Thailand Tour Package.jpg"
+        image: "Tour Package Images - Solanki Tours/Thailand-pattaya.jpg"
     },
     {
         id: 13,
@@ -604,7 +604,7 @@ const tourPackages = [
             "Mana Village excursion",
             "All toll taxes & driver allowance included"
         ],
-        image: "Tour Package Images00 - Solanki Tours/Badrinath-Kedarnath-Yatra.jpg"
+        image: "Tour Package Images - Solanki Tours/Badrinath-Kedarnath-Yatra.jpg"
     },
 
     // ── Mussoorie Package (Source: packthebagtours.com) ───────────────────────

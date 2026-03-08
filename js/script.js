@@ -16,10 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
         loadFeaturedPackages();
     }
 
-    // Handle contact form
-    // Forms now submit directly to Formspree - no JS interception needed
+    // Handle contact form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContactForm);
+    }
 
-    // Forms now submit directly to Formspree - no JS interception needed
+    // Handle enquiry form submission
+    const enquiryForm = document.getElementById('enquiryForm');
+    if (enquiryForm) {
+        enquiryForm.addEventListener('submit', handleEnquiryForm);
+    }
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -43,6 +50,102 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Handle Contact Form Submission
+async function handleContactForm(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    
+    // Get form data
+    const formData = {
+        name: form.querySelector('input[name="name"]').value,
+        email: form.querySelector('input[name="email"]').value,
+        phone: form.querySelector('input[name="phone"]').value,
+        subject: form.querySelector('input[name="subject"]').value,
+        message: form.querySelector('textarea[name="message"]').value
+    };
+    
+    // Disable submit button
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    
+    try {
+        const response = await fetch('http://localhost:3000/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            alert('✅ Message sent successfully! We will get back to you soon.');
+            form.reset();
+        } else {
+            alert('❌ Failed to send message. Please try again or call us directly.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('❌ Connection error. Please check if the server is running or try again later.');
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+    }
+}
+
+// Handle Enquiry Form Submission (Plan Your Dream Tour)
+async function handleEnquiryForm(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = form.querySelector('input[type="submit"]');
+    const originalValue = submitBtn.value;
+    
+    // Get form data - matching all fields from the form
+    const formData = {
+        name: form.querySelector('input[name="name"]').value,
+        email: form.querySelector('input[name="email"]').value,
+        phone: form.querySelector('input[name="phone"]').value,
+        date: form.querySelector('input[name="date"]').value,
+        adults: parseInt(form.querySelector('select[name="adults"]').value),
+        kids: parseInt(form.querySelector('select[name="kids"]').value) || 0,
+        comments: form.querySelector('input[name="comments"]').value
+    };
+    
+    // Disable submit button
+    submitBtn.disabled = true;
+    submitBtn.value = 'Sending...';
+    
+    try {
+        const response = await fetch('http://localhost:3000/send-quote', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            alert('✅ Enquiry sent successfully! Our team will contact you shortly with a customized quote.');
+            form.reset();
+        } else {
+            alert('❌ Failed to send enquiry. Please try again or contact us directly.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('❌ Connection error. Please check if the server is running or try again later.');
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.value = originalValue;
+    }
+}
 
 // Load featured packages
 function loadFeaturedPackages() {

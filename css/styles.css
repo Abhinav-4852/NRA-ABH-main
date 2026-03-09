@@ -401,7 +401,7 @@ textarea {
 .enquiry-card {
     background: white;
     border-radius: 12px;
-    padding: 3rem 5rem;
+    padding: 3rem 5rem 60px;
     box-shadow: var(--shadow-xl);
     width: 100%;
     max-width: 100%;

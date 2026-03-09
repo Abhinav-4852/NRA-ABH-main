@@ -18,10 +18,27 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form) {
         form.addEventListener('submit', handleQuickInquiry);
     }
+
+    // Init flatpickr for quick inquiry travel date
+    if (document.getElementById('quickTravelDate')) {
+        const fpQuick = flatpickr('#quickTravelDate', {
+            dateFormat: 'Y-m-d',
+            altInput: true,
+            altFormat: 'd-m-Y',
+            minDate: 'today',
+            disableMobile: true
+        });
+        fpQuick.altInput.placeholder = 'DD-MM-YYYY 📅';
+    }
 });
 
 // Load package details
 function loadPackageDetails(id) {
+    // Reset state before loading new package to prevent data leaking between navigations
+    currentPackage = null;
+    const itineraryEl = document.getElementById('package-itinerary');
+    if (itineraryEl) itineraryEl.innerHTML = '<div class="itinerary-day"><p>Loading itinerary...</p></div>';
+
     currentPackage = tourPackages.find(pkg => pkg.id === id);
     
     if (!currentPackage) {
@@ -107,25 +124,38 @@ function generateOverview(pkg) {
 }
 
 // Generate itinerary
-// NOTE: This function generates a generic template itinerary. 
-// CRITICAL: Verify that itinerary content matches actual tour package details before displaying to users.
-// Pull detailed day-by-day itineraries from the data source and match them correctly to the package ID.
+// Uses per-package itinerary data when available; falls back to a template sorted by day number.
 function generateItinerary(pkg) {
+    // Use explicitly defined day-by-day data if present, sorted by day number
+    if (pkg.itinerary && pkg.itinerary.length > 0) {
+        return pkg.itinerary
+            .slice()
+            .sort((a, b) => a.day - b.day)
+            .map(item => `
+                <div class="itinerary-day">
+                    <h4>Day ${item.day}: ${item.title}</h4>
+                    <p>${item.description}</p>
+                </div>
+            `).join('');
+    }
+
+    // Generic template fallback
     const nights = getNights(pkg.duration);
-    const destinations = pkg.destinations.split('-').map(d => d.trim());
-    
+    const totalDays = nights + 1;  // e.g. 4N/5D → totalDays = 5
+    const destinations = pkg.destinations.split('-').map(d => d.trim()).filter(Boolean);
+
     let itinerary = '';
-    
-    // Day 1
+
+    // Day 1: Arrival
     itinerary += `
         <div class="itinerary-day">
-            <h4>Day 1: Arrival</h4>
+            <h4>Day 1: Arrival at ${destinations[0]}</h4>
             <p>Arrive at ${destinations[0]}. Check-in to your hotel. Welcome drink on arrival. Evening free for leisure. Overnight stay.</p>
         </div>
     `;
-    
-    // Middle days - sightseeing
-    for (let i = 2; i < nights; i++) {
+
+    // Middle days: sightseeing (days 2 through totalDays-1)
+    for (let i = 2; i < totalDays; i++) {
         const dest = destinations[Math.min(i - 1, destinations.length - 1)];
         itinerary += `
             <div class="itinerary-day">
@@ -134,15 +164,15 @@ function generateItinerary(pkg) {
             </div>
         `;
     }
-    
-    // Last day
+
+    // Last day: Departure
     itinerary += `
         <div class="itinerary-day">
-            <h4>Day ${nights}: Departure</h4>
+            <h4>Day ${totalDays}: Departure</h4>
             <p>After breakfast, check out from hotel. Transfer to airport/railway station for your onward journey. Tour ends with sweet memories.</p>
         </div>
     `;
-    
+
     return itinerary;
 }
 
@@ -192,20 +222,52 @@ function loadRelatedPackages(currentPkg) {
 }
 
 // Handle quick inquiry form
-function handleQuickInquiry(e) {
+async function handleQuickInquiry(e) {
     e.preventDefault();
-    
-    const formData = new FormData(e.target);
+
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn ? submitBtn.textContent : '';
+
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData);
-    
-    // Add package information
-    data.package = currentPackage.title;
-    data.packageId = currentPackage.id;
-    
-    // In a real application, send this to a server
-    console.log('Quick inquiry data:', data);
-    
-    // Show success message
-    alert(`Thank you for your inquiry about ${currentPackage.title}! Our travel experts will contact you within 24 hours.`);
-    e.target.reset();
+
+    // Add package context
+    data.package = currentPackage ? currentPackage.title : 'Unknown';
+    data.packageId = currentPackage ? currentPackage.id : '';
+
+    // Build Web3Forms payload
+    const payload = {
+        access_key: CONFIG.WEB3FORMS_ACCESS_KEY,
+        subject: `Quick Inquiry: ${data.package}`,
+        name: data.name || '',
+        email: data.email || '',
+        phone: data.phone || '',
+        travelDate: data.travelDate || '',
+        travelers: data.travelers || '',
+        requirements: data.requirements || '',
+        package: data.package
+    };
+
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        if (result.success) {
+            alert(`✅ Thank you for your inquiry about ${data.package}! Our travel experts will contact you within 24 hours.`);
+            form.reset();
+        } else {
+            alert('❌ Failed to send inquiry. Please try again or contact us directly.');
+        }
+    } catch (error) {
+        console.error('Inquiry error:', error);
+        alert('❌ Connection error. Please try again later.');
+    } finally {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+    }
 }

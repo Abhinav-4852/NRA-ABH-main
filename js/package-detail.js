@@ -107,6 +107,9 @@ function generateOverview(pkg) {
 }
 
 // Generate itinerary
+// NOTE: This function generates a generic template itinerary. 
+// CRITICAL: Verify that itinerary content matches actual tour package details before displaying to users.
+// Pull detailed day-by-day itineraries from the data source and match them correctly to the package ID.
 function generateItinerary(pkg) {
     const nights = getNights(pkg.duration);
     const destinations = pkg.destinations.split('-').map(d => d.trim());

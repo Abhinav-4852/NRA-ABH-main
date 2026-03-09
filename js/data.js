@@ -1,4 +1,7 @@
 // Convert CSV to JSON for JavaScript usage
+// IMPORTANT: All itinerary day-by-day content must be double-checked against actual tour package details before display.
+// Ensure the correct itinerary data is matched to the correct tour package ID.
+// Do NOT display placeholder or mismatched itinerary data to users.
 const tourPackages = [
     {
         id: 1,

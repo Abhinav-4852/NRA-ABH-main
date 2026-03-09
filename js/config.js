@@ -4,6 +4,10 @@
 // Centralized configuration for links, images, and settings
 // Update this file to change social links, contact info, and paths across the entire site
 
+// ===== Backend API URL =====
+// Update this with your Render deployment URL after deploying the backend
+const API_BASE_URL = "https://solanki-tours-and-travels.onrender.com";
+
 const siteConfig = {
     // ===== Company Info =====
     companyName: 'Solanki Tours',

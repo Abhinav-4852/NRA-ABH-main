@@ -76,7 +76,7 @@ async function handleContactForm(e) {
     submitBtn.textContent = 'Sending...';
     
     try {
-        const response = await fetch('https://localhost:3000/contact', {
+        const response = await fetch(`${API_BASE_URL}/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -125,7 +125,7 @@ async function handleEnquiryForm(e) {
     submitBtn.value = 'Sending...';
     
     try {
-        const response = await fetch('https://localhost:3000/send-quote', {
+        const response = await fetch(`${API_BASE_URL}/send-quote`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

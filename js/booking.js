@@ -4,11 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate package dropdown
     populatePackageDropdown();
     
-    // Set minimum date to today
-    const dateInput = document.getElementById('travelDate');
-    if (dateInput) {
-        const today = new Date().toISOString().split('T')[0];
-        dateInput.setAttribute('min', today);
+    // Init flatpickr for travel date (altInput shows DD-MM-YYYY; hidden value stays ISO for validation)
+    if (document.getElementById('travelDate')) {
+        const fpBooking = flatpickr('#travelDate', {
+            dateFormat: 'Y-m-d',
+            altInput: true,
+            altFormat: 'd-m-Y',
+            minDate: 'today',
+            disableMobile: true
+        });
+        fpBooking.altInput.placeholder = 'DD-MM-YYYY 📅';
     }
     
     // Handle form submission
@@ -68,17 +73,19 @@ function populatePackageDropdown() {
 }
 
 // Handle booking form submission
-function handleBooking(e) {
+async function handleBooking(e) {
     e.preventDefault();
     
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn ? submitBtn.textContent : '';
+
     // Get form data
-    const formData = new FormData(e.target);
+    const formData = new FormData(form);
     const data = {};
     
-    // Convert FormData to object
     for (let [key, value] of formData.entries()) {
         if (key === 'interests') {
-            // Handle multiple checkboxes
             if (!data[key]) data[key] = [];
             data[key].push(value);
         } else {
@@ -86,9 +93,9 @@ function handleBooking(e) {
         }
     }
     
-    // Get selected package details
+    // Attach selected package details
     const packageId = data.package;
-    if (packageId !== 'custom') {
+    if (packageId && packageId !== 'custom') {
         const selectedPackage = tourPackages.find(pkg => pkg.id === parseInt(packageId));
         if (selectedPackage) {
             data.packageDetails = {
@@ -99,22 +106,54 @@ function handleBooking(e) {
         }
     }
     
-    // Validate form
-    if (!validateBookingForm(data)) {
-        return;
+    if (!validateBookingForm(data)) return;
+    
+    // Build Web3Forms payload
+    const packageName = data.packageDetails ? data.packageDetails.title : 'Custom Package';
+    const payload = {
+        access_key: CONFIG.WEB3FORMS_ACCESS_KEY,
+        subject: `Booking Request: ${packageName} — Solanki Tours`,
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        phone: data.phone,
+        city: data.city || '',
+        country: data.country || '',
+        package: packageName,
+        destination: data.destination || '',
+        duration: data.duration || '',
+        travelDate: data.travelDate,
+        travelers: data.travelers,
+        accommodation: data.accommodation || '',
+        budget: data.budget || '',
+        travelType: data.travelType || '',
+        interests: Array.isArray(data.interests) ? data.interests.join(', ') : (data.interests || ''),
+        requirements: data.requirements || '',
+        hearAbout: data.hearAbout || ''
+    };
+
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        if (result.success) {
+            showSuccessMessage(data);
+            form.reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            alert('❌ Failed to submit booking request. Please try again or contact us directly.');
+        }
+    } catch (error) {
+        console.error('Booking error:', error);
+        alert('❌ Connection error. Please try again later.');
+    } finally {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
     }
-    
-    // In a real application, send this to a server
-    console.log('Booking data:', data);
-    
-    // Show success message
-    showSuccessMessage(data);
-    
-    // Reset form
-    e.target.reset();
-    
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Validate booking form

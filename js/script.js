@@ -28,6 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
         enquiryForm.addEventListener('submit', handleEnquiryForm);
     }
 
+    // Init flatpickr for homepage enquiry date
+    if (document.getElementById('enquiryDate')) {
+        const fpEnquiry = flatpickr('#enquiryDate', {
+            dateFormat: 'Y-m-d',
+            altInput: true,
+            altFormat: 'd-m-Y',
+            minDate: 'today',
+            disableMobile: true
+        });
+        fpEnquiry.altInput.placeholder = '4. DD-MM-YYYY 📅';
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -62,30 +74,26 @@ async function handleContactForm(e) {
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     
-    // Get form data
-    const formData = {
+    const payload = {
+        access_key: CONFIG.WEB3FORMS_ACCESS_KEY,
+        subject: 'New Contact Message — Solanki Tours',
         name: form.querySelector('input[name="name"]').value,
         email: form.querySelector('input[name="email"]').value,
         phone: form.querySelector('input[name="phone"]').value,
-        subject: form.querySelector('input[name="subject"]').value,
+        subject_line: form.querySelector('input[name="subject"]').value,
         message: form.querySelector('textarea[name="message"]').value
     };
     
-    // Disable submit button
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     
     try {
-        const response = await fetch(`${API_BASE_URL}/contact`, {
+        const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
         });
-        
         const result = await response.json();
-        
         if (result.success) {
             alert('✅ Message sent successfully! We will get back to you soon.');
             form.reset();
@@ -93,8 +101,8 @@ async function handleContactForm(e) {
             alert('❌ Failed to send message. Please try again or call us directly.');
         }
     } catch (error) {
-        console.error('Error:', error);
-        alert('❌ Connection error. Please check if the server is running or try again later.');
+        console.error('Contact form error:', error);
+        alert('❌ Connection error. Please try again later.');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
@@ -109,32 +117,28 @@ async function handleEnquiryForm(e) {
     const submitBtn = form.querySelector('input[type="submit"]');
     const originalValue = submitBtn.value;
     
-    // Get form data - matching all fields from the form
-    const formData = {
+    const payload = {
+        access_key: CONFIG.WEB3FORMS_ACCESS_KEY,
+        subject: 'New Tour Enquiry — Solanki Tours',
         name: form.querySelector('input[name="name"]').value,
         email: form.querySelector('input[name="email"]').value,
         phone: form.querySelector('input[name="phone"]').value,
-        date: form.querySelector('input[name="date"]').value,
-        adults: parseInt(form.querySelector('select[name="adults"]').value),
-        kids: parseInt(form.querySelector('select[name="kids"]').value) || 0,
-        comments: form.querySelector('input[name="comments"]').value
+        travelDate: form.querySelector('input[name="date"]').value,
+        adults: form.querySelector('select[name="adults"]').value,
+        kids: form.querySelector('select[name="kids"]').value || '0',
+        enquiry: form.querySelector('input[name="comments"]').value
     };
     
-    // Disable submit button
     submitBtn.disabled = true;
     submitBtn.value = 'Sending...';
     
     try {
-        const response = await fetch(`${API_BASE_URL}/send-quote`, {
+        const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
         });
-        
         const result = await response.json();
-        
         if (result.success) {
             alert('✅ Enquiry sent successfully! Our team will contact you shortly with a customized quote.');
             form.reset();
@@ -142,8 +146,8 @@ async function handleEnquiryForm(e) {
             alert('❌ Failed to send enquiry. Please try again or contact us directly.');
         }
     } catch (error) {
-        console.error('Error:', error);
-        alert('❌ Connection error. Please check if the server is running or try again later.');
+        console.error('Enquiry form error:', error);
+        alert('❌ Connection error. Please try again later.');
     } finally {
         submitBtn.disabled = false;
         submitBtn.value = originalValue;

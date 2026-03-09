@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Flatpickr date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -127,22 +129,22 @@
                             <h3>Quick Inquiry</h3>
                             <form id="quickInquiryForm">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Your Name" required>
+                                    <input type="text" name="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" placeholder="Your Email" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" placeholder="Phone Number" required>
+                                    <input type="tel" name="phone" placeholder="Phone Number" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="date" placeholder="Travel Date">
+                                    <input type="text" id="quickTravelDate" name="travelDate" placeholder="DD-MM-YYYY" autocomplete="off">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" placeholder="Number of Travelers" min="1" value="2">
+                                    <input type="number" name="travelers" placeholder="Number of Travelers" min="1" value="2">
                                 </div>
                                 <div class="form-group">
-                                    <textarea placeholder="Special Requirements" rows="3"></textarea>
+                                    <textarea name="requirements" placeholder="Special Requirements" rows="3"></textarea>
                                 </div>
                                 <button type="submit" class="btn-primary btn-block">Send Inquiry</button>
                             </form>
@@ -250,6 +252,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="config.js"></script>
     <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>

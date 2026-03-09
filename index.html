@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Flatpickr date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -83,7 +85,7 @@
                             <input type="tel" placeholder="3. Phone" name="phone" required>
                         </div>
                         <div class="input-field">
-                            <input type="date" placeholder="4. Date" name="date" required>
+                            <input type="text" id="enquiryDate" name="date" placeholder="4. DD-MM-YYYY  📅" autocomplete="off" required>
                         </div>
                     </div>
                     <div class="bottom-fields">
@@ -431,6 +433,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="config.js"></script>
     <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>

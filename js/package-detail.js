@@ -34,11 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Load package details
 function loadPackageDetails(id) {
-    // Reset state before loading new package to prevent data leaking between navigations
-    currentPackage = null;
-    const itineraryEl = document.getElementById('package-itinerary');
-    if (itineraryEl) itineraryEl.innerHTML = '<div class="itinerary-day"><p>Loading itinerary...</p></div>';
-
     currentPackage = tourPackages.find(pkg => pkg.id === id);
     
     if (!currentPackage) {
@@ -124,38 +119,22 @@ function generateOverview(pkg) {
 }
 
 // Generate itinerary
-// Uses per-package itinerary data when available; falls back to a template sorted by day number.
 function generateItinerary(pkg) {
-    // Use explicitly defined day-by-day data if present, sorted by day number
-    if (pkg.itinerary && pkg.itinerary.length > 0) {
-        return pkg.itinerary
-            .slice()
-            .sort((a, b) => a.day - b.day)
-            .map(item => `
-                <div class="itinerary-day">
-                    <h4>Day ${item.day}: ${item.title}</h4>
-                    <p>${item.description}</p>
-                </div>
-            `).join('');
-    }
-
-    // Generic template fallback
     const nights = getNights(pkg.duration);
-    const totalDays = nights + 1;  // e.g. 4N/5D → totalDays = 5
-    const destinations = pkg.destinations.split('-').map(d => d.trim()).filter(Boolean);
-
+    const destinations = pkg.destinations.split('-').map(d => d.trim());
+    
     let itinerary = '';
-
-    // Day 1: Arrival
+    
+    // Day 1
     itinerary += `
         <div class="itinerary-day">
-            <h4>Day 1: Arrival at ${destinations[0]}</h4>
+            <h4>Day 1: Arrival</h4>
             <p>Arrive at ${destinations[0]}. Check-in to your hotel. Welcome drink on arrival. Evening free for leisure. Overnight stay.</p>
         </div>
     `;
-
-    // Middle days: sightseeing (days 2 through totalDays-1)
-    for (let i = 2; i < totalDays; i++) {
+    
+    // Middle days - sightseeing
+    for (let i = 2; i < nights; i++) {
         const dest = destinations[Math.min(i - 1, destinations.length - 1)];
         itinerary += `
             <div class="itinerary-day">
@@ -164,15 +143,15 @@ function generateItinerary(pkg) {
             </div>
         `;
     }
-
-    // Last day: Departure
+    
+    // Last day
     itinerary += `
         <div class="itinerary-day">
-            <h4>Day ${totalDays}: Departure</h4>
+            <h4>Day ${nights}: Departure</h4>
             <p>After breakfast, check out from hotel. Transfer to airport/railway station for your onward journey. Tour ends with sweet memories.</p>
         </div>
     `;
-
+    
     return itinerary;
 }
 

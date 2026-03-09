@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Solanki Tours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="Solanki Tours Logo Transparent.png" alt="Solanki Logo">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="booking.html" class="btn-primary">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Explore Our Tour Packages</h1>
+            <p>Discover curated travel experiences to amazing destinations</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter" onchange="filterPackages()">
+                        <option value="all">All Packages</option>
+                        <option value="domestic">Domestic Tours</option>
+                        <option value="international">International Tours</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Destination:</label>
+                    <select id="destination-filter" onchange="filterPackages()">
+                        <option value="all">All Destinations</option>
+                        <optgroup label="By Tour Group">
+                            <option value="himachal">Himachal Pradesh Tours</option>
+                            <option value="kashmir">Kashmir Tours</option>
+                            <option value="uttarakhand">Uttarakhand Tours</option>
+                            <option value="chardham">Char Dham & Pilgrimage Tours</option>
+                            <option value="northeast">North East India Tours</option>
+                            <option value="combo">Punjab & Himachal Combo Tours</option>
+                            <option value="heritage">Heritage & Cultural Tours</option>
+                            <option value="beach">Beach & Island Tours</option>
+                            <option value="international">International Tours</option>
+                        </optgroup>
+                        <optgroup label="By City/Destination">
+                            <option value="Shimla">Shimla</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Dharamshala">Dharamshala</option>
+                            <option value="Dalhousie">Dalhousie</option>
+                            <option value="Srinagar">Srinagar</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Udaipur">Udaipur</option>
+                            <option value="Darjeeling">Darjeeling</option>
+                            <option value="Gangtok">Gangtok</option>
+                            <option value="Haridwar">Haridwar</option>
+                            <option value="Rishikesh">Rishikesh</option>
+                            <option value="Mussoorie">Mussoorie</option>
+                            <option value="Corbett">Jim Corbett</option>
+                            <option value="Char Dham">Char Dham</option>
+                            <option value="Kedarnath">Kedarnath</option>
+                            <option value="Badrinath">Badrinath</option>
+                            <option value="Kasol">Kasol</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Srilanka">Sri Lanka</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Duration:</label>
+                    <select id="duration-filter" onchange="filterPackages()">
+                        <option value="all">Any Duration</option>
+                        <option value="2-3">2-3 Days</option>
+                        <option value="4-5">4-5 Days</option>
+                        <option value="6-7">6-7 Days</option>
+                        <option value="8-10">8-10 Days</option>
+                        <option value="10+">10+ Days</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select id="sort-filter" onchange="filterPackages()">
+                        <option value="default">Default</option>
+                        <option value="duration-asc">Duration (Low to High)</option>
+                        <option value="duration-desc">Duration (High to Low)</option>
+                        <option value="name">Name (A-Z)</option>
+                    </select>
+                </div>
+                <button class="btn-secondary" onclick="resetFilters()">Reset Filters</button>
+            </div>
+            <div class="results-count">
+                <p id="results-text">Showing all packages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="packages-grid" id="all-packages">
+                <!-- Packages will be loaded dynamically via JavaScript -->
+            </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <h3>No packages found</h3>
+                <p>Try adjusting your filters to see more results</p>
+                <button class="btn-primary" onclick="resetFilters()">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Let us create a custom itinerary tailored to your preferences</p>
+                <a href="booking.html" class="btn-large btn-primary">Request Custom Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!--whatsapp floating button-->
+    <a href="https://api.whatsapp.com/send?phone=7895348735" class="float bounce" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div><h3 class="footer-brand">Solanki<br><span class="footer-sub-brand">Tours and Travels</span></h3>
+                    <Br></Br>
+                    <p>Creating unforgettable travel experiences since 2014. Your journey to extraordinary destinations starts here.</p>
+                    </div> 
+                    <br>
+                    <div> <P>A 260 Ramagarden Karwal Nagar, Main Mukiya Market, Delhi 110091</P>
+                        <br>
+                        <p>Contact us: Solankitourandtravel2206@gmail.com</p>
+                        
+                        <p>+91 78953 48735</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Tours</h4>
+                    <ul>
+                        <li><a href="packages.html?dest=himachal">Himachal Tours</a></li>
+                        <li><a href="packages.html?dest=kerala">Kerala Backwaters</a></li>
+                        <li><a href="packages.html?dest=kashmir">Kashmir Paradise</a></li>
+                        <li><a href="packages.html?dest=rajasthan">Rajasthan Heritage</a></li>
+                        <li><a href="packages.html?dest=international">International Tours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="social logos white/Facebook Logo.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="social logos white/Instagram Logo.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <img src="social logos white/Youtube logo.png" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <img src="social logos white/LinkedIn Logo.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Solanki Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/packages.js"></script>
+</body>
+</html>

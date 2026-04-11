@@ -95,8 +95,12 @@ function resetFilters() {
 function populatePackageSelect() {
     const select = document.getElementById('package');
     if (!select) return;
-    
-    // Add all packages as options
+
+    // Keep only the first static placeholder option, then re-add all packages
+    const placeholder = select.options[0];
+    select.innerHTML = '';
+    if (placeholder) select.appendChild(placeholder);
+
     tourPackages.forEach(pkg => {
         const option = document.createElement('option');
         option.value = pkg.id;
@@ -104,3 +108,10 @@ function populatePackageSelect() {
         select.appendChild(option);
     });
 }
+
+// Re-init packages page once JSON data has loaded
+document.addEventListener('tourPackagesLoaded', function() {
+    allPackages = [...tourPackages];
+    filterPackages();
+    populatePackageSelect();
+});

@@ -196,7 +196,7 @@ function createPackageCard(pkg) {
                     <span>🌙 ${nights} Nights</span>
                 </div>
                 <div class="package-price">${pkg.price}</div>
-                <div class="package-price-note">Per person on twin sharing</div>
+                <div class="package-price-note">  </div>
                 <div class="package-footer">
                     <span style="color: var(--text-light); font-size: 0.9rem;">${pkg.category === 'international' ? '✈️ International' : '🇮🇳 Domestic'}</span>
                     <a href="package-detail.html?id=${pkg.id}" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
@@ -359,6 +359,20 @@ function sortPackages(packages, sortBy) {
 // Scroll to top
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Re-render package-dependent sections once JSON data has loaded
+document.addEventListener('tourPackagesLoaded', function() {
+    if (document.getElementById('featured-packages')) {
+        loadFeaturedPackages();
+    }
+    updateDestinationCounts();
+});
+
+// Filter packages by category ("domestic" / "international")
+function filterByCategory(packages, category) {
+    if (category === 'all') return packages;
+    return packages.filter(pkg => pkg.category === category);
 }
 
 // Add scroll to top button

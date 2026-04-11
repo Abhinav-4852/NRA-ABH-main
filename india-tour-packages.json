@@ -1,0 +1,1700 @@
+﻿{
+    "extracted_at_utc":  "2026-04-11T03:29:25.0775414Z",
+    "source":  "https://accurateholiday.com/",
+    "category":  "india-tour",
+    "total_packages":  77,
+    "categories":  [
+                       "https://accurateholiday.com/himachal-tour-packages.html",
+                       "https://accurateholiday.com/andaman-tour-packages.html",
+                       "https://accurateholiday.com/kerala-tour-packages.html",
+                       "https://accurateholiday.com/goa-tour-packages.html",
+                       "https://accurateholiday.com/kashmir-tour-packages.html",
+                       "https://accurateholiday.com/north-east-tour-packages.html",
+                       "https://accurateholiday.com/rajasthan-tour-packages.html",
+                       "https://accurateholiday.com/uttarakhand-tour-packages.html"
+                   ],
+    "packages":  [
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Port Blair - Ross Island - North Bay - Port Blair",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/andaman-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-4night-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Port Blair - Havelock",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/andaman-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-5night-6days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Port Blair - Coral Island - Havelock - Ross Island",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/andaman-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-6night-7days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Goa",
+                         "duration":  "02 Nights/03 Days",
+                         "destination_covered":  "- Goa",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/goa-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/goa-tour-packages.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Welcome Drink on arrival in the hotel",
+                                                    "Wine bottle",
+                                                    "Morning Tea",
+                                                    "Meals as per Plan, (CP = Breakfast, MAP = Breakfast \u0026 Dinner, A.P. = Breakfast, Lunch \u0026 Dinner),",
+                                                    "Two half days sightseeing, Boat Cruise on the day of South Goa Tour",
+                                                    "Complimentary Airport / Railway Station or Bus stop, pickup and drop.",
+                                                    "Accommodation for 2 persons in A/C room",
+                                                    "Free use of swimming pool, gym and indoor games"
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "SHIMLA VOLVO TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Delhi - Shimla - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/shimla-volvo-tour-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KULLU MANALI VOLVO TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Delhi - Manali - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kullumanali-volvo-tour-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "SHIMLA KULLU MANALI VOLVO TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Delhi - Shimla - Kullu - Manali - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-volvo-tour-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "DHARAMSHALA DALHOUSIE VOLVO TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Delhi - Dharamshala - Dalhousie - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/dharamshala-dalhousie-volvo-tour-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "SHIMLA KULLU MANALI CAR TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Delhi - Shimla - Kullu - Manali - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-tour-package-by-car.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "SHIMLA KULLU MANALI CHANDIGARH CAR TOUR",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Delhi - Shimla - Kullu - Manali - Chandigarh - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-chandigarh-car-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UNLIMITED HIMAHCAL LEGEND CAR TOUR PACKAGE",
+                         "duration":  "08 Nights / 09 Days",
+                         "destination_covered":  "- Delhi â Shimla - Kullu - Manali - Dharamshala - Dalhousie - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/unlimited-himachal-legend-tour-package.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UNLIMITED HIMACHAL \u0026 GOLDEN TEMPLE CAR TOUR",
+                         "duration":  "09 Nights / 10 Days",
+                         "destination_covered":  "- Delhi âShimla - Kullu - Manali- Dharamshala - Dalhousie - Amritsar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/himachal-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/unlimited-himachal-and-golden-temple-tour.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "02 Nights / 03 Days",
+                         "destination_covered":  "- Srinagar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-2night-3days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Srinagar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-3night-4days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Srinagar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-4night-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-5night-6days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-6night-7days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KASHMIR TOUR PACKAGE",
+                         "duration":  "09 Nights / 10 Days",
+                         "destination_covered":  "- Jammu - Katra - Patnitop - Srinagar - Gulmarg - Pahalgam - Sonmarg - Jammu Drop",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-9night-10days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "02 Nights / 03 Days",
+                         "destination_covered":  "- Cochin - Munnar - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-2night-3days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Cochin - Munnar - Alleppey - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-3night-4days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-4night-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-5night-6days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-6night-7days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "KERALA TOUR PACKAGE",
+                         "duration":  "07 Nights / 08 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Kanyakumari - Cochin",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/kerala-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-7night-8days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "NORTH EAST TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Darjeeling",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/north-east-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/north-east-3nights-4days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "NORTH EAST PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Darjeeling - Gangtok",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/north-east-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/north-east-4nights-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "NORTH EAST PACKAGE",
+                         "duration":  "05 Nights / 06 Days",
+                         "destination_covered":  "- Darjeeling - Kalimpong - Gangtok",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/north-east-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/north-east-5nights-6days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "NORTH EAST PACKAGE",
+                         "duration":  "07 Nights / 08 Days",
+                         "destination_covered":  "- Darjeeling - Pelling - Gangtok",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/north-east-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/north-east-7nights-8days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "NORTH EAST PACKAGE",
+                         "duration":  "08 Nights / 09 Days",
+                         "destination_covered":  "- Darjeeling - Kalimpong - Pelling - Gangtok",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/north-east-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/north-east-8nights-9days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-3nights-4days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Delhi - Agra - Jaipur ( Golden Triangle )",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-4nights-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Ajmer - Pushkar",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-4nights-5days-tours.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Ajmer - Pushkar - Udaipur",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-6nights-7days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "07 Nights / 08 Days",
+                         "destination_covered":  "- Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-7nights-8days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "RAJASTHAN TOUR PACKAGE",
+                         "duration":  "13 Nights / 14 Days",
+                         "destination_covered":  "- Cochin - Delhi - Agra - Jaipur - Ajmer - Pushkar - Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/rajasthan-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-13nights-14days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UTTARAKHAND TOUR PACKAGE",
+                         "duration":  "03 Nights / 04 Days",
+                         "destination_covered":  "- Delhi - Nainital - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-3nights-4days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UTTARAKHAND TOUR PACKAGE",
+                         "duration":  "04 Nights / 05 Days",
+                         "destination_covered":  "- Delhi -Nainital - Corbett - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-4nights-5days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UTTARAKHAND TOUR PACKAGE",
+                         "duration":  "06 Nights / 07 Days",
+                         "destination_covered":  "- Delhi - Nainital - Corbett - Mussoorie - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-6nights-7days.htm",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "UTTARAKHAND TOUR PACKAGE",
+                         "duration":  "08 Nights / 09 Days",
+                         "destination_covered":  "- Delhi -Nainital - Corbett - Ranikhet - Kausani - Mussoorie - Delhi",
+                         "starting_price":  null,
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-packages.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-8nights-9days.html",
+                         "itinerary_days":  [
+
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "02 Nights/03 Days",
+                         "destination_covered":  "- Srinagar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-2night-3days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-2night-3days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Srinagar Houseboat",
+                                                    "1 Night Accommodation in Srinagar Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Srinagar",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Ajmer - Pushkar - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-4nights-5days-tours.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-4nights-5days-tours.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi arrival ( Local Delhi )",
+                                                "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.",
+                                                "Day 3 - Jaipur ( Local Jaipur )",
+                                                "Day 4 - Jaipur - Ajmer - Pushkar ( 145 Kms. )",
+                                                "Day 5 - Pushkar - Delhi Drop ( 400 Kms. )"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Delhi",
+                                                    "1 Night Accommodation in Pushkar",
+                                                    "2 Nights Accommodation in Jaipur",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Delhi",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-6night-7days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-6night-7days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )",
+                                                "Day 4 - Srinagar - Pahalgam ( 95 Kms )",
+                                                "Day 5 - Pahalgam - Srinagar ( 95 Kms )",
+                                                "Day 6 - Srinagar - Sonmarg - Srinagar ( 85 Kms )",
+                                                "Day 7 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Srinagar Houseboat",
+                                                    "4 Night Accommodation in Srinagar Hotel",
+                                                    "1 Night Accommodation in Pahalgam Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Srinagar",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Dharamshala Dalhousie",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Delhi - Dharamshala - Dalhousie - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/dharamshala-dalhousie-volvo-tour-package.html",
+                         "details_url":  "https://accurateholiday.com/dharamshala-dalhousie-volvo-tour-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Dharamshala (530 Kms.)",
+                                                "Day 2 - Dharamshala Arrival (Local Dharamshala)",
+                                                "Day 3 - Dharamshala (Local Mcleodganj)",
+                                                "Day 4 - Dharamshala - Dalhousie (Local Dalhousie)",
+                                                "Day 5 - Dalhousie (Chamba - Khajjiar - Kalatop)",
+                                                "Day 6 - Dalhousie - Dharamshala - Delhi (530 Kms.)"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Delhi to Dharamshala, Dharamshala to Delhi Volvo tickets",
+                                                    "Accommodation for 2 night in Dharamshala",
+                                                    "Accommodation for 2 night in Dalhousie",
+                                                    "Welcome drink on arrival",
+                                                    "Every day morning breakfast and dinner in the hotel",
+                                                    "Pick up and drops",
+                                                    "Dharamshala Local sightseeing of by Car",
+                                                    "Local sightseeing of Mcleodgang by Car",
+                                                    "Local Dalhousie sightseeing by Car",
+                                                    "Full day sightseeing of Chamba - Khajjiar - Kalatop by Car",
+                                                    "Inclusive of all applicable taxes."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Himachal Legend",
+                         "duration":  "08 Nights/09 Days",
+                         "destination_covered":  "- Delhi - Shimla - Manali - Dharamshala - Dalhousie",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/unlimited-himachal-legend-tour-package.html",
+                         "details_url":  "https://accurateholiday.com/unlimited-himachal-legend-tour-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Shimla (350 Kms )",
+                                                "Day 2 - Shimla ( Local Shimla )",
+                                                "Day 3 - Shimla - Manali ( 260 Kms ) ( Kullu - Manikaran )",
+                                                "Day 4 - Manali ( Local Manali )",
+                                                "Day 5 - Manali ( Rohtang Pass / Snow Point )",
+                                                "Day 6 - Manali - Dharamshala ( 240 Kms )",
+                                                "Day 7 - Dharamshala - Dalhousie ( 140 Kms )",
+                                                "Day 8 - Dalhousie (Chamba - Khajjiar â Kalatop)",
+                                                "Day 9 - Dalhousie - Delhi ( 580 Kms )"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Accommodation in Shimla for 2 Nights",
+                                                    "Accommodation in Manali for 3 Nights",
+                                                    "Accommodation in Dharamshala for 1 Night",
+                                                    "Accommodation in Dalhousie for 2 nights",
+                                                    "On arriving Welcome drink",
+                                                    "Every day Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "One Candle Light Dinner in Manali",
+                                                    "One basket of Fresh Fruits in Manali",
+                                                    "All Transfers \u0026 sightseeing\u0027s will be by Individual Car",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "Including of Toll Taxes, Parking, and Driver Allowance includes All Taxes are Included."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "North East",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Darjeeling",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/north-east-3nights-4days.html",
+                         "details_url":  "https://accurateholiday.com/north-east-3nights-4days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )",
+                                                "Day 2 - Darjeeling ( Local Darjeeling )",
+                                                "Day 3 - Darjeeling - Mirik - Darjeeling",
+                                                "Day 4 - Darjeeling - NJP Railway Station / IXB Airport Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "3 Nights Accommodation in Darjeeling",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at NJP Raliway Station / IXB Airport",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Cochin - Munnar - Alleppey - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-3night-4days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-3night-4days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin â Munnar",
+                                                "Day 2 - Munnar",
+                                                "Day 3 - Munnar - Alleppey",
+                                                "Day 3 - Alleppey - Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Alleppey Houseboat all includes (Breakfast, Lunch \u0026 Dinner)",
+                                                    "Pick up and Drop ex Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Srinagar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-3night-4days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-3night-4days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )",
+                                                "Day 4 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Srinagar Houseboat",
+                                                    "2 Night Accommodation in Srinagar Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Srinagar",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Himachal \u0026 Golden Temple",
+                         "duration":  "09 Nights/10 Days",
+                         "destination_covered":  "- 2N Shimla - 3N Manali - 1N Dharamshala - 2N Dalhousie - 1N Amritsar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/unlimited-himachal-and-golden-temple-tour.html",
+                         "details_url":  "https://accurateholiday.com/unlimited-himachal-and-golden-temple-tour.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Shimla (350 Kms )",
+                                                "Day 2 - Shimla ( Local Shimla )",
+                                                "Day 3 - Shimla - Manali ( 260 Kms ) ( Kullu - Manikaran )",
+                                                "Day 4 - Manali ( Local Manali )",
+                                                "Day 5 - Manali ( Rohtang Pass / Snow Point )",
+                                                "Day 6 - Manali - Dharamshala ( 240 Kms )",
+                                                "Day 7 - Dharamshala - Dalhousie ( 140 Kms )",
+                                                "Day 8 - Dalhousie (Chamba - Khajjiar â Kalatop)",
+                                                "Day 9 - Dalhousie - Amritsar ( 190 Kms )",
+                                                "Day 10 - Amritsar - Delhi ( 480 Kms )"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Accommodation in Shimla for 2 Nights",
+                                                    "Accommodation in Manali for 3 Nights",
+                                                    "Accommodation in Dharamshala for 1 Night",
+                                                    "Accommodation in Dalhousie for 2 Nights",
+                                                    "Accommodation in Amritsar 1 Night",
+                                                    "On arriving Welcome drink",
+                                                    "Every day Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "One Candle Light Dinner in Manali",
+                                                    "One basket of Fresh Fruits in Manali",
+                                                    "All Transfers \u0026 sightseeing\u0027s will be by Individual Car",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "Inclusive of all Parking charge, Toll Tax, Driver Allowance",
+                                                    "All Taxes are Included."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "09 Nights/10 Days",
+                         "destination_covered":  "- Jamu - Katra - Patnitop - Srinagar - Gulmarg - Pahalgam - Sonmarg - Jammu Drop",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-9night-10days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-9night-10days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Jammu - Katra",
+                                                "Day 2 - Katra ( Vaishno Devi Darshan )",
+                                                "Day 3 - Katra - Patnitop ( 50 Kms )",
+                                                "Day 4 - Patnitop - Srinagar ( 250 Kms )",
+                                                "Day 5 - Local Srinagar",
+                                                "Day 6 - Srinagar - Gulmarg - Srinagar ( 60 Kms )",
+                                                "Day 7 - Srinagar - Pahalgam ( 95 Kms )",
+                                                "Day 8 - Pahalgam - Srinagar ( 95 Kms )",
+                                                "Day 9 - Srinagar - Sonmarg - Srinagar ( 85 Kms )",
+                                                "Day 10 - Srinagar - Jammu Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Night Accommodation in Katra Hotel",
+                                                    "1 Night Accommodation in Patnitop Hotel",
+                                                    "5 Night Accommodation in Srinagar Hotel",
+                                                    "1 Night Accommodation in Pahalgam Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Jammu",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-5night-6days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-5night-6days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin arrival",
+                                                "Day 2 - Cochin - Munnar",
+                                                "Day 3 - Munnar",
+                                                "Day 4 - Munnar - Thekkady",
+                                                "Day 5 - Thekkady - Alleppey",
+                                                "Day 6 - Alleppey - Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Cochin",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "1 Night Accommodation in Thekkady",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Alleppey Houseboat all includes (Breakfast, Lunch \u0026 Dinner)",
+                                                    "Pick up and Drop ex Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Delhi - Agra - Jaipur - Golden Triangle",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-4nights-5days.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-4nights-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi arrival ( Local Delhi )",
+                                                "Day 2 - Delhi - Agra ( Local Agra ) 200 Kms.",
+                                                "Day 3 - Agra - Jaipur ( Local Jaipur ) 235 Kms.",
+                                                "Day 4 - Jaipur ( Local Jaipur )",
+                                                "Day 5 - Jaipur- Delhi Drop 265 Kms."
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Delhi",
+                                                    "1 Night Accommodation in Agra",
+                                                    "2 Nights Accommodation in Jaipur",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Delhi",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "North East",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Darjeeling - Gangtok",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/north-east-4nights-5days.html",
+                         "details_url":  "https://accurateholiday.com/north-east-4nights-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )",
+                                                "Day 2 - Darjeeling ( Local Darjeeling )",
+                                                "Day 3 - Darjeeling - Gangtok ( Local Gangtok )",
+                                                "Day 4 - Gangtok ( Tsomgo Lake \u0026 Baba Mandir )",
+                                                "Day 5 - Gangtok - NJP Railway Station / IXB Airport Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Darjeeling",
+                                                    "2 Nights Accommodation in Gangtok",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at NJP Raliway Station / IXB Airport",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "North East",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Darjeeling - Kalimpong - Gangtok",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/north-east-5nights-6days.html",
+                         "details_url":  "https://accurateholiday.com/north-east-5nights-6days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )",
+                                                "Day 2 - Darjeeling ( Local Darjeeling )",
+                                                "Day 3 - Darjeeling - Kalimpong ( Local Kalimpong )",
+                                                "Day 4 - Kalimpong - Gangtok ( Local Gangtok )",
+                                                "Day 5 - Gangtok ( Tsomgo Lake \u0026 Baba Mandir )",
+                                                "Day 6 - Gangtok - NJP Railway Station / IXB Airport Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Darjeeling",
+                                                    "1 Night Accommodation in Kalimpong",
+                                                    "2 Nights Accommodation in Gangtok",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at NJP Raliway Station / IXB Airport",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "13 Nights/14 Days",
+                         "destination_covered":  "- Delhi - Agra - Jaipur - Ajmer - Pushkar - Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-13nights-14days.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-13nights-14days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi arrival ( Local Delhi )",
+                                                "Day 2 - Delhi - Agra ( Local Agra ) 200 Kms.",
+                                                "Day 3 - Agra - Jaipur ( Local Jaipur ) 235 Kms.",
+                                                "Day 4 - Jaipur ( Local Jaipur )",
+                                                "Day 5 - Jaipur - Ajmer - Pushkar ( 145 Kms. )",
+                                                "Day 6 - Pushkar - Udaipur",
+                                                "Day 7 - Udaipur ( Local Udaipur )",
+                                                "Day 8 - Udaipur - Mount Abu",
+                                                "Day 9 - Mount Abu - Jodhpur",
+                                                "Day 10 - Jodhpur - Jaisalmer",
+                                                "Day 11 - Jaisalmer",
+                                                "Day 12 - Jaisalmer - Mandawa",
+                                                "Day 13 - Mandawa - Bikaner",
+                                                "Day 14 - Bikaner - Delhi"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Delhi",
+                                                    "1 Night Accommodation in Agra",
+                                                    "2 Night Accommodation in Jaipur",
+                                                    "1 Night Accommodation in Pushkar",
+                                                    "2 Nights Accommodation in Udaipur",
+                                                    "1 Night Accommodation in Mount Abu",
+                                                    "1 Night Accommodation in Jodhpur",
+                                                    "2 Nights Accommodation in Jaisalmer",
+                                                    "1 Night Accommodation in Mandawa",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Ex Delhi",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-3nights-4days.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-3nights-4days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi arrival ( Local Delhi )",
+                                                "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.",
+                                                "Day 3 - Jaipur ( Local Jaipur )",
+                                                "Day 4 - Jaipur - Delhi Drop ( 265 Kms. )"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Delhi",
+                                                    "2 Nights Accommodation in Jaipur",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Delhi",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "North East",
+                         "duration":  "08 Nights/09 Days",
+                         "destination_covered":  "- Darjeeling - Kalimpong - Pelling - Gangtok",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/north-east-8nights-9days.html",
+                         "details_url":  "https://accurateholiday.com/north-east-8nights-9days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )",
+                                                "Day 2 - Darjeeling ( Local Darjeeling )",
+                                                "Day 3 - Darjeeling - Kalimpong ( Local Kalimpong )",
+                                                "Day 4 - Kalimpong - Pelling",
+                                                "Day 5 - Pelling",
+                                                "Day 6 - Pelling - Gangtok",
+                                                "Day 7 - Gangtok ( Local Gangtok )",
+                                                "Day 8 - Gangtok ( Tsomgo Lake \u0026 Baba Mandir )",
+                                                "Day 9 - Gangtok - NJP Railway Station / IXB Airport Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Darjeeling",
+                                                    "2 Nights Accommodation in Pelling",
+                                                    "3 Nights Accommodation in Gangtok",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at NJP Raliway Station / IXB Airport",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Shimla",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Delhi - Shimla - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/shimla-volvo-tour-package.html",
+                         "details_url":  "https://accurateholiday.com/shimla-volvo-tour-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Shimla (350 Kms.)",
+                                                "Day 2 - Local Shimla",
+                                                "Day 3 - Shimla (Kufri)",
+                                                "Day 4 - Shimla - Delhi (350 Kms.)"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Delhi to Shimla, Shimla to Delhi Volvo Bus tickets.",
+                                                    "Accomodation of 2 Night in the hotel",
+                                                    "Welcome drinks like coffee and tea on arrival",
+                                                    "Every day morning breakfast and dinner",
+                                                    "Full day shimla sightseeing by car",
+                                                    "Full day visit to Kufri by car",
+                                                    "Inclusive of all taxes"
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/andaman-island-4night-5days.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-4night-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Depart from Andaman Islands",
+                                                "Day 2 - Ross Island",
+                                                "Day 3 - North Bay",
+                                                "Day 4 - Port Blair",
+                                                "Day 5 - Port Blairp"
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Kovalam - Trivandrum - Alleppey - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-6night-7days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-6night-7days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin - Munnar",
+                                                "Day 2 - Munnar",
+                                                "Day 3 - Munnar - Thekkady",
+                                                "Day 4 - Thekkady - Alleppey",
+                                                "Day 5 - Alleppey - Kovalam",
+                                                "Day 6 - Kovalam - Trivandrum - Kovalam",
+                                                "Day 7 - Kovalam - Trivandrum / Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "1 Night Accommodation in Thekkady",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "2 Nights Accommodation in Kovalam",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Alleppey Houseboat all includes (Breakfast, Lunch \u0026 Dinner)",
+                                                    "Pick up from Cochin and Drop ex Trivandrum/Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kullu Manali",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Delhi - Manali - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kullumanali-volvo-tour-package.html",
+                         "details_url":  "https://accurateholiday.com/kullumanali-volvo-tour-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Manali (570 Kms.)",
+                                                "Day 2 - Arrive Manali (Local Manali Sightseeing)",
+                                                "Day 3 - Manali (Rohtang Pass ( Snow Point)",
+                                                "Day 4 - Manali (Kullu - Manikaran)",
+                                                "Day 5 - Manali - Delhi (570 Kms.)",
+                                                "Day 6 - Manali - Delhi (570 Kms.)"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Delhi to Manali, Manali to Delhi Volvo Bus tickets",
+                                                    "Accommodation for 3 Night in the hotel.",
+                                                    "Welcome drink on arrival",
+                                                    "Every day morning Breakfast and Dinner in the hotel",
+                                                    "Local Manali half day sightseeing by Car",
+                                                    "sightseeing of Rohtang Pass (Snow Point) by Car full day",
+                                                    "Kullu â Manikaran full day sightseeing by Car",
+                                                    "One candle light dinner",
+                                                    "All pick up and drops from Volvo stand to hotel",
+                                                    "Inclusive of all taxes"
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Shimla Kullu Manali",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- 2 Nights in Shimla + 3 Nights in Manali",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/shimla-kullumanali-tour-package-by-car.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-tour-package-by-car.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Shimla (340 Kms) 7 Hrs.",
+                                                "Day 2 - Shimla (Local Shimla)",
+                                                "Day 3 - Shimla - Manali (260 Kms) 7 Hrs (Kullu â Manikaran)",
+                                                "Day 4 - Manali (Local Manali)",
+                                                "Day 5 - Manali (Rohtang Pass)",
+                                                "Day 6 - Manali - Delhi ( 570 Kms ) 13 Hrs."
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Shimla for 2 Nights",
+                                                    "3 Nights Accommodation in Manali for 3 Nights",
+                                                    "On arriving Welcome drink",
+                                                    "Every day Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "One Candle light dinner in Manali",
+                                                    "One basket of Fresh fruits in Manali",
+                                                    "Pick up \u0026 drop ex Delhi",
+                                                    "All transfers \u0026 sightseeing\u0027s will be by Individual Car",
+                                                    "Including of toll taxes, parking charges, driver charges, fuel cost inclusive",
+                                                    "All taxes are included"
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Shimla Kullu Manali",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Delhi - Shimla - Manali - Delhi",
+                         "starting_price":  "Delhi covering the destinations Shimla, Kullu, Manali with stay in the hotel\" /\u003e",
+                         "source_url":  "https://accurateholiday.com/shimla-kullumanali-volvo-tour-package.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-volvo-tour-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Manali (570 Kms.)",
+                                                "Day 2 - Manali (Local Sightseeing)",
+                                                "Day 3 - Manali (Rohtang Pass)",
+                                                "Day 4 - Manali (Kullu - Manikaran)",
+                                                "Day 5 - Manali - Shimla ( 250 Kms.)",
+                                                "Day 6 - Shimla",
+                                                "Day 7 - Shimla - Delhi ( 350 Kms.)"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Delhi - Manali Volvo tickets",
+                                                    "Deluxe bus tickets from Manali-Shimla",
+                                                    "Volvo tickets Shimla-Delhi",
+                                                    "Accommodation for night in shimla",
+                                                    "Manali Accommodation for 3 Nights",
+                                                    "Welcome drink on arrival",
+                                                    "Every day morning Breakfast and Dinner at hotel",
+                                                    "In Manali One candle light dinner",
+                                                    "shimla, kufri Full day sightseeing by Car",
+                                                    "local Manali sightseeing",
+                                                    "Rohtang/ Snow point full day sightseeing by Sharing Car",
+                                                    "Sightseeing Kullu-manikaran by car",
+                                                    "Inclusion of all taxes"
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Port Blair - Coral Island - Havelock - Ross Island",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/andaman-island-6night-7days.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-6night-7days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Port Blair",
+                                                "Day 2 - Coral Island",
+                                                "Day 3 - Havelock",
+                                                "Day 4 - Radhanagar Beach",
+                                                "Day 5 - Havelock",
+                                                "Day 6 - Ross Island",
+                                                "Day 7 - Ross Island"
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "07 Nights/08 Days",
+                         "destination_covered":  "- Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-7nights-8days.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-7nights-8days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Udaipur arrival",
+                                                "Day 2 - Udaipur ( Local Udaipur )",
+                                                "Day 3 - Udaipur - Mount Abu",
+                                                "Day 4 - Mount Abu - Jodhpur",
+                                                "Day 5 - Jodhpur - Jaisalmer",
+                                                "Day 6 - Jaisalmer",
+                                                "Day 7 - Jaisalmer - Mandawa",
+                                                "Day 8 - Mandawa"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Udaipur",
+                                                    "1 Night Accommodation in Mount Abu",
+                                                    "1 Night Accommodation in Jodhpur",
+                                                    "2 Nights Accommodation in Jaisalmer",
+                                                    "1 Night Accommodation in Mandawa",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Mandawa",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "07 Nights/08 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Kovalam - Trivandrum - Kanyakumari - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-7night-8days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-7night-8days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin - Munnar",
+                                                "Day 2 - Munnar",
+                                                "Day 3 - Munnar - Thekkady",
+                                                "Day 4 - Thekkady - Alleppey",
+                                                "Day 5 - Alleppey - Kovalam",
+                                                "Day 6 - Kovalam - Trivandrum - Kovalam",
+                                                "Day 7 - Kovalam - Kanyakumari",
+                                                "Day 8 - Kanyakumari - Trivendrum / Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "1 Night Accommodation in Thekkady",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "2 Nights Accommodation in Kovalam",
+                                                    "1 Night Accommodation in Kanyakumari",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Alleppey Houseboat all includes (Breakfast, Lunch \u0026 Dinner)",
+                                                    "Pick up from Cochin and Drop ex Trivandrum/Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Andaman",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Port Blair - Havelock",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/andaman-island-5night-6days.html",
+                         "details_url":  "https://accurateholiday.com/andaman-island-5night-6days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Port Blair",
+                                                "Day 2 - Port Blair",
+                                                "Day 3 - Havelock",
+                                                "Day 4 - Havelock",
+                                                "Day 5 - Havelock",
+                                                "Day 6 - Harbour"
+                                            ],
+                         "package_inclusions":  [
+
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "02 Nights/03 Days",
+                         "destination_covered":  "- Cochin - Munnar - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-2night-3days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-2night-3days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin â Munnar",
+                                                "Day 2 - Munnar",
+                                                "Day 3 - Munnar - Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop ex Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kerala",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Cochin - Munnar - Thekkady - Alleppey - Cochin",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kerala-tour-package-4night-5days.html",
+                         "details_url":  "https://accurateholiday.com/kerala-tour-package-4night-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Cochin â Munnar",
+                                                "Day 2 - Munnar",
+                                                "Day 3 - Munnar - Thekkady",
+                                                "Day 4 - Thekkady - Alleppey",
+                                                "Day 5 - Alleppey - Cochin Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Munnar",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "1 Night Accommodation in Alleppey",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Alleppey Houseboat all includes (Breakfast, Lunch \u0026 Dinner)",
+                                                    "Pick up and Drop ex Cochin",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Srinagar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-4night-5days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-4night-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )",
+                                                "Day 4 - Srinagar - Pahalgam - Srinagar ( 95 Kms )",
+                                                "Day 5 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Srinagar Houseboat",
+                                                    "3 Night Accommodation in Srinagar Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Srinagar",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Kashmir",
+                         "duration":  "05 Nights/06 Days",
+                         "destination_covered":  "- Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/kashmir-tour-5night-6days.html",
+                         "details_url":  "https://accurateholiday.com/kashmir-tour-5night-6days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Srinagar arrival",
+                                                "Day 2 - Local Srinagar",
+                                                "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )",
+                                                "Day 4 - Srinagar - Pahalgam - Srinagar ( 95 Kms )",
+                                                "Day 5 - Srinagar - Sonmarg - Srinagar ( 85 Kms )",
+                                                "Day 6 - Srinagar Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Srinagar Houseboat",
+                                                    "4 Night Accommodation in Srinagar Hotel",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "All Transfer \u0026 sightseeing by Individual Cab",
+                                                    "Pick up and Drop Srinagar",
+                                                    "Toll Taxes, Parking, Driver Allowance includes",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Rajasthan",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Delhi - Jaipur - Ajmer - Pushkar - Udaipur - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/rajasthan-6nights-7days.html",
+                         "details_url":  "https://accurateholiday.com/rajasthan-6nights-7days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi arrival ( Local Delhi )",
+                                                "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.",
+                                                "Day 3 - Jaipur ( Local Jaipur )",
+                                                "Day 4 - Jaipur - Ajmer - Pushkar ( 145 Kms. )",
+                                                "Day 5 - Pushkar - Udaipur ( 300 Kms. )",
+                                                "Day 6 - Udaipur ( Local Udaipur )",
+                                                "Day 7 - Udipur Drop( 400 Kms. )"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "1 Night Accommodation in Delhi",
+                                                    "1 Night Accommodation in Pushkar",
+                                                    "2 Nights Accommodation in Jaipur",
+                                                    "2 Nights Accommodation in Udaipur",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at Udaipur",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Uttarakhand",
+                         "duration":  "08 Nights/09 Days",
+                         "destination_covered":  "- Delhi -Nainital - Corbett - Ranikhet - Kausani - Mussoorie - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-8nights-9days.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-8nights-9days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Nainital",
+                                                "Day 2 - Nainital",
+                                                "Day 3 -Nainital - Corbett",
+                                                "Day 4 - Corbett",
+                                                "Day 5 - Corbett - Ranikhet",
+                                                "Day 6 - Ranikhet - Kausani - Ranikhet",
+                                                "Day 7 - Ranikhet - Mussoorie",
+                                                "Day 8 - Mussoorie",
+                                                "Day 9 - Mussoorie - Delhi"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Nanital",
+                                                    "2 Nights Accommodation in Corbett",
+                                                    "2 Nights Accommodation in Mussoorie",
+                                                    "2 Nights Accommodation in Ranikhet",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast \u0026 Dinner at Hotel",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "North East",
+                         "duration":  "07 Nights/08 Days",
+                         "destination_covered":  "- Darjeeling- Pelling - Gangtok",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/north-east-7nights-8days.html",
+                         "details_url":  "https://accurateholiday.com/north-east-7nights-8days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )",
+                                                "Day 2 - Darjeeling ( Local Darjeeling )",
+                                                "Day 3 - Darjeeling - Pelling",
+                                                "Day 4 - Pelling",
+                                                "Day 5 - Pelling - Gangtok",
+                                                "Day 6 - Gangtok ( Local Gangtok )",
+                                                "Day 7 - Gangtok ( Tsomgo Lake \u0026 Baba Mandir )",
+                                                "Day 8 - Gangtok - NJP Railway Station / IXB Airport Drop"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Darjeeling",
+                                                    "2 Nights Accommodation in Pelling",
+                                                    "3 Nights Accommodation in Gangtok",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast at Hotel",
+                                                    "Pick up and Drop at NJP Raliway Station / IXB Airport",
+                                                    "All transport and sightseeing by Individual Car",
+                                                    "All taxes are include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Uttarakhand",
+                         "duration":  "03 Nights/04 Days",
+                         "destination_covered":  "- Delhi - Nainital - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-3nights-4days.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-3nights-4days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Nainital",
+                                                "Day 2 - Nainital",
+                                                "Day 3 - Nainital",
+                                                "Day 4 - Nanital - Delhi"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "3 Nights Accommodation in Nanital",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast \u0026 Dinner at Hotel",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Uttarakhand",
+                         "duration":  "04 Nights/05 Days",
+                         "destination_covered":  "- Delhi -Nainital - Corbett - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-4nights-5days.html",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-4nights-5days.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Nainital",
+                                                "Day 2 - Nainital",
+                                                "Day 3 -Nainital - Corbett",
+                                                "Day 4 - Corbett",
+                                                "Day 5 - Corbett"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Nanital",
+                                                    "2 Nights Accommodation in Corbett",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast \u0026 Dinner at Hotel",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Uttarakhand",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Delhi - Nainital - Corbett - Mussoorie - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/uttarakhand-tour-6nights-7days.htm",
+                         "details_url":  "https://accurateholiday.com/uttarakhand-tour-6nights-7days.htm",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Nainital",
+                                                "Day 2 - Nainital",
+                                                "Day 3 -Nainital - Corbett",
+                                                "Day 4 - Corbett",
+                                                "Day 5 - Corbett - Mussoorie",
+                                                "Day 6 - Mussoorie",
+                                                "Day 7 - Mussoorie - Delhi"
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "2 Nights Accommodation in Nanital",
+                                                    "2 Nights Accommodation in Corbett",
+                                                    "2 Nights Accommodation in Mussoorie",
+                                                    "Welcome drink on arrival",
+                                                    "Daily Breakfast \u0026 Dinner at Hotel",
+                                                    "Pick up and Drop ex Delhi",
+                                                    "All Transport and Sightseeing by Individual Car",
+                                                    "All Taxes Include."
+                                                ]
+                     },
+                     {
+                         "region":  "india",
+                         "package_name":  "Shimla Kullu Manali Chandigarh",
+                         "duration":  "06 Nights/07 Days",
+                         "destination_covered":  "- Delhi - Shimla - Manali - Chandigarh - Delhi",
+                         "starting_price":  "--\u003e",
+                         "source_url":  "https://accurateholiday.com/shimla-kullumanali-chandigarh-car-package.html",
+                         "details_url":  "https://accurateholiday.com/shimla-kullumanali-chandigarh-car-package.html",
+                         "itinerary_days":  [
+                                                "Day 1 - Delhi - Shimla (340 Kms) 7 Hrs.",
+                                                "Day 2 - Shimla (Local Shimla)",
+                                                "Day 3 - Shimla - Manali (260 Kms ) 7 Hrs ( Kullu â Manikaran)",
+                                                "Day 4 - Manali (Local Manali)",
+                                                "Day 5 - Manali (Rohtang Pass)",
+                                                "Day 6 - Manali - Chandigarh (330 Kms ) 8 Hrs",
+                                                "Day 7 - Chandigarh - Delhi ( 240 Kms ) 4 Hrs."
+                                            ],
+                         "package_inclusions":  [
+                                                    "-",
+                                                    "Accommodation in Shimla for 2 Nights",
+                                                    "Accommodation in Manali for 3 Nights",
+                                                    "Accommodation in Chandigarh for 1 night",
+                                                    "On arriving Welcome drink",
+                                                    "Every day Morning Bed Tea, Breakfast \u0026 Dinner",
+                                                    "One Candle light dinner in Manali",
+                                                    "One basket of Fresh Fruits in Manali",
+                                                    "Pick up \u0026 drop ex Delhi",
+                                                    "All transfers \u0026 sightseeing\u0027s will be by Individual Car",
+                                                    "Inclusive of toll taxes, fuel cost, parking and driver charges",
+                                                    "All taxes are included"
+                                                ]
+                     }
+                 ]
+}

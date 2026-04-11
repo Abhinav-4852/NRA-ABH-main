@@ -680,3 +680,163 @@ const tourPackages = [
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = tourPackages;
 }
+
+// ─── JSON Package Loading ─────────────────────────────────────────────────────
+// Fetches india-tour-packages.json and international-tour-packages.json,
+// transforms each entry into the standard tourPackages format, and merges them
+// in (skipping duplicates by title+duration). A "tourPackagesLoaded" event is
+// dispatched on document when done — even on error — so the page always renders.
+
+/** Default placeholder images keyed by region. */
+const _REGION_IMAGES = {
+    andaman:     'Tour Package Images - Solanki Tours/Andaman-Island.webp',
+    himachal:    'Tour Package Images - Solanki Tours/Shimla Tour.avif',
+    kerala:      'Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg',
+    goa:         'Tour Package Images - Solanki Tours/Goa Beach Paradise.jpg',
+    kashmir:     'Tour Package Images - Solanki Tours/paradise-kashmir.webp',
+    northeast:   'Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg',
+    rajasthan:   'Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg',
+    uttarakhand: 'Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg',
+    chardham:    'Tour Package Images - Solanki Tours/Char Dham Yatra by Helicopter.jpg',
+    dubai:       'Tour Package Images - Solanki Tours/Dubai Tour Package.jpg',
+    thailand:    'Tour Package Images - Solanki Tours/Thailand-pattaya.jpg',
+    srilanka:    'Tour Package Images - Solanki Tours/Sri Lanka Tour Package.jpg',
+    singapore:   'Tour Package Images - Solanki Tours/Singapore Tour Package.jpg',
+    hongkong:    'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=600',
+    switzerland: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600',
+    paris:       'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600',
+    sydney:      'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600'
+};
+
+/** True once the async JSON load + merge has finished (success or error). */
+let _tourDataLoaded = false;
+
+/** Map a source_url to the region slug used in tourPackages. */
+function _inferRegion(sourceUrl) {
+    if (!sourceUrl) return 'india';
+    if (sourceUrl.includes('himachal'))                                    return 'himachal';
+    if (sourceUrl.includes('andaman'))                                     return 'andaman';
+    if (sourceUrl.includes('kerala'))                                      return 'kerala';
+    if (sourceUrl.includes('goa'))                                         return 'goa';
+    if (sourceUrl.includes('kashmir'))                                     return 'kashmir';
+    if (sourceUrl.includes('north-east'))                                  return 'northeast';
+    if (sourceUrl.includes('rajasthan'))                                   return 'rajasthan';
+    if (sourceUrl.includes('uttarakhand'))                                 return 'uttarakhand';
+    if (sourceUrl.includes('thailand'))                                    return 'thailand';
+    if (sourceUrl.includes('srilanka') || sourceUrl.includes('sri-lanka')) return 'srilanka';
+    if (sourceUrl.includes('singapore'))                                   return 'singapore';
+    if (sourceUrl.includes('switzerland'))                                 return 'switzerland';
+    if (sourceUrl.includes('dubai'))                                       return 'dubai';
+    if (sourceUrl.includes('paris'))                                       return 'paris';
+    if (sourceUrl.includes('hongkong') || sourceUrl.includes('hong-kong')) return 'hongkong';
+    if (sourceUrl.includes('sydney'))                                      return 'sydney';
+    return 'india';
+}
+
+/** Convert "ANDAMAN TOUR PACKAGE" → "Andaman Tour Package". */
+function _toTitleCase(str) {
+    return (str || '').toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
+/** Normalise "04 Nights / 05 Days" → "04 NIGHTS/05 DAYS". */
+function _normaliseDuration(raw) {
+    return (raw || '')
+        .replace(/\s*\/\s*/g, '/')
+        .replace(/nights?/gi, 'NIGHTS')
+        .replace(/days?/gi,   'DAYS')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+/** Transform a raw JSON package object into the standard tourPackages shape. */
+function _transformPackage(jsonPkg, id) {
+    const region   = _inferRegion(jsonPkg.source_url);
+    const title    = _toTitleCase(jsonPkg.package_name);
+    const duration = _normaliseDuration(jsonPkg.duration);
+
+    // Strip leading dashes/spaces: "- Port Blair - Havelock" → "Port Blair - Havelock"
+    const destinations = (jsonPkg.destination_covered || '')
+        .replace(/^[\s\-]+/, '')
+        .trim();
+
+    // Drop bare "-" separators and empty entries
+    const rawInclusions = (jsonPkg.package_inclusions || [])
+        .filter(inc => inc && inc.trim() && inc.trim() !== '-');
+    const inclusions = rawInclusions.length > 0
+        ? rawInclusions
+        : ['Tour inclusions available on inquiry — please contact us for full package details.'];
+
+    const price = (jsonPkg.starting_price && String(jsonPkg.starting_price).trim())
+        ? String(jsonPkg.starting_price)
+        : 'Contact Us';
+
+    return {
+        id,
+        title,
+        duration,
+        destinations,
+        price,
+        category:  jsonPkg.region === 'international' ? 'international' : 'domestic',
+        region,
+        inclusions,
+        itinerary: Array.isArray(jsonPkg.itinerary_days) ? jsonPkg.itinerary_days : [],
+        image:     _REGION_IMAGES[region] || 'Tour Package Images - Solanki Tours/Shimla Tour.avif'
+    };
+}
+
+/** Fetch both JSON files, transform and merge into tourPackages, then signal readiness. */
+(async function _loadJsonPackages() {
+    try {
+        const [indiaRes, intlRes] = await Promise.all([
+            fetch('india-tour-packages.json'),
+            fetch('international-tour-packages.json')
+        ]);
+
+        if (!indiaRes.ok || !intlRes.ok) throw new Error('JSON fetch returned non-OK status');
+
+        const [indiaData, intlData] = await Promise.all([indiaRes.json(), intlRes.json()]);
+
+        const jsonPackages = [
+            ...(indiaData.packages || []),
+            ...(intlData.packages  || [])
+        ];
+
+        let nextId = Math.max(...tourPackages.map(p => p.id)) + 1;
+
+        // Dedup by normalised "title|duration" to avoid near-identical entries
+        const existingKeys = new Set(
+            tourPackages.map(p => `${p.title.toLowerCase()}|${p.duration.toLowerCase()}`)
+        );
+
+        for (const raw of jsonPackages) {
+            const pkg = _transformPackage(raw, nextId);
+            const key = `${pkg.title.toLowerCase()}|${pkg.duration.toLowerCase()}`;
+            if (!existingKeys.has(key)) {
+                tourPackages.push(pkg);
+                existingKeys.add(key);
+                nextId++;
+            }
+        }
+    } catch (err) {
+        console.warn('[Solanki Tours] Could not load JSON package files:', err);
+    } finally {
+        _tourDataLoaded = true;
+        document.dispatchEvent(new CustomEvent('tourPackagesLoaded'));
+    }
+}());
+
+/**
+ * Run callback once both the DOM and JSON package data are ready.
+ * Safe to call at any point — handles all timing combinations.
+ */
+function onTourDataReady(callback) {
+    if (_tourDataLoaded && document.readyState !== 'loading') {
+        callback();
+        return;
+    }
+    let domOk  = document.readyState !== 'loading';
+    let dataOk = _tourDataLoaded;
+    function tryRun() { if (domOk && dataOk) callback(); }
+    if (!domOk)  document.addEventListener('DOMContentLoaded',   () => { domOk  = true; tryRun(); }, { once: true });
+    if (!dataOk) document.addEventListener('tourPackagesLoaded', () => { dataOk = true; tryRun(); }, { once: true });
+}

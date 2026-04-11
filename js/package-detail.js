@@ -118,40 +118,46 @@ function generateOverview(pkg) {
     return `Embark on an unforgettable ${nights}-night journey through ${pkg.destinations}. This carefully curated ${category} tour package offers the perfect blend of adventure, relaxation, and cultural experiences. Whether you're traveling with family, friends, or as a couple, this ${pkg.title.toLowerCase()} promises memories that will last a lifetime. Our expert team has designed this itinerary to showcase the best of the region while ensuring your comfort and satisfaction throughout the journey.`;
 }
 
-// Generate itinerary
+// Generate itinerary — uses actual day labels from JSON when available
 function generateItinerary(pkg) {
+    // Use real itinerary data loaded from JSON if present
+    if (pkg.itinerary && pkg.itinerary.length > 0) {
+        return pkg.itinerary.map(day => `
+        <div class="itinerary-day">
+            <h4>${day}</h4>
+            <p>Please contact us for the detailed day-by-day itinerary and activity breakdown.</p>
+        </div>
+    `).join('');
+    }
+
+    // Fallback: generate a generic itinerary from duration + destinations
     const nights = getNights(pkg.duration);
     const destinations = pkg.destinations.split('-').map(d => d.trim());
-    
-    let itinerary = '';
-    
-    // Day 1
-    itinerary += `
+
+    let itinerary = `
         <div class="itinerary-day">
             <h4>Day 1: Arrival</h4>
             <p>Arrive at ${destinations[0]}. Check-in to your hotel. Welcome drink on arrival. Evening free for leisure. Overnight stay.</p>
         </div>
     `;
-    
-    // Middle days - sightseeing
+
     for (let i = 2; i < nights; i++) {
         const dest = destinations[Math.min(i - 1, destinations.length - 1)];
         itinerary += `
-            <div class="itinerary-day">
-                <h4>Day ${i}: ${dest} Sightseeing</h4>
-                <p>After breakfast, proceed for full day sightseeing of ${dest}. Visit popular attractions and landmarks. Evening at leisure. Overnight stay at hotel.</p>
-            </div>
-        `;
+        <div class="itinerary-day">
+            <h4>Day ${i}: ${dest} Sightseeing</h4>
+            <p>After breakfast, proceed for full day sightseeing of ${dest}. Visit popular attractions and landmarks. Evening at leisure. Overnight stay at hotel.</p>
+        </div>
+    `;
     }
-    
-    // Last day
+
     itinerary += `
         <div class="itinerary-day">
             <h4>Day ${nights}: Departure</h4>
             <p>After breakfast, check out from hotel. Transfer to airport/railway station for your onward journey. Tour ends with sweet memories.</p>
         </div>
     `;
-    
+
     return itinerary;
 }
 
@@ -199,6 +205,14 @@ function loadRelatedPackages(currentPkg) {
         container.innerHTML = random.map(pkg => createPackageCard(pkg)).join('');
     }
 }
+
+// Reload package details once JSON data has arrived (new packages may have been added)
+document.addEventListener('tourPackagesLoaded', function() {
+    const packageId = parseInt(getUrlParameter('id'));
+    if (packageId) {
+        loadPackageDetails(packageId);
+    }
+});
 
 // Handle quick inquiry form
 async function handleQuickInquiry(e) {

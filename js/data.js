@@ -770,6 +770,16 @@ function _transformPackage(jsonPkg, id) {
         ? String(jsonPkg.starting_price)
         : 'Contact Us';
 
+    // Normalise itinerary to [{day, description}] regardless of source format.
+    // India JSON:         [{day: "Day 1 - ...", description: "..."}]
+    // International JSON: ["Day 1 - Dubai", ...]
+    const itinerary = (Array.isArray(jsonPkg.itinerary_days) ? jsonPkg.itinerary_days : [])
+        .map(entry =>
+            typeof entry === 'object' && entry !== null
+                ? { day: entry.day || '', description: entry.description || '' }
+                : { day: String(entry), description: '' }
+        );
+
     return {
         id,
         title,
@@ -779,7 +789,7 @@ function _transformPackage(jsonPkg, id) {
         category:  jsonPkg.region === 'international' ? 'international' : 'domestic',
         region,
         inclusions,
-        itinerary: Array.isArray(jsonPkg.itinerary_days) ? jsonPkg.itinerary_days : [],
+        itinerary,
         image:     _REGION_IMAGES[region] || 'Tour Package Images - Solanki Tours/Shimla Tour.avif'
     };
 }

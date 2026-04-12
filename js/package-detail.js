@@ -120,12 +120,13 @@ function generateOverview(pkg) {
 
 // Generate itinerary — uses actual day labels from JSON when available
 function generateItinerary(pkg) {
-    // Use real itinerary data loaded from JSON if present
+    // Use real itinerary data loaded from JSON if present.
+    // Each entry is {day, description} — description may be empty for international packages.
     if (pkg.itinerary && pkg.itinerary.length > 0) {
-        return pkg.itinerary.map(day => `
+        return pkg.itinerary.map(entry => `
         <div class="itinerary-day">
-            <h4>${day}</h4>
-            <p>Please contact us for the detailed day-by-day itinerary and activity breakdown.</p>
+            <h4>${entry.day}</h4>
+            <p>${entry.description || 'Please contact us for the detailed itinerary and activity breakdown.'}</p>
         </div>
     `).join('');
     }

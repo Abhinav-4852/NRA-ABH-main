@@ -1,213 +1,317 @@
 ﻿{
-    "extracted_at_utc":  "2026-04-11T03:29:25.0835078Z",
-    "source":  "https://accurateholiday.com/",
-    "category":  "international-tour",
-    "total_packages":  8,
-    "categories":  [
-                       "https://accurateholiday.com/thailand-tour-packages.html",
-                       "https://accurateholiday.com/srilanka-tour-packages.html",
-                       "https://accurateholiday.com/singapore-tour-packages.html",
-                       "https://accurateholiday.com/switzerland-tour-packages.html",
-                       "https://accurateholiday.com/dubai-tour-packages.html",
-                       "https://accurateholiday.com/paris-tour-packages.html",
-                       "https://accurateholiday.com/hongkong-tour-packages.html",
-                       "https://accurateholiday.com/sydney-tour-packages.html"
-                   ],
-    "packages":  [
-                     {
-                         "region":  "international",
-                         "package_name":  "Dubai",
-                         "duration":  "03 Nights/04 Days",
-                         "destination_covered":  "- Dubai",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/dubai-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/dubai-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Dubai",
-                                                "Day 2 - Dubai",
-                                                "Day 3 - Dubai",
-                                                "Day 4 - Dubai"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "3 Nights accommodation at Hotel",
-                                                    "Daily Breakfast",
-                                                    "Dubai Half Day City Tour",
-                                                    "Dessert Safari with Dinner (with Dune Bashing, Belly Dance and Bar beque Dinner)",
-                                                    "Dhow Cruise with Dinner",
-                                                    "Airport Hotel Return Transfers",
-                                                    "All Hotel taxes and Service charges."
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Hongkong",
-                         "duration":  "05 Nights/06 Days",
-                         "destination_covered":  "- Hongkong - Macau - Star Pisces",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/hongkong-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/hongkong-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Arrival In Hong Kong",
-                                                "Day 2 - Hong Kong (Day At Leisure)",
-                                                "Day 3 - Hong Kong - Star Pisces",
-                                                "Day 4 - Star Pisces - Hong Kong - Macau",
-                                                "Day 5 - Macau Sightseeing Tour",
-                                                "Day 6 - Macau-Hong Kong Airport"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "2 Nights accommodation in Hong Kong.",
-                                                    "2 Nights accommodation in Macau.",
-                                                    "1 Night accommodation on Star Pisces",
-                                                    "Daily Buffet Breafast",
-                                                    "All Meals on the Cruise.",
-                                                    "Half day Hong Kong City tour",
-                                                    "Half day Macau City tour with Indian lunch.",
-                                                    "Return Ferry tickets Hong Kong - Macau - Hong Kong",
-                                                    "Return Airport Transfers \u0026 Cruise Terminal Transfers",
-                                                    "All Transfers and Sightseeing on SIC basis",
-                                                    "All Hotel taxes and Service charges."
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Paris",
-                         "duration":  "02 Nights/03 Days",
-                         "destination_covered":  "- Paris",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/paris-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/paris-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Arrive Paris",
-                                                "Day 2 - Paris City tour",
-                                                "Day 3 - Paris-Departure"
-                                            ],
-                         "package_inclusions":  [
-
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Singapore",
-                         "duration":  "03 Nights/04 Days",
-                         "destination_covered":  "- Singapore",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/singapore-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/singapore-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Arrive Singapore",
-                                                "Day 2 - Singapore",
-                                                "Day 3 - Singapore",
-                                                "Day 4 - Singapore"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "3 Nights accommodation at Hotel",
-                                                    "Daily Breakfast",
-                                                    "Singapore Half Day City Tour",
-                                                    "Airport Hotel Return Transfers",
-                                                    "All Hotel taxes and Service charges."
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Srilanka",
-                         "duration":  "04 Nights/05 Days",
-                         "destination_covered":  "- Srilanka",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/srilanka-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/srilanka-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 -Arrive Sri Lanka",
-                                                "Day 2 - Sri Lanka",
-                                                "Day 3 - Sri Lanka",
-                                                "Day 4 - Sri Lanka",
-                                                "Day 5 - Sri Lanka"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "Transport in an A/C Micro van with the service of an English-speaking chauffeur Guide.",
-                                                    "Sightseeing as mentioned above.",
-                                                    "Value added tax.",
-                                                    "Meeting and Assistance at the airport."
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Switzerland",
-                         "duration":  "04 Nights/05 Days",
-                         "destination_covered":  "- Switzerland",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/switzerland-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/switzerland-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Arrive Switzerland (by Coach)",
-                                                "Day 2 - Switzerland- Zurich City tour + Rhine Falls",
-                                                "Day 3 - Switzerland",
-                                                "Day 4 - Switzerland",
-                                                "Day 5 - Return Home with Wonderful Memories"
-                                            ],
-                         "package_inclusions":  [
-
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Sydney",
-                         "duration":  "05 Nights/06 Days",
-                         "destination_covered":  "- Sydney",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/sydney-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/sydney-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Arrive Sydney- Showboats Dinner Cruise",
-                                                "Day 2 - Sydney- Guided City Tour",
-                                                "Day 3 - Sydney- Blue Mountains \u0026 Wildlife Park",
-                                                "Day 4 - Sydney- Day Free",
-                                                "Day 5 - Sydney- Day Free",
-                                                "Day 6 - Sydney - Delhi"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "Economy Class return Airfare.",
-                                                    "5 Nights accommodation with Breakfast in Sydney.",
-                                                    "Hotel Aspire / Ibis / Metro or Similar",
-                                                    "Sydney City tour (No Return drop off)",
-                                                    "Airport transfers",
-                                                    "All Tours \u0026 Transfers on Seat In Coach (Sharing) basis.",
-                                                    "Australian Visa fees",
-                                                    "All taxes."
-                                                ]
-                     },
-                     {
-                         "region":  "international",
-                         "package_name":  "Thailand",
-                         "duration":  "04 Nights/05 Days",
-                         "destination_covered":  "- Pattaya - Bangkok",
-                         "starting_price":  "",
-                         "source_url":  "https://accurateholiday.com/thailand-tour-packages.html",
-                         "details_url":  "https://accurateholiday.com/thailand-tour-packages.html",
-                         "itinerary_days":  [
-                                                "Day 1 - Pattaya",
-                                                "Day 2 - Pattaya",
-                                                "Day 3 - Pattaya - Bangkok",
-                                                "Day 4 - Bangkok",
-                                                "Day 5 - Bangkok"
-                                            ],
-                         "package_inclusions":  [
-                                                    "-",
-                                                    "Economy Class return Airfare on Direct flight",
-                                                    "02 Nights accommodation at Pattaya",
-                                                    "02 Nights accommodation at Bangkok",
-                                                    "04 Breakfast \u0026 Early Check in Confirmed",
-                                                    "Airport Hotel return transfers Seat-In-Coach basis.",
-                                                    "Coral island tour Seat-In-Coach basis (max 4 hours)",
-                                                    "Pattaya City tour on Seat-In-Coach basis (max 3 hours)",
-                                                    "All hotel taxes and service charges",
-                                                    "Airport taxes",
-                                                    "Service Taxes Included."
-                                                ]
-                     }
-                 ]
+    "extracted_at_utc": "2026-04-11T03:29:25.0835078Z",
+    "source": "https://accurateholiday.com/",
+    "category": "international-tour",
+    "total_packages": 8,
+    "categories": [
+        "https://accurateholiday.com/thailand-tour-packages.html",
+        "https://accurateholiday.com/srilanka-tour-packages.html",
+        "https://accurateholiday.com/singapore-tour-packages.html",
+        "https://accurateholiday.com/switzerland-tour-packages.html",
+        "https://accurateholiday.com/dubai-tour-packages.html",
+        "https://accurateholiday.com/paris-tour-packages.html",
+        "https://accurateholiday.com/hongkong-tour-packages.html",
+        "https://accurateholiday.com/sydney-tour-packages.html"
+    ],
+    "packages": [
+        {
+            "region": "international",
+            "package_name": "Dubai",
+            "duration": "03 Nights/04 Days",
+            "destination_covered": "- Dubai",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/dubai-tour-packages.html",
+            "details_url": "https://accurateholiday.com/dubai-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Dubai",
+                    "description": "Arrive in Dubai International Airport and meet the local tour operator. Get transferred to the Hotel. Check-in to the Hotel. Remaining day at own leisure. Enjoy an overnight stay at Hotel."
+                },
+                {
+                    "day": "Day 2 - Dubai",
+                    "description": "Enjoy Breakfast at the Hotel. Later proceed for Half day City Tour. Enjoy Desert Safari in the evening. After Dinner, return back to the Hotel. Enjoy overnight stay at Hotel."
+                },
+                {
+                    "day": "Day 3 - Dubai",
+                    "description": "Enjoy Breakfast in the Hotel. Day free at own leisure. In the evening enjoy Dhow Cruise with Dinner. Overnight stay at Hotel."
+                },
+                {
+                    "day": "Day 4 - Dubai",
+                    "description": "Enjoy Breakfast at the Hotel. Check-out from the Hotel and get transferred to the Airport."
+                }
+            ],
+            "package_inclusions": [
+                "3 Nights accommodation at Hotel",
+                "Daily Breakfast",
+                "Dubai Half Day City Tour",
+                "Dessert Safari with Dinner (with Dune Bashing, Belly Dance and Bar beque Dinner)",
+                "Dhow Cruise with Dinner",
+                "Airport Hotel Return Transfers",
+                "All Hotel taxes and Service charges."
+            ]
+        },
+        {
+            "region": "international",
+            "package_name": "Hongkong",
+            "duration": "05 Nights/06 Days",
+            "destination_covered": "- Hongkong - Macau - Star Pisces",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/hongkong-tour-packages.html",
+            "details_url": "https://accurateholiday.com/hongkong-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Arrival In Hong Kong",
+                    "description": "Meals:On arrival in Hong Kong, transfer to the hotel. Check-in to the hotel. In the evening embark on an exciting tour of Hong Kong Island covering the Victoria Peak, which attracts close to 7 million visitors annually. Also, visit the Aberdeen Fishing Village, which is home to the boat people (fishermen) and renders a picturesque view of fishing boats, trawlers and yacht. Return to the hotel for a comfortable overnight stay."
+                },
+                {
+                    "day": "Day 2 - Hong Kong (Day At Leisure)",
+                    "description": "After enjoying breakfast, spend the day at leisure."
+                },
+                {
+                    "day": "Day 3 - Hong Kong - Star Pisces",
+                    "description": "Breakfast in the Hotel. Remaining Day is Free at own Leisure. Later transfer to Cruise Terminal to board the Star Pisces. Enjoy overnight stay on Cruise."
+                },
+                {
+                    "day": "Day 4 - Star Pisces - Hong Kong - Macau",
+                    "description": "Disembark Cruise. Meet & Assistance at Cruise terminal and transfer to Ferry Pier to take ferry for Macau. Arrive Macau and transfer to the Hotel, where you will Check in (Normal Check in time is 15:00 Hours). Overnight stay at hotel in Macau."
+                },
+                {
+                    "day": "Day 5 - Macau Sightseeing Tour",
+                    "description": "After a delicious breakfast, go for a half-day city tour of Macau, covering places such as the Ruins of St. Paul's Church, a 17th century Portuguese Cathedral and the Senado Square, which has been Macau's urban centre for centuries. During this tour, you will also get to visit other important attractions such as the Na Cha Temple, section of the old city walls and A-Ma Temple. Afterwards have a comfortable overnight stay at the hotel."
+                },
+                {
+                    "day": "Day 6 - Macau-Hong Kong Airport",
+                    "description": "After breakfast at the hotel, check-out and transfer by hotel complimentary shuttle to pier and take direct ferry to Hong Kong airport to board your flight for back home."
+                }
+            ],
+            "package_inclusions": [
+                "2 Nights accommodation in Hong Kong.",
+                "2 Nights accommodation in Macau.",
+                "1 Night accommodation on Star Pisces",
+                "Daily Buffet Breafast",
+                "All Meals on the Cruise.",
+                "Half day Hong Kong City tour",
+                "Half day Macau City tour with Indian lunch.",
+                "Return Ferry tickets Hong Kong - Macau - Hong Kong",
+                "Return Airport Transfers & Cruise Terminal Transfers",
+                "All Transfers and Sightseeing on SIC basis",
+                "All Hotel taxes and Service charges."
+            ]
+        },
+        {
+            "region": "international",
+            "package_name": "Paris",
+            "duration": "02 Nights/03 Days",
+            "destination_covered": "- Paris",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/paris-tour-packages.html",
+            "details_url": "https://accurateholiday.com/paris-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Arrive Paris",
+                    "description": "Welcome to Paris, the fashion capital of the world, where you begin your Europe Tour. On Arrival, you will be met by our Travel Representative outside the customs area, who will welcome you and take you to the hotel for check-in. Enjoy Dinner & overnight stay at hotel in Paris."
+                },
+                {
+                    "day": "Day 2 - Paris City tour",
+                    "description": "After breakfast, you will proceed for Paris City tour. See Arc de Triomphe, the Champs Elysees, arguably the most well known avenue in the world, the magnificent Opera, Town Hall and the National Assembly, Louvre the famous Notre Dame Cathedral. Later visit Eiffel Tower, the symbol of Paris. Evening is free for leisure. Enjoy Dinner & overnight stay at hotel in Paris."
+                },
+                {
+                    "day": "Day 3 - Paris-Departure",
+                    "description": "After a continental breakfast, you will Check-out from the hotel and drp to airport fo your further destination."
+                }
+            ],
+            "package_inclusions": []
+        },
+        {
+            "region": "international",
+            "package_name": "Singapore",
+            "duration": "03 Nights/04 Days",
+            "destination_covered": "- Singapore",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/singapore-tour-packages.html",
+            "details_url": "https://accurateholiday.com/singapore-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Arrive Singapore",
+                    "description": "Arrive Singapore, one of the most enjoyable cities in South East Asia. Meet with our local tour operator representative. Transfer to the hotel, where you will Check-in. Evening is free at own leisure to explore Singapore and savour its finest delicacies. Overnight stay at hotel."
+                },
+                {
+                    "day": "Day 2 - Singapore",
+                    "description": "Enjoy breakfast at hotel. Remaining day is Free at own Leisure. You will be provided 2-in-1 Hippo Pass which offers you unlimited access to travel in Hippo City Hop on-Hop off buses for full two days. The buses cover all the major attractions of Singapore and you can hop onâ€\"hop off multiple times during the day. Enjoy the attractions of Singapore as per your choice and leisure. Overnight stay at Hotel."
+                },
+                {
+                    "day": "Day 3 - Singapore",
+                    "description": "Enjoy breakfast at hotel. Rest of the day at leisure to explore the City on your own or you can opt for some optional Sightseeing tour (at Additional Cost). Overnight stay at hotel."
+                },
+                {
+                    "day": "Day 4 - Singapore",
+                    "description": "Enjoy breakfast at hotel. Later Check-out from hotel (as per hotels Check out time). Later transfer to the Airport."
+                }
+            ],
+            "package_inclusions": [
+                "3 Nights accommodation at Hotel",
+                "Daily Breakfast",
+                "Singapore Half Day City Tour",
+                "Airport Hotel Return Transfers",
+                "All Hotel taxes and Service charges."
+            ]
+        },
+        {
+            "region": "international",
+            "package_name": "Srilanka",
+            "duration": "04 Nights/05 Days",
+            "destination_covered": "- Srilanka",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/srilanka-tour-packages.html",
+            "details_url": "https://accurateholiday.com/srilanka-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 -Arrive Sri Lanka",
+                    "description": "Upon arrival in Sri lanka, our representative will meet you and transfer to Dambulla. Visit to Polonnaruwa in Afternoon and return to hotel till evening. Overnight stay at hotel."
+                },
+                {
+                    "day": "Day 2 - Sri Lanka",
+                    "description": "After breakfast climb the Sigiriya Rock fortress. Thereafter proceed to Kandy. En route visit a spice garden and a batik factory. Arrive in Kandy and check-in to hotel. Rest of the day at leisure. Overnight stay at Hotel"
+                },
+                {
+                    "day": "Day 3 - Sri Lanka",
+                    "description": "After breakfast commence sightseeing in Kandy including Upper Lake Drive, Market Square, the Temple of the Sacred Tooth Relic and Royal Botanical gardens."
+                },
+                {
+                    "day": "Day 4 - Sri Lanka",
+                    "description": "After breakfast proceed to Colombo. Afternoon commence sightseeing and shopping in Colombo. Overnight stay at Hotel"
+                },
+                {
+                    "day": "Day 5 - Sri Lanka",
+                    "description": "After breakfast transfer to airport to connect with the departure flight."
+                }
+            ],
+            "package_inclusions": [
+                "Transport in an A/C Micro van with the service of an English-speaking chauffeur Guide.",
+                "Sightseeing as mentioned above.",
+                "Value added tax.",
+                "Meeting and Assistance at the airport."
+            ]
+        },
+        {
+            "region": "international",
+            "package_name": "Switzerland",
+            "duration": "04 Nights/05 Days",
+            "destination_covered": "- Switzerland",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/switzerland-tour-packages.html",
+            "details_url": "https://accurateholiday.com/switzerland-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Arrive Switzerland (by Coach)",
+                    "description": "On arrival in Zurich, transfer to the hotel where you will Check in. Rest day at leisure. Enjoy Dinner & overnight stay at hotel in Switzerland."
+                },
+                {
+                    "day": "Day 2 - Switzerland- Zurich City tour + Rhine Falls",
+                    "description": "After breakfast, you will proceed for an Orientation tour of Zurich. visit the St. Peter's Church and the famous churches of Fraumunster and Grossmunster with its twin Romanesque towers. Later we drive to Rhine Falls. The Rhine Falls is the largest plain waterfall in Europe, near the town of Schaffhausen in northern Switzerland. Fall are 150 m (450 Ft.) Wide & 23 m (75 Ft.) High. Return back to the Hotel. Enjoy Dinner & overnight stay at hotel in Switzerland."
+                },
+                {
+                    "day": "Day 3 - Switzerland",
+                    "description": "After a continental breakfast, the day is free OR we suggest you to take a full day excursion to Mount Titlis with Ice-Flyer and Lucerne City tour. visit to Mt. Titlis. Your journey to Mt. Titlis pass through a series of three different cable cars. At Mt. Titlis you have free time to play and enjoy in the snow, visit the Ice Cave or just relax at the restaurant. Later in the Afternoon move towards another beautiful city Lucerne and enjoy your orientation tour which comprises of famous Lion monuments, Kappelbruck Bridge. This is the ideal place to purchase branded Swiss watches, swiss chocolates, swiss army knives, souvenirs, etc. Enjoy Dinner & overnight stay at hotel in Switzerland."
+                },
+                {
+                    "day": "Day 4 - Switzerland",
+                    "description": "After breakfast, the day is free for you to relax OR we suggest you to take an opportunity to visitJungfraujoch and picturesque Interlaken (Optional - at Additional Cost). Our scenic drive to Lauterbrunnen, from where we board a train to Jungfraujoch. takes us along lovely lakes and mountain passes. Marvel at the changes in the Alpine scenery as your charming cog-wheel train takes you on a unique journey. Experience the magic of the mountains at the Sphinx Terrace. See the breathtaking Jungfrau Peak and the awesome Aletsch Glacier.Thereafter you will proceed for your Journey to Interlaken. Here you will visit Interlaken City. Later transfer to the Hotel & you can spend time to relax at the many cafes or shop for Swiss watches, chocolates, memorabilia, etc.overnight stay at hotel in Switzerland."
+                },
+                {
+                    "day": "Day 5 - Return Home with Wonderful Memories",
+                    "description": "After a continental breakfast, you will check out of the hotel and drive to the Airport to catch your Flight back to Delhi. Its time to say goodbye to all the new friends you have made. We would like you to spare a few minutes of your time to write and tell us how you enjoyed your tour and any suggestions you may have for the future. We hope you take back happy memories of your Tour with D.Paul's Travel."
+                }
+            ],
+            "package_inclusions": []
+        },
+        {
+            "region": "international",
+            "package_name": "Sydney",
+            "duration": "05 Nights/06 Days",
+            "destination_covered": "- Sydney",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/sydney-tour-packages.html",
+            "details_url": "https://accurateholiday.com/sydney-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Arrive Sydney- Showboats Dinner Cruise",
+                    "description": "On arrival, our local representative will be waiting at the airport to welcome and transfer you to the hotel. Welcome to the Harbour City of Australia. Check In to your hotel and relax for a while. In the evening, get ready for the Sydney Showboats Dinner Cruise (at Additional Cost), Australia's most luxurious paddle wheeler, renowned for its famous dinner cruise and show. Entertainment is assured right from the moment you step on board. Captivating array of outstanding Australian performers, in-house magicians, dynamic vocalists and dancers from the finest international venues in vibrant costumes guarantee to delight audiences. Perfect for a romantic night out or any celebration that demands fun and entertainment combined with amazing restaurant dining experience. Overnight stay at hotel in Sydney."
+                },
+                {
+                    "day": "Day 2 - Sydney- Guided City Tour",
+                    "description": "After morning breakfast, we head for a Sydney City Tour that covers Opera House (from Inside), Sydney Tower, Sydney Aquarium and Sydney Wildlife World. We will start with a tour to the world famous Sydney Opera House. Discover the unknown history and magic of this place and discover the magnificent beauty. We proceed to Harbour Bridge, then to the Nature's Wonder, the Rocks, will head further to Lady Macquarie's Chair, one of the best vantage points in Sydney and then to spectacular Hyde Park and a stopover at Darling Harbour, one of Australia's major attractions. Our tour will not be complete without visiting Sydney Tower- the tallest free-standing structure, walk under water to explore Australia's rich & diverse aquatic life at Sea Life Sydney Aquarium. Experience a real Australian adventure at Sydney Wild Life World, now known as Wild Life Sydney Zoo and meet some of Australia's cutest national icons, including koalas and yellow footed rock wallabies! Overnight stay at hotel in Sydney."
+                },
+                {
+                    "day": "Day 3 - Sydney- Blue Mountains & Wildlife Park",
+                    "description": "Enjoy morning breakfast. Today we will go for a full day Blue Mountains and Australian Wildlife Park Tour. (at Additional Cost). Enroute the Blue Mountains, enjoy the most spectacular views over the Jamison Valley and Kings Tableland. We visit Katoomba with its most famous attraction, The Three Sisters and Echo Point. We will tour along some of the most scenic roads of Blue Mountains. We will head for a breathtaking lookout overlooking the Megalong Valley and beyond to the Great Dividing Range. Discover here why the Blue Mountains are so called. We will then visit Australian Wildlife Park to play with koalas, kangaroos and other Australian native animals. Return after a simply unforgettable day. Overnight stay at hotel in Sydney."
+                },
+                {
+                    "day": "Day 4 - Sydney- Day Free",
+                    "description": "Enjoy breakfast at hotel. Today the day is Free for you to Explore the Nearby Places on your own or we suggest you to opt for Value Pack which includes Tickets to Sydney Aquarium, Sydney Tower Eye & Dolphin Watch Cruise (at Additional Cost). Overnight stay at hotel in Sydney."
+                },
+                {
+                    "day": "Day 5 - Sydney- Day Free",
+                    "description": ""
+                },
+                {
+                    "day": "Day 6 - Sydney - Delhi",
+                    "description": "Get up to a beautiful Aussie morning. Store the beauty in your eyes. Pack the bags and get ready to have breakfast. Today we check out from hotel and drive to airport. Return home with loads of pleasant memories."
+                }
+            ],
+            "package_inclusions": [
+                "Economy Class return Airfare.",
+                "5 Nights accommodation with Breakfast in Sydney.",
+                "Hotel Aspire / Ibis / Metro or Similar",
+                "Sydney City tour (No Return drop off)",
+                "Airport transfers",
+                "All Tours & Transfers on Seat In Coach (Sharing) basis.",
+                "Australian Visa fees",
+                "All taxes."
+            ]
+        },
+        {
+            "region": "international",
+            "package_name": "Thailand",
+            "duration": "04 Nights/05 Days",
+            "destination_covered": "- Pattaya - Bangkok",
+            "starting_price": "",
+            "source_url": "https://accurateholiday.com/thailand-tour-packages.html",
+            "details_url": "https://accurateholiday.com/thailand-tour-packages.html",
+            "itinerary_days": [
+                {
+                    "day": "Day 1 - Pattaya",
+                    "description": "Arrive Bangkok, Welcome at the airport at Gate No. 3, near, information center (subject to change kindly check your vouchers) after clearing custom, visa processing, baggage claim transfer to Pattaya. Check in to the hotel in Pattaya. Day free at leisure. Overnight at hotel."
+                },
+                {
+                    "day": "Day 2 - Pattaya",
+                    "description": "Breakfast in the hotel (7 AM. to 9 AM). Transfer to Coral Island at 9 A.M Sharp by normal boat (one can buy optional tour Water sports at your own cost). Rest Day free at leisure. Overnight at hotel."
+                },
+                {
+                    "day": "Day 3 - Pattaya - Bangkok",
+                    "description": "Breakfast in the hotel (7 AM. to 9 AM).After breakfast check out from the hotel and take a city tour on the way with as visit to World Gems Collection show room. Check in the Bangkok hotel at around 4.00 - 4.30P.M. Evening free leisure. Overnight at hotel"
+                },
+                {
+                    "day": "Day 4 - Bangkok",
+                    "description": "Breakfast in the hotel (7 AM. to 9 AM). Day free at leisure. Overnight at hotel."
+                },
+                {
+                    "day": "Day 5 - Bangkok",
+                    "description": "Breakfast in the hotel (7 AM. to 9 AM).Check Out from the hotel (enjoy your free day for shopping or enjoying the extra add ons mentioned in the list above). Later take your transfer to airport."
+                }
+            ],
+            "package_inclusions": [
+                "Economy Class return Airfare on Direct flight",
+                "02 Nights accommodation at Pattaya",
+                "02 Nights accommodation at Bangkok",
+                "04 Breakfast & Early Check in Confirmed",
+                "Airport Hotel return transfers Seat-In-Coach basis.",
+                "Coral island tour Seat-In-Coach basis (max 4 hours)",
+                "Pattaya City tour on Seat-In-Coach basis (max 3 hours)",
+                "All hotel taxes and service charges",
+                "Airport taxes",
+                "Service Taxes Included."
+            ]
+        }
+    ]
 }

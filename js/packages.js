@@ -109,9 +109,3 @@ function populatePackageSelect() {
     });
 }
 
-// Re-init packages page once JSON data has loaded
-document.addEventListener('tourPackagesLoaded', function() {
-    allPackages = [...tourPackages];
-    filterPackages();
-    populatePackageSelect();
-});

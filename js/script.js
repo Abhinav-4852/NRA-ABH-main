@@ -361,14 +361,6 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Re-render package-dependent sections once JSON data has loaded
-document.addEventListener('tourPackagesLoaded', function() {
-    if (document.getElementById('featured-packages')) {
-        loadFeaturedPackages();
-    }
-    updateDestinationCounts();
-});
-
 // Filter packages by category ("domestic" / "international")
 function filterByCategory(packages, category) {
     if (category === 'all') return packages;

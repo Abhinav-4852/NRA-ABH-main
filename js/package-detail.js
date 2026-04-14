@@ -207,13 +207,6 @@ function loadRelatedPackages(currentPkg) {
     }
 }
 
-// Reload package details once JSON data has arrived (new packages may have been added)
-document.addEventListener('tourPackagesLoaded', function() {
-    const packageId = parseInt(getUrlParameter('id'));
-    if (packageId) {
-        loadPackageDetails(packageId);
-    }
-});
 
 // Handle quick inquiry form
 async function handleQuickInquiry(e) {

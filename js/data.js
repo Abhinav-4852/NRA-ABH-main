@@ -152,26 +152,6 @@ const tourPackages = [
         image: "Tour Package Images - Solanki Tours/Andaman-Island.webp"
     },
     {
-        id: 8,
-        title: "Golden Triangle Tour",
-        duration: "04 NIGHTS/05 DAYS",
-        destinations: "Delhi - Agra - Jaipur",
-        price: "Contact Us",
-        category: "domestic",
-        region: "rajasthan",
-        inclusions: [
-            "1 Night Accommodation in Delhi",
-            "1 Night Accommodation in Agra",
-            "2 Nights Accommodation in Jaipur",
-            "Welcome drink on arrival",
-            "Daily Breakfast at Hotel",
-            "Pick up and Drop at Delhi",
-            "All transport and sightseeing by Individual Car",
-            "All taxes are include"
-        ],
-        image: "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-    },
-    {
         id: 9,
         title: "Darjeeling Gangtok Tour",
         duration: "04 NIGHTS/05 DAYS",
@@ -935,58 +915,65 @@ tourPackages.push({
     image:        "Tour Package Images - Solanki Tours/Shimla Tour.avif"
 });
 tourPackages.push({
-    id:           42,
-    title:        "Andaman Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Port Blair - Ross Island - North Bay - Port Blair",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "andaman",
-    inclusions:   [
+    id:             42,
+    title:          "Andaman Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "andaman",
+    image:          "Tour Package Images - Solanki Tours/Andaman-Island.webp",
+    duration:       "04 NIGHTS/05 DAYS",
+    destinations:   "Port Blair - Ross Island - North Bay - Port Blair",
+    inclusions:     [
             "Tour inclusions available on inquiry — please contact us for full package details."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - Depart from Andaman Islands", description: "On arrive at Port Blair airport, our representative will receive and escorted to the hotel. After check-in at the hotel and little relax, start with the sightseeing with Anthropological Museum, which displays the tools, models habitats, art and handcrafts of the aboriginal tribes of Andaman & Nicobar Islands from Anthropological Museum, we proceed to Corbyn's, Cove beach. Light & Sound Show at Cellular Jail. At evening, we move for the Light and Sound Show at Cellular Jail where the saga of the freedom struggle brought alive." },
             { day: "Day 2 - Ross Island", description: "In Morning, after breakfast we will proceed for a cruising towards Ross Island and Harbour Cruise (Viper Island). Ross Island, the erstwhile capital of Port Blair during the British regime, it now stands an imposing relic, with the structure almost in debris. A small museum displays photographs and other antiques of the Britishers, relevant to these islands. Harbour Cruise (Viper Island) .In afternoon, we proceed for a cruise of harbour, the panoramic view of seven points from sea i.e.; harbour, floating docks, etc including a trip to Viper Island the place of execution. Meals : Breakfast" },
             { day: "Day 3 - North Bay", description: "In the Morning, we proceed for a full day joyful trip to North Bay Island (Coral Island) by ferry. North Bay, offers exotic coral, colorful fishes and underwater marine life. We can view these colorful corals & underwater marine life via in glass bottom boat and snorkeling (optional)." },
             { day: "Day 4 - Port Blair", description: "After Breakfast, we take you for the tour of Port Blair city which covers Cellular Jail (National Memorial), Chatham saw mill (the oldest and biggest mill in Asia), Forest Museum, Mini Zoo, Samundrika (Naval Marine Museum), Aquarium (Fisheries Museum), Science Centre, Gandhi Park, Marina Park, Andaman Water Sports Complex. In the evening, we proceed to Sagarika ( the Govt. Emporium of Handcraft) and local market for shopping. Meals : Breakfast" },
             { day: "Day 5 - Port Blairp", description: "Drop to Port Blair / Harbour for Return journey with a wonderful holiday memories." }
         ],
-    image:        "Tour Package Images - Solanki Tours/Andaman-Island.webp"
-});
-tourPackages.push({
-    id:           43,
-    title:        "Andaman Tour Package",
-    duration:     "05 NIGHTS/06 DAYS",
-    destinations: "Port Blair - Havelock",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "andaman",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "and-4n",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Port Blair - Ross Island - North Bay - Port Blair",
+            inclusions:   [
             "Tour inclusions available on inquiry — please contact us for full package details."
         ],
-    itinerary:    [
+            itinerary:    [
+            { day: "Day 1 - Depart from Andaman Islands", description: "On arrive at Port Blair airport, our representative will receive and escorted to the hotel. After check-in at the hotel and little relax, start with the sightseeing with Anthropological Museum, which displays the tools, models habitats, art and handcrafts of the aboriginal tribes of Andaman & Nicobar Islands from Anthropological Museum, we proceed to Corbyn's, Cove beach. Light & Sound Show at Cellular Jail. At evening, we move for the Light and Sound Show at Cellular Jail where the saga of the freedom struggle brought alive." },
+            { day: "Day 2 - Ross Island", description: "In Morning, after breakfast we will proceed for a cruising towards Ross Island and Harbour Cruise (Viper Island). Ross Island, the erstwhile capital of Port Blair during the British regime, it now stands an imposing relic, with the structure almost in debris. A small museum displays photographs and other antiques of the Britishers, relevant to these islands. Harbour Cruise (Viper Island) .In afternoon, we proceed for a cruise of harbour, the panoramic view of seven points from sea i.e.; harbour, floating docks, etc including a trip to Viper Island the place of execution. Meals : Breakfast" },
+            { day: "Day 3 - North Bay", description: "In the Morning, we proceed for a full day joyful trip to North Bay Island (Coral Island) by ferry. North Bay, offers exotic coral, colorful fishes and underwater marine life. We can view these colorful corals & underwater marine life via in glass bottom boat and snorkeling (optional)." },
+            { day: "Day 4 - Port Blair", description: "After Breakfast, we take you for the tour of Port Blair city which covers Cellular Jail (National Memorial), Chatham saw mill (the oldest and biggest mill in Asia), Forest Museum, Mini Zoo, Samundrika (Naval Marine Museum), Aquarium (Fisheries Museum), Science Centre, Gandhi Park, Marina Park, Andaman Water Sports Complex. In the evening, we proceed to Sagarika ( the Govt. Emporium of Handcraft) and local market for shopping. Meals : Breakfast" },
+            { day: "Day 5 - Port Blairp", description: "Drop to Port Blair / Harbour for Return journey with a wonderful holiday memories." }
+        ]
+        },
+        {
+            variantId:    "and-5n",
+            duration:     "05 NIGHTS/06 DAYS",
+            destinations: "Port Blair - Havelock",
+            inclusions:   [
+            "Tour inclusions available on inquiry — please contact us for full package details."
+        ],
+            itinerary:    [
             { day: "Day 1 - Port Blair", description: "Upon arrival at Port Blair in the morning. Our representative will transfer to hotel. After lunch, proceed for Chidiya Tapu - about 31 kms from Port Blair - generally known as the \"Bird Island\" covered with lush green mangroves and beautiful beach with breath-taking sunset - all of which creates a mesmerizing environment. In the evening, attend the enthralling Sound and Light Show at Cellular Jail - where the heroic saga of the Indian freedom struggle is brought alive. Overnight stay at Port Blair." },
             { day: "Day 2 - Port Blair", description: "After breakfast in the morning visit for a full-day Excursion to Jolly Buoy or Red Skin (Coral Island) - to see coral reefs, exotic varieties of beautiful ornamental fishes and other marine life. The glass bottom boat ride helps one to take a closer look at the vast coral colonies. Optional Activities - Snorkelling, Swimming, Trekking. Overnight stay at Port Blair. Meals : Breakfast" },
             { day: "Day 3 - Havelock", description: "Early morning departure by inter-island ferry to Havelock Island(57 kms by sea from Port Blair). Stay here overnight amongst sandy beach and lush green forest in a comfortable beach resort. Then after quick refreshment proceed to the Asia's Best Beach \"Radhanagar Beach (Beach No.7)\". Overnight stay at Havelock." },
             { day: "Day 4 - Havelock", description: "After breakfast, proceed to Elephant Beach for adventurous snorkeling experience. â€œSnorkeling is leisure water sports in which a person swims on the surface of water wearing the face mask and view in the underwater coralsâ€. Overnight stay at Havelock. Meals : Breakfast" },
             { day: "Day 5 - Havelock", description: "Return from Havelock to Port Blair in the evening and transfer to hotel." },
             { day: "Day 6 - Harbour", description: "Transfer to Airport/Harbour for return flight/voyage." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Andaman-Island.webp"
-});
-tourPackages.push({
-    id:           44,
-    title:        "Andaman Tour Package",
-    duration:     "06 NIGHTS/07 DAYS",
-    destinations: "Port Blair - Coral Island - Havelock - Ross Island",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "andaman",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "and-6n",
+            duration:     "06 NIGHTS/07 DAYS",
+            destinations: "Port Blair - Coral Island - Havelock - Ross Island",
+            inclusions:   [
             "Tour inclusions available on inquiry — please contact us for full package details."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Port Blair", description: "Arrival at Port Blair in the morning by flight/ship and transfer to hotel. After lunch, visit the Corbyn's Cove Beach - 9 kms from Port Blair - a coconut palm fringed beach, ideal for swimming, sun-basking & bathing. Then proceed for a leisurely cruise (Harbour Cruise) in a steamer along the Port Blair Harbour - which takes one to Viper Island. The gallows atop a hillock here is sight to watch." },
             { day: "Day 2 - Coral Island", description: "Start after Breakfast for a full-day Excursion to North Bay (Coral Island) - to see coral reefs, exotic varieties of beautiful ornamental fishes and other marine life. The glass bottom boat ride helps one to take a closer look at the vast coral colonies. Optional Activities - Snorkeling, Swimming, Trekking. Meals : Breakfast" },
             { day: "Day 3 - Havelock", description: "Early morning departure by inter-island ferry to Havelock Island (57 kms by sea from Port Blair). Stay here overnight amongst sandy beach and lush green forest in a comfortable beach resort. Then after lunch proceed to the Kalapathar beach where you can watch the beautiful sunset. Optional activities are swimming. Overnight stay at Havelock. Honey moon cake will be placed at the resort where you are staying. Meals : Lunch" },
@@ -994,18 +981,20 @@ tourPackages.push({
             { day: "Day 5 - Havelock", description: "After breakfast, start for a full-day tour of places in & around Port Blair (City Tour) - covering the famous Cellular Jail, Chatham Saw Mill (oldest & largest in Asia), Mini Zoo, Anthropological Museum, Fisheries (Marine) Museum, Science Centre, Naval Marine Museum (Samudrika) and the Cottage Industries Emporium (Sagarika) - for shopping & souvenirs. In the evening, attend the enthralling Sound and Light Show at Cellular Jail - where the heroic saga of the Indian freedom struggle is brought alive. Meals : Breakfast" },
             { day: "Day 6 - Ross Island", description: "After breakfast, visit Ross Island - from where the Britishers' governed the entire A&N islands at the time of pre Independence. This island is an ideal destination for nature walk amidst sylvan surroundings with deers, peacocks, exotic birds, etc. After lunch, visit Chidiya Tapu - about 31 kms from Port Blair - generally known as the \"Bird Island\" covered with lush green mangroves and beautiful beach with breath-taking sunset. Optional Activities - Swimming, Trekking & Snorkeling. Exotic Dinner at a sea facing restaurant at Port Blair on the fixed menu. Meals : Breakfast, Lunch, Dinner" },
             { day: "Day 7 - Ross Island", description: "Transfer to Airport/Harbour for return flight/voyage to onward destination. Meals : Breakfast, Lunch, Dinner" }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Andaman-Island.webp"
+        ]
+        }
+    ]
 });
 tourPackages.push({
-    id:           45,
-    title:        "Kerala Tour Package",
-    duration:     "02 NIGHTS/03 DAYS",
-    destinations: "Cochin - Munnar - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+    id:             45,
+    title:          "Kerala Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "kerala",
+    image:          "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg",
+    duration:       "02 NIGHTS/03 DAYS",
+    destinations:   "Cochin - Munnar - Cochin",
+    inclusions:     [
             "2 Nights Accommodation in Munnar",
             "Welcome drink on arrival",
             "Daily Breakfast at Hotel",
@@ -1013,22 +1002,36 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - Cochin – Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local sightseeing and market visit. Overnight stay at Hotel." },
             { day: "Day 2 - Munnar", description: "In the Morning after breakfast proceed to full day local sightseeing of Munnar like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar - Cochin Drop", description: "Morning after breakfast check out from hotel and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
         ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
-});
-tourPackages.push({
-    id:           46,
-    title:        "Kerala Tour Package",
-    duration:     "03 NIGHTS/04 DAYS",
-    destinations: "Cochin - Munnar - Alleppey - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "ker-2n",
+            duration:     "02 NIGHTS/03 DAYS",
+            destinations: "Cochin - Munnar - Cochin",
+            inclusions:   [
+            "2 Nights Accommodation in Munnar",
+            "Welcome drink on arrival",
+            "Daily Breakfast at Hotel",
+            "Pick up and Drop ex Cochin",
+            "All Transport and Sightseeing by Individual Car",
+            "All Taxes Include."
+        ],
+            itinerary:    [
+            { day: "Day 1 - Cochin – Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local sightseeing and market visit. Overnight stay at Hotel." },
+            { day: "Day 2 - Munnar", description: "In the Morning after breakfast proceed to full day local sightseeing of Munnar like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
+            { day: "Day 3 - Munnar - Cochin Drop", description: "Morning after breakfast check out from hotel and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
+        ]
+        },
+        {
+            variantId:    "ker-3n",
+            duration:     "03 NIGHTS/04 DAYS",
+            destinations: "Cochin - Munnar - Alleppey - Cochin",
+            inclusions:   [
             "2 Nights Accommodation in Munnar",
             "1 Night Accommodation in Alleppey",
             "Welcome drink on arrival",
@@ -1038,23 +1041,18 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Cochin – Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local sightseeing and market visit. Overnight stay at Hotel." },
             { day: "Day 2 - Munnar", description: "In the Morning after breakfast proceed to full day local sightseeing of Munnar like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar - Alleppey", description: "In the Morning after breakfast checks out from hotel and proceed to Alleppey and check in the houseboat at alleppey and enjoy the backwater destination. Overnight stay in Houseboat." },
             { day: "Day 3 - Alleppey - Cochin Drop", description: "Morning after breakfast check out from houseboat and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
-});
-tourPackages.push({
-    id:           47,
-    title:        "Kerala Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Cochin - Munnar - Thekkady - Alleppey - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ker-4n",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Cochin - Munnar - Thekkady - Alleppey - Cochin",
+            inclusions:   [
             "2 Nights Accommodation in Munnar",
             "1 Night Accommodation in Alleppey",
             "1 Night Accommodation in Alleppey",
@@ -1065,24 +1063,19 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Cochin – Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local sightseeing and market visit. Overnight stay at Hotel." },
             { day: "Day 2 - Munnar", description: "In the Morning after breakfast proceed to full day local sightseeing of Munnar like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar - Thekkady", description: "Morning after breakfast check out from hotel and proceed to Thekkady and check in the hotel. Then Proceed to full day local Thekkady sightseeing like - one of the world's most fascinating wild life reserves The Periyar wild life sanctuary is spread across 777 sq km of which 360 sq km is thick ever green forest and Boating at Periyar Lake, Spice Plantation visit and Elephant Ride. Overnight stay at Hotel." },
             { day: "Day 4 - Thekkady - Alleppey", description: "Morning after breakfast check out from hotel and proceed to Alleppey and check in the houseboat and enjoy the backwater destination. Overnight stay in Houseboat." },
             { day: "Day 5 - Alleppey - Cochin Drop", description: "Morning after breakfast check out from Houseboat at alleppey and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
-});
-tourPackages.push({
-    id:           48,
-    title:        "Kerala Tour Package",
-    duration:     "05 NIGHTS/06 DAYS",
-    destinations: "Cochin - Munnar - Thekkady - Alleppey - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ker-5n",
+            duration:     "05 NIGHTS/06 DAYS",
+            destinations: "Cochin - Munnar - Thekkady - Alleppey - Cochin",
+            inclusions:   [
             "1 Night Accommodation in Cochin",
             "2 Nights Accommodation in Munnar",
             "1 Night Accommodation in Thekkady",
@@ -1094,25 +1087,20 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Cochin arrival", description: "Upon arrival at Cochin, our representative will meet you and proceed to Hotel. Check in the hotel and after taking some rest proceed to local Cochin sightseeing like The Queen of Arabian Sea, this is one of the finest natural harbors in the World and was one of the major centers for commerce and trade with British, Chinese, Portugese, Dutch, etc. and Cochin famous Dutch Palace, Jewish Synagogue, Jewish Street, St. Francis Church and Chinese Fishing Nets. Overnight stay at Hotel." },
             { day: "Day 2 - Cochin - Munnar", description: "Morning after breakfast check out from hotel and proceed to Munnar. Check in the hotel and after taking some proceed to local city and market visit. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar", description: "Morning after breakfast proceed to full day local Munnar sightseeing like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 4 - Munnar - Thekkady", description: "Morning after breakfast check out from hotel and proceed to Thekkady and check in the hotel. Then Proceed to full day local Thekkady sightseeing like - one of the world's most fascinating wild life reserves The Periyar wild life sanctuary is spread across 777 sq km of which 360 sq km is thick ever green forest and Boating at Periyar Lake, Spice Plantation visit and Elephant Ride. Overnight stay at Hotel." },
             { day: "Day 5 - Thekkady - Alleppey", description: "Morning after breakfast check out from hotel and proceed to Alleppey and check in the houseboat and enjoy the backwater destination. Overnight stay in Houseboat." },
             { day: "Day 6 - Alleppey - Cochin Drop", description: "Morning after breakfast check out from Houseboat and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
-});
-tourPackages.push({
-    id:           49,
-    title:        "Kerala Tour Package",
-    duration:     "06 NIGHTS/07 DAYS",
-    destinations: "Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ker-6n",
+            duration:     "06 NIGHTS/07 DAYS",
+            destinations: "Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Cochin",
+            inclusions:   [
             "2 Nights Accommodation in Munnar",
             "1 Night Accommodation in Thekkady",
             "1 Night Accommodation in Alleppey",
@@ -1124,7 +1112,7 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Cochin - Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local city and market visit. Overnight stay at Hotel." },
             { day: "Day 2 - Munnar", description: "Morning after breakfast proceed to full day local Munnar sightseeing like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar - Thekkady", description: "Morning after breakfast check out from hotel and proceed to Thekkady and check in the hotel. Then Proceed to full day local Thekkady sightseeing like - one of the world's most fascinating wild life reserves The Periyar wild life sanctuary is spread across 777 sq km of which 360 sq km is thick ever green forest and Boating at Periyar Lake, Spice Plantation visit and Elephant Ride. Overnight stay at Hotel." },
@@ -1132,18 +1120,13 @@ tourPackages.push({
             { day: "Day 5 - Alleppey - Kovalam", description: "Morning after breakfast check out from houseboat and proceed to Kovalam and check in the hotel. And full day enjoy the swimming of the sea and sun set point. Overnight stay at Hotel." },
             { day: "Day 6 - Kovalam - Trivandrum - Kovalam", description: "Morning after breakfast proceed to full day local Trivandrum sightseeing. Trivandrum is the or Thiruvananthapuram is the capital of Kerala and Trivandrum has an ancient city with a history dating back as early as 1000 BC. and The Padmanabhaswami Temple, Srichitra Art Gallery, Napier Museum and Zoo etc. Overnight stay at Hotel." },
             { day: "Day 7 - Kovalam - Trivandrum / Cochin Drop", description: "Morning after breakfast check out from Hotel and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
-});
-tourPackages.push({
-    id:           50,
-    title:        "Kerala Tour Package",
-    duration:     "07 NIGHTS/08 DAYS",
-    destinations: "Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Kanyakumari - Cochin",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kerala",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ker-7n",
+            duration:     "07 NIGHTS/08 DAYS",
+            destinations: "Cochin - Munnar - Thekkady - Alleppey - Kovalam - Trivandrum - Kanyakumari - Cochin",
+            inclusions:   [
             "2 Nights Accommodation in Munnar",
             "1 Night Accommodation in Thekkady",
             "1 Night Accommodation in Alleppey",
@@ -1156,7 +1139,7 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Cochin - Munnar", description: "On arrival at Cochin, we will meet you and proceed to Munnar. Check in the hotel and after taking some rest proceed to local city and market visit. Overnight stay at Hotel." },
             { day: "Day 2 - Munnar", description: "Morning after breakfast proceed to full day local Munnar sightseeing like the confluence of three mountain streams - Mudrapuzha, Nallathanni and Kundale, Munnar is 1600 Meter above sea level and Mattupetty Dam, Kundale Lake and Echo point. Afternoon proceed to Rajamalai were the rarest species of mountain goat, \"Nilgiri Thars\", can be spotted etc. Overnight stay at Hotel." },
             { day: "Day 3 - Munnar - Thekkady", description: "Morning after breakfast check out from hotel and proceed to Thekkady and check in the hotel. Then Proceed to full day local Thekkady sightseeing like - one of the world's most fascinating wild life reserves The Periyar wild life sanctuary is spread across 777 sq km of which 360 sq km is thick ever green forest and Boating at Periyar Lake, Spice Plantation visit and Elephant Ride. Overnight stay at Hotel." },
@@ -1165,18 +1148,20 @@ tourPackages.push({
             { day: "Day 6 - Kovalam - Trivandrum - Kovalam", description: "Morning after breakfast proceed to full day local Trivandrum sightseeing. Trivandrum is the or Thiruvananthapuram is the capital of Kerala and Trivandrum has an ancient city with a history dating back as early as 1000 BC. and The Padmanabhaswami Temple, Srichitra Art Gallery, Napier Museum and Zoo etc. Overnight stay at Hotel." },
             { day: "Day 7 - Kovalam - Kanyakumari", description: "Morning after breakfast proceeds to Kanyakumari. Check in the hotel and after taking some rest proceed to local Kanyakumari sightseein like Swami Vivekananda memorial statue, Padmanbhapuram Palace, Suchithram Temple, Devi Kanyakumari Temple, Gandhidham and Trivenisagam and the Sunset in the evening etc. Overnight stay at Hotel." },
             { day: "Day 8 - Kanyakumari - Trivendrum / Cochin Drop", description: "In the morning after breakfast check out from Hotel and proceed to Cochin. Drop at Cochin airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Kerala Backwater Tour.jpg"
+        ]
+        }
+    ]
 });
 tourPackages.push({
-    id:           51,
-    title:        "Kashmir Tour Package",
-    duration:     "02 NIGHTS/03 DAYS",
-    destinations: "Srinagar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+    id:             51,
+    title:          "Kashmir Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "kashmir",
+    image:          "Tour Package Images - Solanki Tours/paradise-kashmir.webp",
+    duration:       "02 NIGHTS/03 DAYS",
+    destinations:   "Srinagar",
+    inclusions:     [
             "1 Night Accommodation in Srinagar Houseboat",
             "1 Night Accommodation in Srinagar Hotel",
             "Welcome drink on arrival",
@@ -1186,22 +1171,38 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
             { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
             { day: "Day 3 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey" }
         ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
-});
-tourPackages.push({
-    id:           52,
-    title:        "Kashmir Tour Package",
-    duration:     "03 NIGHTS/04 DAYS",
-    destinations: "Srinagar - Gulmarg - Srinagar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "kas-2n",
+            duration:     "02 NIGHTS/03 DAYS",
+            destinations: "Srinagar",
+            inclusions:   [
+            "1 Night Accommodation in Srinagar Houseboat",
+            "1 Night Accommodation in Srinagar Hotel",
+            "Welcome drink on arrival",
+            "Daily Morning Bed Tea, Breakfast & Dinner",
+            "All Transfer & sightseeing by Individual Cab",
+            "Pick up and Drop Srinagar",
+            "Toll Taxes, Parking, Driver Allowance includes",
+            "All Taxes Include."
+        ],
+            itinerary:    [
+            { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
+            { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
+            { day: "Day 3 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey" }
+        ]
+        },
+        {
+            variantId:    "kas-3n",
+            duration:     "03 NIGHTS/04 DAYS",
+            destinations: "Srinagar - Gulmarg - Srinagar",
+            inclusions:   [
             "1 Night Accommodation in Srinagar Houseboat",
             "2 Night Accommodation in Srinagar Hotel",
             "Welcome drink on arrival",
@@ -1211,23 +1212,18 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
             { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
             { day: "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Gulmarg. The Beautiful Gulmarg with Splendor of Nature and Snowy Mountain. One can have Gondola Ride ( Cable Car ) From Gulmarg to Khilanmarg ( At Client's Own cost ). In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 4 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
-});
-tourPackages.push({
-    id:           53,
-    title:        "Kashmir Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Srinagar - Gulmarg - Pahalgam - Srinagar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "kas-4n",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Srinagar - Gulmarg - Pahalgam - Srinagar",
+            inclusions:   [
             "1 Night Accommodation in Srinagar Houseboat",
             "3 Night Accommodation in Srinagar Hotel",
             "Welcome drink on arrival",
@@ -1237,24 +1233,19 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
             { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
             { day: "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Gulmarg. The Beautiful Gulmarg with Splendor of Nature and Snowy Mountain. One can have Gondola Ride ( Cable Car ) From Gulmarg to Khilanmarg ( At Client's Own cost ). In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 4 - Srinagar - Pahalgam - Srinagar ( 95 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Pahalgam. Full day of Excursion Pahalgam and on te way visit Saffron Fields, Avantipura Ruims and Anantang, Sulphur Springs. Enjoy the nature and the roaring rivers. In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 5 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
-});
-tourPackages.push({
-    id:           54,
-    title:        "Kashmir Tour Package",
-    duration:     "05 NIGHTS/06 DAYS",
-    destinations: "Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "kas-5n",
+            duration:     "05 NIGHTS/06 DAYS",
+            destinations: "Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+            inclusions:   [
             "1 Night Accommodation in Srinagar Houseboat",
             "4 Night Accommodation in Srinagar Hotel",
             "Welcome drink on arrival",
@@ -1264,25 +1255,20 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
             { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
             { day: "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Gulmarg. The Beautiful Gulmarg with Splendor of Nature and Snowy Mountain. One can have Gondola Ride ( Cable Car ) From Gulmarg to Khilanmarg ( At Client's Own cost ). In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 4 - Srinagar - Pahalgam - Srinagar ( 95 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Pahalgam. Full day of Excursion Pahalgam and on te way visit Saffron Fields, Avantipura Ruims and Anantang, Sulphur Springs. Enjoy the nature and the roaring rivers. In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 5 - Srinagar - Sonmarg - Srinagar ( 85 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Sonmarg. Full day of Excursion of Sonmarg and Sonmarg is the Gateway of Ladakh. In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 6 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
-});
-tourPackages.push({
-    id:           55,
-    title:        "Kashmir Tour Package",
-    duration:     "06 NIGHTS/07 DAYS",
-    destinations: "Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "kas-6n",
+            duration:     "06 NIGHTS/07 DAYS",
+            destinations: "Srinagar - Gulmarg - Pahalgam - Sonmarg - Srinagar",
+            inclusions:   [
             "1 Night Accommodation in Srinagar Houseboat",
             "4 Night Accommodation in Srinagar Hotel",
             "1 Night Accommodation in Pahalgam Hotel",
@@ -1293,7 +1279,7 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Srinagar arrival", description: "On arrival at Srinagar airport, we will meet you and transfer to houseboat. Check in the houseboat and day free for local activities. Overnight stay at Houseboat." },
             { day: "Day 2 - Local Srinagar", description: "Morning after breakfast proceed to full day local Srinagar sightseeing like Mughal Gardens, The Nihat Bagh ( The Garden of Pleasure ), Shalimar Bagh, Shankracharya Temple and Magnificient Srinaga city and Lakes. Overnight stay at Hotel." },
             { day: "Day 3 - Srinagar - Gulmarg - Srinagar ( 60 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Gulmarg. The Beautiful Gulmarg with Splendor of Nature and Snowy Mountain. One can have Gondola Ride ( Cable Car ) From Gulmarg to Khilanmarg ( At Client's Own cost ). In evening back to Srinagar and Overnight stay at Hotel." },
@@ -1301,18 +1287,13 @@ tourPackages.push({
             { day: "Day 5 - Pahalgam - Srinagar ( 95 Kms )", description: "Morning after breakfast proceed to Srinagar. En route enjoy the Film city destination of Pahalgam and natural beauty. In evening check in the hotel and Overnight stay at Hotel." },
             { day: "Day 6 - Srinagar - Sonmarg - Srinagar ( 85 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Sonmarg. Full day of Excursion of Sonmarg and Sonmarg is the Gateway of Ladakh. In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 7 - Srinagar Drop", description: "Morning after breakfast check out from hotel and drop at Srinagar airport with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
-});
-tourPackages.push({
-    id:           56,
-    title:        "Kashmir Tour Package",
-    duration:     "09 NIGHTS/10 DAYS",
-    destinations: "Jammu - Katra - Patnitop - Srinagar - Gulmarg - Pahalgam - Sonmarg - Jammu Drop",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "kashmir",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "kas-9n",
+            duration:     "09 NIGHTS/10 DAYS",
+            destinations: "Jammu - Katra - Patnitop - Srinagar - Gulmarg - Pahalgam - Sonmarg - Jammu Drop",
+            inclusions:   [
             "2 Night Accommodation in Katra Hotel",
             "1 Night Accommodation in Patnitop Hotel",
             "5 Night Accommodation in Srinagar Hotel",
@@ -1324,7 +1305,7 @@ tourPackages.push({
             "Toll Taxes, Parking, Driver Allowance includes",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Jammu - Katra", description: "On arrival at Jammu, we will meet you and transfer to Katra. Check in the hotel and day at leisure. Overnight stay at Hotel." },
             { day: "Day 2 - Katra ( Vaishno Devi Darshan )", description: "Morning after breakfast proceed to Vaishno Devi Darshan. Overnight stay at Hotel." },
             { day: "Day 3 - Katra - Patnitop ( 50 Kms )", description: "Morning after breakfast proceed to Patnitop. Full day Excursion of Patnitop and Chinar Garden, Maha Devi Temple. One can enjoy activities like Trekking, Horse Riding, Long Walks in Cedar Trees. Overnight stay at Hotel." },
@@ -1335,18 +1316,20 @@ tourPackages.push({
             { day: "Day 8 - Pahalgam - Srinagar ( 95 Kms )", description: "Morning after breakfast proceed to Srinagar. En route enjoy the Film city destination of Pahalgam and natural beauty. In evening check in the hotel and Overnight stay at Hotel." },
             { day: "Day 9 - Srinagar - Sonmarg - Srinagar ( 85 Kms )", description: "Morning after breakfast proceed to full day sightseeing of Sonmarg. Full day of Excursion of Sonmarg and Sonmarg is the Gateway of Ladakh. In evening back to Srinagar and Overnight stay at Hotel." },
             { day: "Day 10 - Srinagar - Jammu Drop", description: "Morning after breakfast check out from hotel and proceed to Jammu. Drop at Jammu airport, railway station with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/paradise-kashmir.webp"
+        ]
+        }
+    ]
 });
 tourPackages.push({
-    id:           57,
-    title:        "North East Tour Package",
-    duration:     "03 NIGHTS/04 DAYS",
-    destinations: "Darjeeling",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "northeast",
-    inclusions:   [
+    id:             57,
+    title:          "North East Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "northeast",
+    image:          "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg",
+    duration:       "03 NIGHTS/04 DAYS",
+    destinations:   "Darjeeling",
+    inclusions:     [
             "3 Nights Accommodation in Darjeeling",
             "Welcome drink on arrival",
             "Daily Breakfast at Hotel",
@@ -1354,23 +1337,38 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
             { day: "Day 3 - Darjeeling - Mirik - Darjeeling", description: "Morning after breakfast proceed to full excursion tour to Mirik Lake ( 4900 ft ) route Indo - Nepal Border. Mirik is famous for its man-made Sumendu Lake, Cardamom plantations and tea estates, Boating in lake. In evening back to Darjeeling and Overnight stay in Hotel." },
             { day: "Day 4 - Darjeeling - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey." }
         ],
-    image:        "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg"
-});
-tourPackages.push({
-    id:           58,
-    title:        "North East Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Darjeeling - Gangtok",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "northeast",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "ne-3n",
+            duration:     "03 NIGHTS/04 DAYS",
+            destinations: "Darjeeling",
+            inclusions:   [
+            "3 Nights Accommodation in Darjeeling",
+            "Welcome drink on arrival",
+            "Daily Breakfast at Hotel",
+            "Pick up and Drop at NJP Raliway Station / IXB Airport",
+            "All transport and sightseeing by Individual Car",
+            "All taxes are include."
+        ],
+            itinerary:    [
+            { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
+            { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
+            { day: "Day 3 - Darjeeling - Mirik - Darjeeling", description: "Morning after breakfast proceed to full excursion tour to Mirik Lake ( 4900 ft ) route Indo - Nepal Border. Mirik is famous for its man-made Sumendu Lake, Cardamom plantations and tea estates, Boating in lake. In evening back to Darjeeling and Overnight stay in Hotel." },
+            { day: "Day 4 - Darjeeling - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey." }
+        ]
+        },
+        {
+            variantId:    "ne-4n",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Darjeeling - Gangtok",
+            inclusions:   [
             "2 Nights Accommodation in Darjeeling",
             "2 Nights Accommodation in Gangtok",
             "Welcome drink on arrival",
@@ -1379,24 +1377,19 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
             { day: "Day 3 - Darjeeling - Gangtok ( Local Gangtok )", description: "Morning after breakfast proceed to Gangtok. Check in the hotel and after taking some rest proceed to local Gangtok sightseeing like Banzakhri Falls, Cottage Industry and Handicraft Centre, Flower Show, Dro - dul Chorten & Institute of Tibetology etc. Overnight stay in Hotel." },
             { day: "Day 4 - Gangtok ( Tsomgo Lake & Baba Mandir )", description: "Morning after breakfast proceed to excursion of Tsomgo Lake ( 12,400 ft. ) & Baba Mandir ( 13,200 ft. ). In evening back to Gangtok and Overnight stay in Hotel." },
             { day: "Day 5 - Gangtok - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey ." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg"
-});
-tourPackages.push({
-    id:           59,
-    title:        "North East Package",
-    duration:     "05 NIGHTS/06 DAYS",
-    destinations: "Darjeeling - Kalimpong - Gangtok",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "northeast",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ne-5n",
+            duration:     "05 NIGHTS/06 DAYS",
+            destinations: "Darjeeling - Kalimpong - Gangtok",
+            inclusions:   [
             "2 Nights Accommodation in Darjeeling",
             "1 Night Accommodation in Kalimpong",
             "2 Nights Accommodation in Gangtok",
@@ -1406,25 +1399,20 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
             { day: "Day 3 - Darjeeling - Kalimpong ( Local Kalimpong )", description: "Morning after breakfast proceed to Kalimpong. Check in the hotel and after taking some rest proceed to local Kalimpong sightseeing like Mangal Dham, Deolo Hill, Dr. Graham's Home, Golf Garden, Durpin Dara Hill & Flower Nurseries etc. Overnight stay in Hotel." },
             { day: "Day 4 - Kalimpong - Gangtok ( Local Gangtok )", description: "Morning after breakfast proceed to Gangtok. Check in the hotel and after taking some rest proceed to local Gangtok sightseeing like Banzakhri Falls, Cottage Industry and Handicraft Center, Flower Show, Dro - dul Chorten & Institute of Tibetology etc. Overnight stay in Hotel." },
             { day: "Day 5 - Gangtok ( Tsomgo Lake & Baba Mandir )", description: "Morning after breakfast proceed to excursion of Tsomgo Lake ( 12,400 ft. ) & Baba Mandir ( 13,200 ft. ). In evening back to Gangtok and Overnight stay in Hotel." },
             { day: "Day 6 - Gangtok - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey ." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg"
-});
-tourPackages.push({
-    id:           60,
-    title:        "North East Package",
-    duration:     "07 NIGHTS/08 DAYS",
-    destinations: "Darjeeling - Pelling - Gangtok",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "northeast",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ne-7n",
+            duration:     "07 NIGHTS/08 DAYS",
+            destinations: "Darjeeling - Pelling - Gangtok",
+            inclusions:   [
             "2 Nights Accommodation in Darjeeling",
             "2 Nights Accommodation in Pelling",
             "3 Nights Accommodation in Gangtok",
@@ -1434,7 +1422,7 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
             { day: "Day 3 - Darjeeling - Pelling", description: "Morning after breakfast proceed to Pelling. Check in the hotel and after taking some rest proceed to local Market visit. Overnight stay in Hotel." },
@@ -1443,18 +1431,13 @@ tourPackages.push({
             { day: "Day 6 - Gangtok ( Local Gangtok )", description: "Morning after breakfast proceed to local Gangtok sightseeing like Tashi View Point, Banzakhri Falls, Cottage Industry and Handicraft Center, Flower Show, Dro - dul Chorten & Institute of Tibetology etc. Overnight stay in Hotel." },
             { day: "Day 7 - Gangtok ( Tsomgo Lake & Baba Mandir )", description: "Morning after breakfast proceed to excursion of Tsomgo Lake ( 12,400 ft. ) and Baba Mandir ( 13,200 ft. ). In evening back to Gangtok and Overnight stay in Hotel." },
             { day: "Day 8 - Gangtok - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey ." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg"
-});
-tourPackages.push({
-    id:           61,
-    title:        "North East Package",
-    duration:     "08 NIGHTS/09 DAYS",
-    destinations: "Darjeeling - Kalimpong - Pelling - Gangtok",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "northeast",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "ne-8n",
+            duration:     "08 NIGHTS/09 DAYS",
+            destinations: "Darjeeling - Kalimpong - Pelling - Gangtok",
+            inclusions:   [
             "2 Nights Accommodation in Darjeeling",
             "2 Nights Accommodation in Pelling",
             "3 Nights Accommodation in Gangtok",
@@ -1464,7 +1447,7 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - NJP Railway Station / IXB Airport - Darjeeling ( 95 Kms. )", description: "On arrival at NJP Railway Station / IXB Airport, we will meet you and transfer to Darjeeling. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Darjeeling ( Local Darjeeling )", description: "Early Morning proceed to Tiger hill to see the Spectacular Sunrise over Mt. Khangchendzongha ( 28,208 ft. Worlds 3rd highest peak ), on the way back visit Ghoom Monastery and Batasia Loop. Himalayan Mountaineering Institute, P.N.Zoological Park, Tenzing Rock, TIbetan Refugee Self-Help Center, Tea Garden, Japanese Temple etc. Overnight stay in Hotel." },
             { day: "Day 3 - Darjeeling - Kalimpong ( Local Kalimpong )", description: "Morning after breakfast proceed to Kalimpong. Check in the hotel and after taking some rest proceed to local Kalimpong sightseeing like Mangal Dham, Deolo Hill, Dr. Graham's Home, Golf Garden, Durpin Dara Hill & Flower Nurseries etc. Overnight stay in Hotel." },
@@ -1474,18 +1457,20 @@ tourPackages.push({
             { day: "Day 7 - Gangtok ( Local Gangtok )", description: "Morning after breakfast proceed to local Gangtok sightseeing like Tashi View Point, Banzakhri Falls, Cottage Industry and Handicraft Centre, Flower Show, Dro - dul Chorten & Institute of Tibetology etc. Overnight stay in Hotel." },
             { day: "Day 8 - Gangtok ( Tsomgo Lake & Baba Mandir )", description: "Morning after breakfast proceed to excursion of Tsomgo Lake ( 12,400 ft. ) & Baba Mandir ( 13,200 ft. ). In evening back to Gangtok and Overnight stay in Hotel." },
             { day: "Day 9 - Gangtok - NJP Railway Station / IXB Airport Drop", description: "Morning after breakfast check out from Hotel and Drop at NJP Railway Station / IXB Airport with onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/darjeeling Gangtok Tour.jpg"
+        ]
+        }
+    ]
 });
 tourPackages.push({
-    id:           62,
-    title:        "Rajasthan Tour Package",
-    duration:     "03 NIGHTS/04 DAYS",
-    destinations: "Delhi - Jaipur - Delhi",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+    id:             62,
+    title:          "Rajasthan Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "rajasthan",
+    image:          "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg",
+    duration:       "03 NIGHTS/04 DAYS",
+    destinations:   "Delhi - Jaipur - Delhi",
+    inclusions:     [
             "1 Night Accommodation in Delhi",
             "2 Nights Accommodation in Jaipur",
             "Welcome drink on arrival",
@@ -1494,23 +1479,39 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
             { day: "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled \"pink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. Arrive Jaipur and check in the hotel and evening free. Overnight stay in Hotel." },
             { day: "Day 3 - Jaipur ( Local Jaipur )", description: "Morning after breakfast proceed to local Jaipur Sightseeing like the majestic Amber Fort, is one that cannot be easily described. Ride up on Elephants to the former capital of the royals set against the backdrop of the wooded hills. Later visit the City Palace, Palace of Winds also known as Hawa Mahal, this elaborate building, now little more than a faÃ§ade, is encrusted with delicate screen sand carved balconies from which the royal ladies, confined to their quarters, could sneak views of the outside world. Past, present and future merge at Jai Singh's observatory, where time has been accurately measured since the 17th century. Overnight stay in Hotel." },
             { day: "Day 4 - Jaipur - Delhi Drop ( 265 Kms. )", description: "Morning after breakfast check out from Hotel and proceed to Delhi. Drop at Delhi airport, railway station with onward journey." }
         ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-});
-tourPackages.push({
-    id:           63,
-    title:        "Rajasthan Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Delhi - Agra - Jaipur ( Golden Triangle )",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "raj-3n",
+            duration:     "03 NIGHTS/04 DAYS",
+            destinations: "Delhi - Jaipur - Delhi",
+            inclusions:   [
+            "1 Night Accommodation in Delhi",
+            "2 Nights Accommodation in Jaipur",
+            "Welcome drink on arrival",
+            "Daily Breakfast at Hotel",
+            "Pick up and Drop at Delhi",
+            "All transport and sightseeing by Individual Car",
+            "All taxes are include."
+        ],
+            itinerary:    [
+            { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
+            { day: "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled \"pink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. Arrive Jaipur and check in the hotel and evening free. Overnight stay in Hotel." },
+            { day: "Day 3 - Jaipur ( Local Jaipur )", description: "Morning after breakfast proceed to local Jaipur Sightseeing like the majestic Amber Fort, is one that cannot be easily described. Ride up on Elephants to the former capital of the royals set against the backdrop of the wooded hills. Later visit the City Palace, Palace of Winds also known as Hawa Mahal, this elaborate building, now little more than a faÃ§ade, is encrusted with delicate screen sand carved balconies from which the royal ladies, confined to their quarters, could sneak views of the outside world. Past, present and future merge at Jai Singh's observatory, where time has been accurately measured since the 17th century. Overnight stay in Hotel." },
+            { day: "Day 4 - Jaipur - Delhi Drop ( 265 Kms. )", description: "Morning after breakfast check out from Hotel and proceed to Delhi. Drop at Delhi airport, railway station with onward journey." }
+        ]
+        },
+        {
+            variantId:    "raj-4n-golden",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Delhi - Agra - Jaipur ( Golden Triangle )",
+            inclusions:   [
             "1 Night Accommodation in Delhi",
             "1 Night Accommodation in Agra",
             "2 Nights Accommodation in Jaipur",
@@ -1520,24 +1521,19 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
             { day: "Day 2 - Delhi - Agra ( Local Agra ) 200 Kms.", description: "Morning after breakfast proceed to Agra and en route Sikandra sightseeing. In Agra check in the hotel and proceed to local Agra sightseeing like Taj Mahal, Agra Fort, It mad ud daulla etc. Overnight stay in Hotel." },
             { day: "Day 3 - Agra - Jaipur ( Local Jaipur ) 235 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled \"pink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. The palaces and forts of the yesteryears, which were witnesses to the royal processions and splendours are now living monuments enroute visiting Fatehpur Sikri-a perfectly preserved red sandstone Ã¢â¬Åghost town\" which was the estranged capital of mughal emperor Akbar, built in 1569 and deserted when its water supply failed. Arrive Jaipur in late evening & transfer to hotel. Overnight stay in Hotel." },
             { day: "Day 4 - Jaipur ( Local Jaipur )", description: "Morning after breakfast proceed to local Jaipur Sightseeing like the majestic Amber Fort, is one that cannot be easily described. Ride up on Elephants to the former capital of the royals set against the backdrop of the wooded hills. Later visit the City Palace, Palace of Winds also known as Hawa Mahal, this elaborate building, now little more than a faÃÂ§ade, is encrusted with delicate screen sand carved balconies from which the royal ladies, confined to their quarters, could sneak views of the outside world. Past, present and future merge at Jai Singh's observatory, where time has been accurately measured since the 17th century. Overnight stay in Hotel." },
             { day: "Day 5 - Jaipur- Delhi Drop 265 Kms.", description: "Morning after breakfast proceed to Delhi and Drop at Delhi airport, railway station with onward journey .." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-});
-tourPackages.push({
-    id:           64,
-    title:        "Rajasthan Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Delhi - Jaipur - Ajmer - Pushkar",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "raj-4n-pushkar",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Delhi - Jaipur - Ajmer - Pushkar",
+            inclusions:   [
             "1 Night Accommodation in Delhi",
             "1 Night Accommodation in Pushkar",
             "2 Nights Accommodation in Jaipur",
@@ -1547,24 +1543,19 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
             { day: "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled â€œpink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. Arrive Jaipur and check in the hotel and evening free. Overnight stay in Hotel." },
             { day: "Day 3 - Jaipur ( Local Jaipur )", description: "Morning after breakfast proceed to local Jaipur Sightseeing like the majestic Amber Fort, is one that cannot be easily described. Ride up on Elephants to the former capital of the royals set against the backdrop of the wooded hills. Later visit the City Palace, Palace of Winds also known as Hawa Mahal, this elaborate building, now little more than a faÃ§ade, is encrusted with delicate screen sand carved balconies from which the royal ladies, confined to their quarters, could sneak views of the outside world. Past, present and future merge at Jai Singh's observatory, where time has been accurately measured since the 17th century. Overnight stay in Hotel." },
             { day: "Day 4 - Jaipur - Ajmer - Pushkar ( 145 Kms. )", description: "Morning after breakfast proceed to Ajmer. In Ajmer visit The Dargah of the Great Sufi Sain Khwaja Moinuddin Chishti, Madintual Hind and The Madina of India and Mosque of white marble then proceed to Pushkar. Pushkar is just 15kms from Ajmer, In Pushkar visit Brahma Temple. Pushkat boasts of its temple and evening free for local Market visit. Overnight stay at Hotel." },
             { day: "Day 5 - Pushkar - Delhi Drop ( 400 Kms. )", description: "Morning after breakfast check out from Hotel and proceed to Delhi. Drop at Delhi airport, railway station with onward journey" }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-});
-tourPackages.push({
-    id:           65,
-    title:        "Rajasthan Tour Package",
-    duration:     "06 NIGHTS/07 DAYS",
-    destinations: "Delhi - Jaipur - Ajmer - Pushkar - Udaipur",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "raj-6n",
+            duration:     "06 NIGHTS/07 DAYS",
+            destinations: "Delhi - Jaipur - Ajmer - Pushkar - Udaipur",
+            inclusions:   [
             "1 Night Accommodation in Delhi",
             "1 Night Accommodation in Pushkar",
             "2 Nights Accommodation in Jaipur",
@@ -1575,7 +1566,7 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
             { day: "Day 2 - Delhi - Jaipur ( Local Jaipur ) 265 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled â€œpink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. Arrive Jaipur and check in the hotel and evening free. Overnight stay in Hotel." },
             { day: "Day 3 - Jaipur ( Local Jaipur )", description: "Morning after breakfast proceed to local Jaipur Sightseeing like the majestic Amber Fort, is one that cannot be easily described. Ride up on Elephants to the former capital of the royals set against the backdrop of the wooded hills. Later visit the City Palace, Palace of Winds also known as Hawa Mahal, this elaborate building, now little more than a faÃ§ade, is encrusted with delicate screen sand carved balconies from which the royal ladies, confined to their quarters, could sneak views of the outside world. Past, present and future merge at Jai Singh's observatory, where time has been accurately measured since the 17th century. Overnight stay in Hotel." },
@@ -1583,18 +1574,13 @@ tourPackages.push({
             { day: "Day 5 - Pushkar - Udaipur ( 300 Kms. )", description: "Morning after breakfast proceed to Udaipur. En route sightseeing of Ranakpur. In evening Check in the hotel in Udaipur and evening free for local market visit. Overnight stay at Hotel." },
             { day: "Day 6 - Udaipur ( Local Udaipur )", description: "Morning after breakfast proceed to local sightseeing of Udaipur. Visit the Lake Pichola set on The backdrop of Aravali hills, The City Palace museum, the Jagdish Temple, Sahelion kin Bari ( Queen's resort for their friends ) Bhartiya Lok Kala Mandir and Pratap Memorial. Overnight stay in Hotel." },
             { day: "Day 7 - Udipur Drop( 400 Kms. )", description: "Morning after breakfast check out from Hotel and Drop at Udaipur airport, railway station with onward journey ." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-});
-tourPackages.push({
-    id:           66,
-    title:        "Rajasthan Tour Package",
-    duration:     "07 NIGHTS/08 DAYS",
-    destinations: "Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "raj-7n",
+            duration:     "07 NIGHTS/08 DAYS",
+            destinations: "Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+            inclusions:   [
             "2 Nights Accommodation in Udaipur",
             "1 Night Accommodation in Mount Abu",
             "1 Night Accommodation in Jodhpur",
@@ -1606,7 +1592,7 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Udaipur arrival", description: "On arrival at Udaipur, we will meet you and transfer to hotel. Check in the hotel and day at leisure for local market visit. Overnight stay in Hotel." },
             { day: "Day 2 - Udaipur ( Local Udaipur )", description: "Morning after breakfast proceed to local sightseeing of Udaipur. Visit the Lake Pichola set on The backdrop of Aravali hills, The City Palace museum, the Jagdish Temple, Sahelion kin Bari ( Queen's resort for their friends ) Bhartiya Lok Kala Mandir and Pratap Memorial. Overnight stay in Hotel." },
             { day: "Day 3 - Udaipur - Mount Abu", description: "Morning after breakfast proceed to Mount Abu. Mount Abu is a Hill station in Rajasthan. In Mount Abu a number of Jain Temples. In Mount Abu check in the hotel and proceed to local Mount abu sightseeing like Delwara Jain Temple Complex, Nakki Lake and Sunset Point etc. Overnight stay in Hotel." },
@@ -1615,18 +1601,13 @@ tourPackages.push({
             { day: "Day 6 - Jaisalmer", description: "Morning after breakfast proceed to local Jaisalmer sightseeing like The exciting Sam or Khuri village ( Famous for Camel Cart ride ) and Sunset point on the sand dunes. You can enjoy the Camel safari in the Jaisalmet desert and the cultural programs preformed by the local artists and musicians and other desert safari etc. Overnight stay in Hotel." },
             { day: "Day 7 - Jaisalmer - Mandawa", description: "Morning after breakfast proceed to Mandawa. Check in the hotel and after taking some rest proceed to local Mandawa sightseeing like The exquisite small village of Shekhawati this place is embellished by many ravishing havelis of 18th and 19th century built by the rich and the famous merchants and the famous paintings of the village. Overnight stay in Hotel." },
             { day: "Day 8 - Mandawa", description: "Morning after breakfast check out from hotel and drop at airport, railway station with onward journey" }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
-});
-tourPackages.push({
-    id:           67,
-    title:        "Rajasthan Tour Package",
-    duration:     "13 NIGHTS/14 DAYS",
-    destinations: "Cochin - Delhi - Agra - Jaipur - Ajmer - Pushkar - Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "rajasthan",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "raj-13n",
+            duration:     "13 NIGHTS/14 DAYS",
+            destinations: "Cochin - Delhi - Agra - Jaipur - Ajmer - Pushkar - Udaipur - Mount Abu - Jodhpur - Jaisalmer - Mandawa",
+            inclusions:   [
             "1 Night Accommodation in Delhi",
             "1 Night Accommodation in Agra",
             "2 Night Accommodation in Jaipur",
@@ -1642,7 +1623,7 @@ tourPackages.push({
             "All transport and sightseeing by Individual Car",
             "All taxes are include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi arrival ( Local Delhi )", description: "On arrival at Delhi, we will meet you and transfer to hotel. Check in the hotel and after taking some rest proceed to local Delhi sightseeing like Raj-Ghat, India Gate, President Bhawan, Qutub Minnar, Lotus Temple etc. Overnight stay in Hotel." },
             { day: "Day 2 - Delhi - Agra ( Local Agra ) 200 Kms.", description: "Morning after breakfast proceed to Agra and en route Sikandra sightseeing. In Agra check in the hotel and proceed to local Agra sightseeing like Taj Mahal, Agra Fort, It mad ud daulla etc. Overnight stay in Hotel." },
             { day: "Day 3 - Agra - Jaipur ( Local Jaipur ) 235 Kms.", description: "Morning after breakfast proceed to Jaipur- the fabled â€œpink city\" of the desert named after Jai Singh, the former Maharaja of Jaipur. This is the only city in the world symbolizing the nine divisions of the universe through the nine rectangular sectors subdividing it. The palaces and forts of the yesteryears, which were witnesses to the royal processions and splendours are now living monuments enroute visiting Fatehpur Sikri-a perfectly preserved red sandstone â€œghost town\" which was the estranged capital of mughal emperor Akbar, built in 1569 and deserted when its water supply failed. Arrive Jaipur in late evening & transfer to hotel. Overnight stay in Hotel." },
@@ -1657,18 +1638,20 @@ tourPackages.push({
             { day: "Day 12 - Jaisalmer - Mandawa", description: "Morning after breakfast proceed to Mandawa. Check in the hotel and after taking some rest proceed to local Mandawa sightseeing like The exquisite small village of Shekhawati this place is embellished by many ravishing havelis of 18th and 19th century built by the rich and the famous merchants and the famous paintings of the village. Overnight stay in Hotel." },
             { day: "Day 13 - Mandawa - Bikaner", description: "Morning after breakfast proceed to Bikaner. Check in the hotel and after taking some rest proceed to local Bikaner sightseeing like Havelis, Famous park and cultural programs etc. Overnight stay at Hotel." },
             { day: "Day 14 - Bikaner - Delhi", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station with onward journey" }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Golden Triangle Tour.jpg"
+        ]
+        }
+    ]
 });
 tourPackages.push({
-    id:           68,
-    title:        "Uttarakhand Tour Package",
-    duration:     "03 NIGHTS/04 DAYS",
-    destinations: "Delhi - Nainital - Delhi",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "uttarakhand",
-    inclusions:   [
+    id:             68,
+    title:          "Uttarakhand Tour Package",
+    price:          "Contact Us",
+    category:       "domestic",
+    region:         "uttarakhand",
+    image:          "Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg",
+    duration:       "03 NIGHTS/04 DAYS",
+    destinations:   "Delhi - Nainital - Delhi",
+    inclusions:     [
             "3 Nights Accommodation in Nanital",
             "Welcome drink on arrival",
             "Daily Breakfast & Dinner at Hotel",
@@ -1676,23 +1659,38 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+    itinerary:      [
             { day: "Day 1 - Delhi - Nainital", description: "On arrival at Delhi, our representative will meet you and proceed to Nanital. Check in the hotel and after some rest visit to local market Overnight stay at Hotel." },
             { day: "Day 2 - Nainital", description: "Morning after breakfast visit to Nanital sightseeing like Naini Lake, Mall road, Boating Club, Cable Car Ride & Thandi Sadak etc. Overnight stay at Hotel." },
             { day: "Day 3 - Nainital", description: "Morning after breakfast proceed to Nanital sightseeing like lakes tour of Bhim Tal, Sat Tal, Naukuchia Tal , Snow point & Mall road. Overnight stay at Hotel." },
             { day: "Day 4 - Nanital - Delhi", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station for onward journey." }
         ],
-    image:        "Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg"
-});
-tourPackages.push({
-    id:           69,
-    title:        "Uttarakhand Tour Package",
-    duration:     "04 NIGHTS/05 DAYS",
-    destinations: "Delhi -Nainital - Corbett - Delhi",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "uttarakhand",
-    inclusions:   [
+    defaultVariant: 0,
+    variants: [
+        {
+            variantId:    "utt-3n",
+            duration:     "03 NIGHTS/04 DAYS",
+            destinations: "Delhi - Nainital - Delhi",
+            inclusions:   [
+            "3 Nights Accommodation in Nanital",
+            "Welcome drink on arrival",
+            "Daily Breakfast & Dinner at Hotel",
+            "Pick up and Drop ex Delhi",
+            "All Transport and Sightseeing by Individual Car",
+            "All Taxes Include."
+        ],
+            itinerary:    [
+            { day: "Day 1 - Delhi - Nainital", description: "On arrival at Delhi, our representative will meet you and proceed to Nanital. Check in the hotel and after some rest visit to local market Overnight stay at Hotel." },
+            { day: "Day 2 - Nainital", description: "Morning after breakfast visit to Nanital sightseeing like Naini Lake, Mall road, Boating Club, Cable Car Ride & Thandi Sadak etc. Overnight stay at Hotel." },
+            { day: "Day 3 - Nainital", description: "Morning after breakfast proceed to Nanital sightseeing like lakes tour of Bhim Tal, Sat Tal, Naukuchia Tal , Snow point & Mall road. Overnight stay at Hotel." },
+            { day: "Day 4 - Nanital - Delhi", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station for onward journey." }
+        ]
+        },
+        {
+            variantId:    "utt-4n",
+            duration:     "04 NIGHTS/05 DAYS",
+            destinations: "Delhi -Nainital - Corbett - Delhi",
+            inclusions:   [
             "2 Nights Accommodation in Nanital",
             "2 Nights Accommodation in Corbett",
             "Welcome drink on arrival",
@@ -1701,24 +1699,19 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi - Nainital", description: "On arrival at Delhi, our representative will meet you and proceed to Nanital. Check in the hotel and after some rest visit to local market Overnight stay at Hotel." },
             { day: "Day 2 - Nainital", description: "Morning after breakfast visit to Nanital sightseeing like Naini Lake, Mall road, Boating Club, Cable Car Ride & Thandi Sadak etc. Overnight stay at Hotel." },
             { day: "Day 3 -Nainital - Corbett", description: "Morning after breakfast visit to Corbett- a national park most famous for hill & Shivalik ranges and is being called as the perfect tigers land. Check in the hotel in Corbett and rest of the day free. Overnight stay at Hotel." },
             { day: "Day 4 - Corbett", description: "Morning after breakfast proceed to Jim Park Corbett, Elephant Safari then back to Hotel. Overnight stay at Hotel." },
             { day: "Day 5 - Corbett", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station for your onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg"
-});
-tourPackages.push({
-    id:           70,
-    title:        "Uttarakhand Tour Package",
-    duration:     "06 NIGHTS/07 DAYS",
-    destinations: "Delhi - Nainital - Corbett - Mussoorie - Delhi",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "uttarakhand",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "utt-6n",
+            duration:     "06 NIGHTS/07 DAYS",
+            destinations: "Delhi - Nainital - Corbett - Mussoorie - Delhi",
+            inclusions:   [
             "2 Nights Accommodation in Nanital",
             "2 Nights Accommodation in Corbett",
             "2 Nights Accommodation in Mussoorie",
@@ -1728,7 +1721,7 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi - Nainital", description: "On arrival at Delhi, our representative will meet you and proceed to Nanital. Check in the hotel and after some rest visit to local market Overnight stay at Hotel." },
             { day: "Day 2 - Nainital", description: "Morning after breakfast visit to Nanital sightseeing like Naini Lake, Mall road, Boating Club, Cable Car Ride & Thandi Sadak etc. Overnight stay at Hotel." },
             { day: "Day 3 -Nainital - Corbett", description: "Morning after breakfast visit to Corbett- a national park most famous for hill & Shivalik ranges and is being called as the perfect tigers land. Check in the hotel in Corbett and rest of the day free. Overnight stay at Hotel." },
@@ -1736,18 +1729,13 @@ tourPackages.push({
             { day: "Day 5 - Corbett - Mussoorie", description: "Morning after breakfast proceed to Mussoorie. Check in the hotel and after taking some rest proceed to local Market and Mall Road visit. Overnight stay at Hotel." },
             { day: "Day 6 - Mussoorie", description: "Morning after breakfast proceed to local Sightseeing like Kempty Fall, Lal Tibba, Gun Hill, Municipal Garden etc. Overnight stay at Hotel." },
             { day: "Day 7 - Mussoorie - Delhi", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station for onward journey." }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg"
-});
-tourPackages.push({
-    id:           71,
-    title:        "Uttarakhand Tour Package",
-    duration:     "08 NIGHTS/09 DAYS",
-    destinations: "Delhi -Nainital - Corbett - Ranikhet - Kausani - Mussoorie - Delhi",
-    price:        "Contact Us",
-    category:     "domestic",
-    region:       "uttarakhand",
-    inclusions:   [
+        ]
+        },
+        {
+            variantId:    "utt-8n",
+            duration:     "08 NIGHTS/09 DAYS",
+            destinations: "Delhi -Nainital - Corbett - Ranikhet - Kausani - Mussoorie - Delhi",
+            inclusions:   [
             "2 Nights Accommodation in Nanital",
             "2 Nights Accommodation in Corbett",
             "2 Nights Accommodation in Mussoorie",
@@ -1758,7 +1746,7 @@ tourPackages.push({
             "All Transport and Sightseeing by Individual Car",
             "All Taxes Include."
         ],
-    itinerary:    [
+            itinerary:    [
             { day: "Day 1 - Delhi - Nainital", description: "On arrival at Delhi, our representative will meet you and proceed to Nanital. Check in the hotel and after some rest visit to local market Overnight stay at Hotel." },
             { day: "Day 2 - Nainital", description: "Morning after breakfast visit to Nanital sightseeing like Naini Lake, Mall road, Boating Club, Cable Car Ride & Thandi Sadak etc. Overnight stay at Hotel." },
             { day: "Day 3 -Nainital - Corbett", description: "Morning after breakfast visit to Corbett- a national park most famous for hill & Shivalik ranges and is being called as the perfect tigers land. Check in the hotel in Corbett and rest of the day free. Overnight stay at Hotel." },
@@ -1768,8 +1756,9 @@ tourPackages.push({
             { day: "Day 7 - Ranikhet - Mussoorie", description: "Morning after breakfast proceed to Mussoorie. Check in the hotel and after taking some rest proceed to local Market and Mall Road visit. Overnight stay at Hotel." },
             { day: "Day 8 - Mussoorie", description: "Morning after breakfast proceed to local Sightseeing like Kempty Fall, Lal Tibba, Gun Hill, Municipal Garden etc. Overnight stay at Hotel." },
             { day: "Day 9 - Mussoorie - Delhi", description: "Morning after breakfast check out from hotel and proceed to Delhi. Drop at Delhi airport, railway station with onward journey" }
-        ],
-    image:        "Tour Package Images - Solanki Tours/Uttarakhand Hill Station tour.jpg"
+        ]
+        }
+    ]
 });
 tourPackages.push({
     id:           72,

@@ -1,13 +1,15 @@
 // Package Detail Page JavaScript
 
 let currentPackage = null;
+let currentVariantIndex = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get package ID from URL
+    // Get package ID and optional variant from URL
     const packageId = parseInt(getUrlParameter('id'));
-    
+    const variantParam = getUrlParameter('variant');
+
     if (packageId) {
-        loadPackageDetails(packageId);
+        loadPackageDetails(packageId, variantParam);
     } else {
         // Redirect to packages page if no ID
         window.location.href = 'packages.html';
@@ -32,98 +34,147 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Load package details
-function loadPackageDetails(id) {
+// Load package details, with optional variant selection
+function loadPackageDetails(id, variantParam) {
     currentPackage = tourPackages.find(pkg => pkg.id === id);
-    
+
     if (!currentPackage) {
         window.location.href = 'packages.html';
         return;
     }
-    
+
+    // Resolve which variant to show
+    if (currentPackage.variants && currentPackage.variants.length > 0) {
+        if (variantParam) {
+            const idx = currentPackage.variants.findIndex(v => v.variantId === variantParam);
+            currentVariantIndex = idx >= 0 ? idx : (currentPackage.defaultVariant || 0);
+        } else {
+            currentVariantIndex = currentPackage.defaultVariant || 0;
+        }
+    } else {
+        currentVariantIndex = 0;
+    }
+
     // Update page title
     document.title = `${currentPackage.title} - Solanki Tours`;
-    
+
     // Update breadcrumb
     const breadcrumb = document.getElementById('package-breadcrumb');
-    if (breadcrumb) {
-        breadcrumb.textContent = currentPackage.title;
-    }
-    
+    if (breadcrumb) breadcrumb.textContent = currentPackage.title;
+
     // Update hero image
     const heroImage = document.getElementById('package-hero');
     if (heroImage) {
         heroImage.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${currentPackage.image}')`;
     }
-    
+
     // Update title
     const titleEl = document.getElementById('package-title');
-    if (titleEl) {
-        titleEl.textContent = currentPackage.title;
-    }
-    
-    // Update duration
-    const durationEl = document.getElementById('package-duration');
-    if (durationEl) {
-        durationEl.textContent = formatDuration(currentPackage.duration);
-    }
-    
-    // Update destinations
-    const destEl = document.getElementById('package-destinations');
-    if (destEl) {
-        destEl.textContent = currentPackage.destinations;
-    }
-    
-    // Update overview
-    const overviewEl = document.getElementById('package-overview');
-    if (overviewEl) {
-        overviewEl.textContent = generateOverview(currentPackage);
-    }
-    
-    // Update inclusions
-    const inclusionsEl = document.getElementById('package-inclusions');
-    if (inclusionsEl) {
-        inclusionsEl.innerHTML = currentPackage.inclusions
-            .map(inc => `<li>${inc}</li>`)
-            .join('');
-    }
-    
-    // Update itinerary
-    const itineraryEl = document.getElementById('package-itinerary');
-    if (itineraryEl) {
-        itineraryEl.innerHTML = generateItinerary(currentPackage);
-    }
-    
+    if (titleEl) titleEl.textContent = currentPackage.title;
+
+    // Render variant tabs for consolidated packages
+    renderVariantTabs(currentPackage, currentVariantIndex);
+
+    // Render variant-specific content
+    renderVariantContent(currentPackage, currentVariantIndex);
+
     // Update price
     const priceEl = document.getElementById('package-price');
-    if (priceEl) {
-        priceEl.textContent = currentPackage.price;
-    }
-    
+    if (priceEl) priceEl.textContent = currentPackage.price;
+
     // Update best time
     const bestTimeEl = document.getElementById('best-time');
-    if (bestTimeEl) {
-        bestTimeEl.textContent = getBestTime(currentPackage.region);
-    }
-    
+    if (bestTimeEl) bestTimeEl.textContent = getBestTime(currentPackage.region);
+
     // Load related packages
     loadRelatedPackages(currentPackage);
 }
 
-// Generate overview text
-function generateOverview(pkg) {
-    const nights = getNights(pkg.duration);
-    const category = pkg.category === 'international' ? 'international' : 'domestic';
-    
-    return `Embark on an unforgettable ${nights}-night journey through ${pkg.destinations}. This carefully curated ${category} tour package offers the perfect blend of adventure, relaxation, and cultural experiences. Whether you're traveling with family, friends, or as a couple, this ${pkg.title.toLowerCase()} promises memories that will last a lifetime. Our expert team has designed this itinerary to showcase the best of the region while ensuring your comfort and satisfaction throughout the journey.`;
+// Render duration tabs above the itinerary for consolidated packages
+function renderVariantTabs(pkg, activeIndex) {
+    // Find or create the tabs container — insert it before #package-duration if present
+    let tabsContainer = document.getElementById('variant-tabs');
+    if (!tabsContainer) {
+        tabsContainer = document.createElement('div');
+        tabsContainer.id = 'variant-tabs';
+        tabsContainer.className = 'variant-tabs';
+        const durationEl = document.getElementById('package-duration');
+        if (durationEl && durationEl.parentNode) {
+            durationEl.parentNode.insertBefore(tabsContainer, durationEl);
+        }
+    }
+
+    if (!pkg.variants || pkg.variants.length <= 1) {
+        tabsContainer.innerHTML = '';
+        return;
+    }
+
+    tabsContainer.innerHTML = pkg.variants.map((v, i) => {
+        const active = i === activeIndex ? ' tab-active' : '';
+        return `<button class="variant-tab${active}" onclick="selectVariant(${i})">${durationLabel(v.duration)}</button>`;
+    }).join('');
 }
 
-// Generate itinerary — uses actual day labels from JSON when available
-function generateItinerary(pkg) {
-    // Use real itinerary data loaded from JSON if present.
-    // Each entry is {day, description} — description may be empty for international packages.
-    if (pkg.itinerary && pkg.itinerary.length > 0) {
-        return pkg.itinerary.map(entry => `
+// Render the duration, destinations, overview, inclusions, itinerary for the selected variant
+function renderVariantContent(pkg, variantIndex) {
+    const v = getVariant(pkg, variantIndex);
+
+    // Update URL without page reload so back-button works
+    const newUrl = `package-detail.html?id=${pkg.id}${v.variantId ? '&variant=' + v.variantId : ''}`;
+    history.replaceState(null, '', newUrl);
+
+    const durationEl = document.getElementById('package-duration');
+    if (durationEl) durationEl.textContent = formatDuration(v.duration);
+
+    const destEl = document.getElementById('package-destinations');
+    if (destEl) destEl.textContent = v.destinations;
+
+    const overviewEl = document.getElementById('package-overview');
+    if (overviewEl) overviewEl.textContent = generateOverview(pkg, v);
+
+    const inclusionsEl = document.getElementById('package-inclusions');
+    if (inclusionsEl) {
+        inclusionsEl.innerHTML = v.inclusions
+            .map(inc => `<li>${inc}</li>`)
+            .join('');
+    }
+
+    const itineraryEl = document.getElementById('package-itinerary');
+    if (itineraryEl) itineraryEl.innerHTML = generateItinerary(v);
+}
+
+// Called when a variant tab is clicked
+function selectVariant(variantIndex) {
+    if (!currentPackage) return;
+    currentVariantIndex = variantIndex;
+
+    // Update tab active state
+    document.querySelectorAll('.variant-tab').forEach((tab, i) => {
+        tab.classList.toggle('tab-active', i === variantIndex);
+    });
+
+    renderVariantContent(currentPackage, variantIndex);
+}
+
+// Generate overview text — accepts a variant object (or falls back to pkg for non-consolidated)
+function generateOverview(pkg, variant) {
+    const v = variant || pkg;
+    const nights = getNights(v.duration);
+    const category = pkg.category === 'international' ? 'international' : 'domestic';
+
+    return `Embark on an unforgettable ${nights}-night journey through ${v.destinations}. This carefully curated ${category} tour package offers the perfect blend of adventure, relaxation, and cultural experiences. Whether you're traveling with family, friends, or as a couple, this ${pkg.title.toLowerCase()} promises memories that will last a lifetime. Our expert team has designed this itinerary to showcase the best of the region while ensuring your comfort and satisfaction throughout the journey.`;
+}
+
+// Generate itinerary HTML — accepts a variant (or pkg for non-consolidated packages)
+function generateItinerary(variant) {
+    const v = variant || {};
+    const itinerary = v.itinerary;
+    const duration = v.duration;
+    const destinations = v.destinations;
+
+    // Use real itinerary data when present
+    if (itinerary && itinerary.length > 0) {
+        return itinerary.map(entry => `
         <div class="itinerary-day">
             <h4>${entry.day}</h4>
             <p>${entry.description || 'Please contact us for the detailed itinerary and activity breakdown.'}</p>
@@ -131,20 +182,20 @@ function generateItinerary(pkg) {
     `).join('');
     }
 
-    // Fallback: generate a generic itinerary from duration + destinations
-    const nights = getNights(pkg.duration);
-    const destinations = pkg.destinations.split('-').map(d => d.trim());
+    // Fallback: generate generic itinerary from duration + destinations
+    const nights = getNights(duration || '');
+    const dests = (destinations || '').split('-').map(d => d.trim());
 
-    let itinerary = `
+    let html = `
         <div class="itinerary-day">
             <h4>Day 1: Arrival</h4>
-            <p>Arrive at ${destinations[0]}. Check-in to your hotel. Welcome drink on arrival. Evening free for leisure. Overnight stay.</p>
+            <p>Arrive at ${dests[0] || 'destination'}. Check-in to your hotel. Welcome drink on arrival. Evening free for leisure. Overnight stay.</p>
         </div>
     `;
 
     for (let i = 2; i < nights; i++) {
-        const dest = destinations[Math.min(i - 1, destinations.length - 1)];
-        itinerary += `
+        const dest = dests[Math.min(i - 1, dests.length - 1)];
+        html += `
         <div class="itinerary-day">
             <h4>Day ${i}: ${dest} Sightseeing</h4>
             <p>After breakfast, proceed for full day sightseeing of ${dest}. Visit popular attractions and landmarks. Evening at leisure. Overnight stay at hotel.</p>
@@ -152,14 +203,14 @@ function generateItinerary(pkg) {
     `;
     }
 
-    itinerary += `
+    html += `
         <div class="itinerary-day">
             <h4>Day ${nights}: Departure</h4>
             <p>After breakfast, check out from hotel. Transfer to airport/railway station for your onward journey. Tour ends with sweet memories.</p>
         </div>
     `;
 
-    return itinerary;
+    return html;
 }
 
 // Get best time to visit

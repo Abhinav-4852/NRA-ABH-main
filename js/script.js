@@ -181,34 +181,91 @@ function updateDestinationCounts() {
 
 
 // Create package card HTML
-function createPackageCard(pkg) {
-    const nights = pkg.duration.split('/')[0].trim().split(' ')[0];
-    
+function createPackageCard(pkg, activeVariantIndex) {
+    const variantIdx = activeVariantIndex !== undefined ? activeVariantIndex : (pkg.defaultVariant || 0);
+    const v = getVariant(pkg, variantIdx);
+    const nights = v.duration.split('/')[0].trim().split(' ')[0];
+
+    // Duration pills for consolidated packages
+    let pillsHtml = '';
+    if (pkg.variants && pkg.variants.length > 1) {
+        const pills = pkg.variants.map((variant, i) => {
+            const active = i === variantIdx ? ' pill-active' : '';
+            const label = durationLabel(variant.duration);
+            return `<button class="duration-pill${active}" onclick="event.stopPropagation();switchVariant(${pkg.id},${i},this)" data-pkg="${pkg.id}" data-variant="${i}">${label}</button>`;
+        }).join('');
+        pillsHtml = `
+            <div class="duration-pills-row">
+                <span class="duration-pills-label">Duration</span>
+                <div class="duration-pills">${pills}</div>
+            </div>`;
+    }
+
     return `
-        <div class="package-card" onclick="viewPackage(${pkg.id})">
+        <div class="package-card" id="pkg-card-${pkg.id}" onclick="viewPackage(${pkg.id},${variantIdx})">
             <div class="package-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('${pkg.image}');">
-                <span class="package-badge">${pkg.duration}</span>
+                <span class="package-badge" id="pkg-badge-${pkg.id}">${v.duration}</span>
             </div>
             <div class="package-content">
+                ${pillsHtml}
                 <h3 class="package-title">${pkg.title}</h3>
-                <div class="package-details">
-                    <span>📍 ${pkg.destinations.split('-')[0].trim()}</span>
+                <div class="package-details" id="pkg-details-${pkg.id}">
+                    <span>📍 ${v.destinations.split('-')[0].trim()}</span>
                     <span>🌙 ${nights} Nights</span>
                 </div>
                 <div class="package-price">${pkg.price}</div>
                 <div class="package-price-note">  </div>
                 <div class="package-footer">
                     <span style="color: var(--text-light); font-size: 0.9rem;">${pkg.category === 'international' ? '✈️ International' : '🇮🇳 Domestic'}</span>
-                    <a href="package-detail.html?id=${pkg.id}" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+                    <a href="package-detail.html?id=${pkg.id}&variant=${v.variantId || ''}" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" id="pkg-link-${pkg.id}">View Details</a>
                 </div>
             </div>
         </div>
     `;
 }
 
-// View package details
-function viewPackage(id) {
-    window.location.href = `package-detail.html?id=${id}`;
+// Switch visible variant on a card without page navigation
+function switchVariant(pkgId, variantIndex, pillBtn) {
+    const pkg = tourPackages.find(p => p.id === pkgId);
+    if (!pkg || !pkg.variants) return;
+    const v = pkg.variants[variantIndex];
+    if (!v) return;
+
+    // Update pill active state
+    const card = document.getElementById('pkg-card-' + pkgId);
+    if (card) {
+        card.querySelectorAll('.duration-pill').forEach(p => p.classList.remove('pill-active'));
+        pillBtn.classList.add('pill-active');
+
+        // Update badge
+        const badge = document.getElementById('pkg-badge-' + pkgId);
+        if (badge) badge.textContent = v.duration;
+
+        // Update details
+        const details = document.getElementById('pkg-details-' + pkgId);
+        if (details) {
+            const nights = v.duration.split('/')[0].trim().split(' ')[0];
+            details.innerHTML = `<span>📍 ${v.destinations.split('-')[0].trim()}</span><span>🌙 ${nights} Nights</span>`;
+        }
+
+        // Update detail link
+        const link = document.getElementById('pkg-link-' + pkgId);
+        if (link) link.href = `package-detail.html?id=${pkgId}&variant=${v.variantId || ''}`;
+
+        // Update card onclick
+        card.setAttribute('onclick', `viewPackage(${pkgId},${variantIndex})`);
+    }
+}
+
+// View package details (optionally with a specific variant)
+function viewPackage(id, variantIndex) {
+    const pkg = tourPackages.find(p => p.id === id);
+    let url = `package-detail.html?id=${id}`;
+    if (pkg && pkg.variants && variantIndex !== undefined) {
+        const v = pkg.variants[variantIndex];
+        if (v && v.variantId) url += `&variant=${v.variantId}`;
+    }
+    window.location.href = url;
 }
 
 // Search packages
@@ -242,6 +299,22 @@ function getNights(duration) {
     return match ? parseInt(match[1]) : 0;
 }
 
+// Get the active variant object for a package (falls back gracefully for non-consolidated packages)
+function getVariant(pkg, variantIndex) {
+    if (!pkg.variants || pkg.variants.length === 0) return pkg;
+    const idx = (variantIndex !== undefined && variantIndex !== null)
+        ? variantIndex
+        : (pkg.defaultVariant || 0);
+    return pkg.variants[Math.max(0, Math.min(idx, pkg.variants.length - 1))];
+}
+
+// Short label for a duration pill, e.g. "04 NIGHTS/05 DAYS" → "4N/5D"
+function durationLabel(duration) {
+    const m = duration.match(/(\d+)\s*NIGHTS?\s*\/\s*(\d+)\s*DAYS?/i);
+    if (m) return `${parseInt(m[1])}N/${parseInt(m[2])}D`;
+    return duration;
+}
+
 // ===== Destination Group Mappings =====
 const destinationGroupPackages = {
     'himachal': [
@@ -259,13 +332,15 @@ const destinationGroupPackages = {
         'Delhi Manali Car Tour'
     ],
     'kashmir': [
-        'Kashmir Paradise Tour'
+        'Kashmir Paradise Tour',
+        'Kashmir Tour Package'
     ],
     'uttarakhand': [
         'Uttarakhand Hill Station Tour',
         'Mussoorie Dhanaulti Tour Package',
         'Haridwar Rishikesh Tour Package',
-        'Jim Corbett Jungle Safari'
+        'Jim Corbett Jungle Safari',
+        'Uttarakhand Tour Package'
     ],
     'chardham': [
         'Char Dham Yatra by Helicopter (Ex Dehradun)',
@@ -275,19 +350,23 @@ const destinationGroupPackages = {
         'Badrinath Kedarnath Dham Package'
     ],
     'northeast': [
-        'Darjeeling Gangtok Tour'
+        'Darjeeling Gangtok Tour',
+        'North East Tour Package',
+        'North East Package'
+    ],
+    'rajasthan': [
+        'Rajasthan Tour Package'
     ],
     'combo': [
         'Himachal with Golden Temple Tour',
         'Manali Kasol Amritsar Tour'
     ],
-    'heritage': [
-        'Golden Triangle Tour'
-    ],
     'beach': [
         'Kerala Backwaters Tour',
         'Goa Beach Paradise',
-        'Andaman Island Paradise'
+        'Andaman Island Paradise',
+        'Kerala Tour Package',
+        'Andaman Tour Package'
     ],
     'international': [
         'Thailand Tour Package',
@@ -309,34 +388,36 @@ function filterByDestination(packages, destination) {
         return packages.filter(pkg => titles.includes(pkg.title));
     }
 
-    // Fallback: match by region or destination string
-    return packages.filter(pkg =>
-        pkg.destinations.toLowerCase().includes(dest) ||
-        pkg.region === dest
-    );
+    // Fallback: match by region, or by destinations string across all variants
+    return packages.filter(pkg => {
+        if (pkg.region === dest) return true;
+        if (pkg.variants && pkg.variants.length > 0) {
+            return pkg.variants.some(v => v.destinations.toLowerCase().includes(dest));
+        }
+        return pkg.destinations.toLowerCase().includes(dest);
+    });
 }
 
-// Filter packages by duration
+// Filter packages by duration — for consolidated packages, match if ANY variant fits
 function filterByDuration(packages, durationRange) {
     if (durationRange === 'all') return packages;
-    
-    return packages.filter(pkg => {
-        const nights = getNights(pkg.duration);
-        
-        switch(durationRange) {
-            case '2-3':
-                return nights >= 2 && nights <= 3;
-            case '4-5':
-                return nights >= 4 && nights <= 5;
-            case '6-7':
-                return nights >= 6 && nights <= 7;
-            case '8-10':
-                return nights >= 8 && nights <= 10;
-            case '10+':
-                return nights > 10;
-            default:
-                return true;
+
+    function nightsMatch(nights) {
+        switch (durationRange) {
+            case '2-3':  return nights >= 2  && nights <= 3;
+            case '4-5':  return nights >= 4  && nights <= 5;
+            case '6-7':  return nights >= 6  && nights <= 7;
+            case '8-10': return nights >= 8  && nights <= 10;
+            case '10+':  return nights > 10;
+            default:     return true;
         }
+    }
+
+    return packages.filter(pkg => {
+        if (pkg.variants && pkg.variants.length > 0) {
+            return pkg.variants.some(v => nightsMatch(getNights(v.duration)));
+        }
+        return nightsMatch(getNights(pkg.duration));
     });
 }
 

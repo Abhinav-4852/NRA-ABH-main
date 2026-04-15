@@ -91,21 +91,29 @@ function resetFilters() {
     filterPackages();
 }
 
-// Populate package select dropdown
+// Populate package select dropdown — lists each variant as a separate option
 function populatePackageSelect() {
     const select = document.getElementById('package');
     if (!select) return;
 
-    // Keep only the first static placeholder option, then re-add all packages
     const placeholder = select.options[0];
     select.innerHTML = '';
     if (placeholder) select.appendChild(placeholder);
 
     tourPackages.forEach(pkg => {
-        const option = document.createElement('option');
-        option.value = pkg.id;
-        option.textContent = `${pkg.title} (${pkg.duration})`;
-        select.appendChild(option);
+        if (pkg.variants && pkg.variants.length > 0) {
+            pkg.variants.forEach(v => {
+                const option = document.createElement('option');
+                option.value = `${pkg.id}:${v.variantId}`;
+                option.textContent = `${pkg.title} (${v.duration})`;
+                select.appendChild(option);
+            });
+        } else {
+            const option = document.createElement('option');
+            option.value = pkg.id;
+            option.textContent = `${pkg.title} (${pkg.duration})`;
+            select.appendChild(option);
+        }
     });
 }
 
